@@ -1,8 +1,8 @@
 namespace ProjetoAssistenciaTecnica
 {
-    public partial class Form1 : Form
+    public partial class FInicio : Form
     {
-        public Form1()
+        public FInicio()
         {
             InitializeComponent();
         }
