@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FInicio));
             toolStrip1 = new ToolStrip();
             botaoCadastrarCliente = new ToolStripButton();
+            panel1 = new Panel();
+            tabControl1 = new TabControl();
             toolStrip1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
@@ -52,12 +55,32 @@
             botaoCadastrarCliente.Size = new Size(23, 22);
             botaoCadastrarCliente.Text = "toolStripButton1";
             botaoCadastrarCliente.ToolTipText = "Cadastrar Cliente";
+            botaoCadastrarCliente.Click += botaoCadastrarCliente_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(tabControl1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 25);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1029, 510);
+            panel1.TabIndex = 1;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1029, 510);
+            tabControl1.TabIndex = 0;
             // 
             // FInicio
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 535);
+            Controls.Add(panel1);
             Controls.Add(toolStrip1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
@@ -66,6 +89,7 @@
             Text = "Tela Inicial";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -74,5 +98,7 @@
 
         private ToolStrip toolStrip1;
         private ToolStripButton botaoCadastrarCliente;
+        private Panel panel1;
+        private TabControl tabControl1;
     }
 }
