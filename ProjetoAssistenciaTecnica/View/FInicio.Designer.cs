@@ -33,16 +33,18 @@
             botaoCadastrarCliente = new ToolStripButton();
             panel1 = new Panel();
             tabControl1 = new TabControl();
+            botaoCadastrarPessoa = new ToolStripButton();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente });
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarPessoa });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1029, 25);
+            toolStrip1.Size = new Size(1029, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -52,7 +54,7 @@
             botaoCadastrarCliente.Image = (Image)resources.GetObject("botaoCadastrarCliente.Image");
             botaoCadastrarCliente.ImageTransparentColor = Color.Magenta;
             botaoCadastrarCliente.Name = "botaoCadastrarCliente";
-            botaoCadastrarCliente.Size = new Size(23, 22);
+            botaoCadastrarCliente.Size = new Size(29, 24);
             botaoCadastrarCliente.Text = "toolStripButton1";
             botaoCadastrarCliente.ToolTipText = "Cadastrar Cliente";
             botaoCadastrarCliente.Click += botaoCadastrarCliente_Click;
@@ -61,9 +63,9 @@
             // 
             panel1.Controls.Add(tabControl1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 25);
+            panel1.Location = new Point(0, 27);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1029, 510);
+            panel1.Size = new Size(1029, 508);
             panel1.TabIndex = 1;
             // 
             // tabControl1
@@ -72,12 +74,22 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1029, 510);
+            tabControl1.Size = new Size(1029, 508);
             tabControl1.TabIndex = 0;
+            // 
+            // botaoCadastrarPessoa
+            // 
+            botaoCadastrarPessoa.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            botaoCadastrarPessoa.Image = (Image)resources.GetObject("botaoCadastrarPessoa.Image");
+            botaoCadastrarPessoa.ImageTransparentColor = Color.Magenta;
+            botaoCadastrarPessoa.Name = "botaoCadastrarPessoa";
+            botaoCadastrarPessoa.Size = new Size(29, 24);
+            botaoCadastrarPessoa.Text = "toolStripButton1";
+            botaoCadastrarPessoa.Click += botaoCadastrarPessoa_Click;
             // 
             // FInicio
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 535);
             Controls.Add(panel1);
@@ -100,5 +112,6 @@
         private ToolStripButton botaoCadastrarCliente;
         private Panel panel1;
         private TabControl tabControl1;
+        private ToolStripButton botaoCadastrarPessoa;
     }
 }
