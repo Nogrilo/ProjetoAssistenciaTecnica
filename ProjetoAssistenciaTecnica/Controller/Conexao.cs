@@ -11,7 +11,7 @@ namespace ProjetoAssistenciaTecnica
     {
         public MySqlConnection GetConnection()
         {
-            string conexao = "server=localhost;" + "user=root; password=mitona;" + "database=sistema_cavalo;";
+            string conexao = "server=localhost;" + "user=root; password=mitona@;" + "database=db_eletro;";
             return new MySqlConnection(conexao);
         }
     }

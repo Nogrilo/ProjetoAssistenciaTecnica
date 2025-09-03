@@ -33,12 +33,13 @@
             txtNome = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
+            txtTelefone = new TextBox();
             label4 = new Label();
             label5 = new Label();
             txtCPF = new TextBox();
             comboBox1 = new ComboBox();
             label6 = new Label();
+            botaoSalvar = new Button();
             txtDataNascimento = new MaskedTextBox();
             SuspendLayout();
             // 
@@ -86,12 +87,12 @@
             label3.TabIndex = 4;
             label3.Text = "CPF";
             // 
-            // textBox4
+            // txtTelefone
             // 
-            textBox4.Location = new Point(107, 187);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(426, 34);
-            textBox4.TabIndex = 7;
+            txtTelefone.Location = new Point(107, 187);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(426, 34);
+            txtTelefone.TabIndex = 5;
             // 
             // label4
             // 
@@ -118,7 +119,7 @@
             txtCPF.Location = new Point(80, 124);
             txtCPF.Name = "txtCPF";
             txtCPF.Size = new Size(125, 34);
-            txtCPF.TabIndex = 14;
+            txtCPF.TabIndex = 4;
             // 
             // comboBox1
             // 
@@ -139,14 +140,23 @@
             label6.TabIndex = 16;
             label6.Text = "Tipo";
             // 
+            // botaoSalvar
+            // 
+            botaoSalvar.Location = new Point(680, 30);
+            botaoSalvar.Name = "botaoSalvar";
+            botaoSalvar.Size = new Size(268, 244);
+            botaoSalvar.TabIndex = 18;
+            botaoSalvar.Text = "SALVAR";
+            botaoSalvar.UseVisualStyleBackColor = true;
+            botaoSalvar.Click += botaoSalvar_Click;
+            // 
             // txtDataNascimento
             // 
-            txtDataNascimento.Location = new Point(176, 255);
-            txtDataNascimento.Mask = "00/00/0000";
+            txtDataNascimento.Location = new Point(177, 258);
+            txtDataNascimento.Mask = "0000/00/00";
             txtDataNascimento.Name = "txtDataNascimento";
-            txtDataNascimento.Size = new Size(125, 34);
-            txtDataNascimento.TabIndex = 17;
-            txtDataNascimento.ValidatingType = typeof(DateTime);
+            txtDataNascimento.Size = new Size(184, 34);
+            txtDataNascimento.TabIndex = 6;
             // 
             // FPessoa
             // 
@@ -154,11 +164,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(992, 429);
             Controls.Add(txtDataNascimento);
+            Controls.Add(botaoSalvar);
             Controls.Add(label6);
             Controls.Add(comboBox1);
             Controls.Add(txtCPF);
             Controls.Add(label5);
-            Controls.Add(textBox4);
+            Controls.Add(txtTelefone);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(txtNome);
@@ -180,12 +191,13 @@
         private TextBox txtNome;
         private Label label2;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox txtTelefone;
         private Label label4;
         private Label label5;
         private TextBox txtCPF;
         private ComboBox comboBox1;
         private Label label6;
+        private Button botaoSalvar;
         private MaskedTextBox txtDataNascimento;
     }
 }
