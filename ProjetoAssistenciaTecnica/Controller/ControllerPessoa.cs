@@ -26,14 +26,16 @@ namespace ProjetoAssistenciaTecnica.Controller
                 nome,
                 cpf_cnpj,
                 telefone,
-                data_nascimento
+                data_nascimento,
+                email
                 ) 
 
                 VALUES (
                 @nome,
                 @cpf_cnpj,
                 @telefone,
-                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d')
+                DATE_FORMAT(@data_nascimento,   '%d/%m/%Y'),
+                @email
                 );";
 
                 MySqlCommand executa = new MySqlCommand(sql, conexao);
@@ -41,6 +43,7 @@ namespace ProjetoAssistenciaTecnica.Controller
                 executa.Parameters.AddWithValue("@cpf_cnpj", obj.cpf_cnpj);
                 executa.Parameters.AddWithValue("@telefone", obj.telefone);
                 executa.Parameters.AddWithValue("@data_nascimento", obj.data_nascimento);
+                executa.Parameters.AddWithValue("@email", obj.email);
 
                 /* Abrir a conexao */
                 conexao.Open();

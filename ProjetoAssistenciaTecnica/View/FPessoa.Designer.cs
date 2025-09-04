@@ -37,10 +37,10 @@
             label4 = new Label();
             label5 = new Label();
             txtCPF = new TextBox();
-            comboBox1 = new ComboBox();
-            label6 = new Label();
             botaoSalvar = new Button();
             txtDataNascimento = new MaskedTextBox();
+            label6 = new Label();
+            txtEmail = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -121,25 +121,6 @@
             txtCPF.Size = new Size(125, 34);
             txtCPF.TabIndex = 4;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Cliente", "Funcionario" });
-            comboBox1.Location = new Point(80, 326);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 36);
-            comboBox1.TabIndex = 15;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(16, 326);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(51, 28);
-            label6.TabIndex = 16;
-            label6.Text = "Tipo";
-            // 
             // botaoSalvar
             // 
             botaoSalvar.Location = new Point(680, 30);
@@ -158,15 +139,32 @@
             txtDataNascimento.Size = new Size(184, 34);
             txtDataNascimento.TabIndex = 6;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(16, 331);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(59, 28);
+            label6.TabIndex = 20;
+            label6.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(177, 325);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(426, 34);
+            txtEmail.TabIndex = 21;
+            // 
             // FPessoa
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(992, 429);
+            Controls.Add(txtEmail);
+            Controls.Add(label6);
             Controls.Add(txtDataNascimento);
             Controls.Add(botaoSalvar);
-            Controls.Add(label6);
-            Controls.Add(comboBox1);
             Controls.Add(txtCPF);
             Controls.Add(label5);
             Controls.Add(txtTelefone);
@@ -195,9 +193,9 @@
         private Label label4;
         private Label label5;
         private TextBox txtCPF;
-        private ComboBox comboBox1;
-        private Label label6;
         private Button botaoSalvar;
         private MaskedTextBox txtDataNascimento;
+        private Label label6;
+        private TextBox txtEmail;
     }
 }

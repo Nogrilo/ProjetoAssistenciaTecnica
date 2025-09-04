@@ -21,17 +21,17 @@ namespace ProjetoAssistenciaTecnica.View
 
         private void botaoSalvar_Click(object sender, EventArgs e)
         {
-
             Pessoa obj          = new Pessoa();
             obj.nome            = txtNome.Text;
             obj.cpf_cnpj        = txtCPF.Text;
             obj.telefone        = txtTelefone.Text;
             obj.data_nascimento = txtDataNascimento.Text;
+            obj.email           = txtEmail.Text;
 
             ControllerPessoa controllerPessoa = new ControllerPessoa();
 
             controllerPessoa.cadastrarPessoa(obj);
-            MessageBox.Show("Ve ai bem certinho");
+            MessageBox.Show("Pessoa Cadastrada com Sucesso!");
 
         }
     }

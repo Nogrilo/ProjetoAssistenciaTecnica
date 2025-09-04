@@ -16,6 +16,8 @@ namespace ProjetoAssistenciaTecnica.Model
 
         public string telefone { get; set; }
 
+        public string email { get; set; }
+
         public string data_nascimento { get; set; }
 
         public string data_cadastro { get; set; }
