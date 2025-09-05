@@ -51,6 +51,7 @@ namespace ProjetoAssistenciaTecnica.View
             obj.idPessoa            = int.Parse(txtIDPessoa.Text); // Converter int para TXT
             obj.ativo               = int.Parse(txtAtivo.Text);
             obj.tipo                = txtTipo.Text;
+            obj.dataAdmissao        = txtDataAdmissao.Text;
             obj.codigoFuncionario   = txtCodigoFuncionario.Text;
             obj.porcentagemComissao = float.Parse(txtPorcentagem.Text); // Converter float para TXT
 
