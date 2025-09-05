@@ -22,20 +22,14 @@ namespace ProjetoAssistenciaTecnica.Controller
         {
             try
             {
-                string sql = @"insert into tb_pessoa (
-                nome,
-                cpf_cnpj,
-                telefone,
-                data_nascimento,
-                email
-                ) 
+                // Chamar a Procedure que o Filipe fez, que inseri os dados no banco, de forma melhorada
 
-                VALUES (
+                string sql = @"call sp_insert_cliente( 
                 @nome,
                 @cpf_cnpj,
                 @telefone,
-                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d'),
-                @email
+                @email,
+                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d')
                 );";
 
                 MySqlCommand executa = new MySqlCommand(sql, conexao);

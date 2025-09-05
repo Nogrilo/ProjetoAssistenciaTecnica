@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoAssistenciaTecnica.Model
 {
-    public class Cliente
+    public class Cliente : Pessoa
     {
         public int idCliente { get; set; }
 

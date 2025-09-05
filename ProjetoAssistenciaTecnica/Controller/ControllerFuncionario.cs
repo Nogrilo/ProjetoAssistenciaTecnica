@@ -36,8 +36,9 @@ namespace ProjetoAssistenciaTecnica.Controller
                 @cpf_cnpj,
                 @telefone,
                 DATE_FORMAT(@data_nascimento,   '%Y/%m/%d'),
-                @email
-                );";
+                @email,
+                );
+                SELECT LAST_INSERT_ID();"; // Funcao de SQL para pegar o ultimo ID adicionado na tabela Pessoa
 
                 /* Inserindo os dados na tabela pessoa */
                 MySqlCommand executaPessoa = new MySqlCommand(sqlPessoa, conexao);
@@ -91,7 +92,7 @@ namespace ProjetoAssistenciaTecnica.Controller
                 @nome,
                 @72333908922345, 
                 @47984441721, 
-]               @kjsldj@jfpsj.dsi, 
+                @kjsldj@jfpsj.dsi, 
                 @2000-01-01');"; */
             }
             catch (Exception ex)
