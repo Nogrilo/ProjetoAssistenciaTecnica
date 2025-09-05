@@ -33,7 +33,7 @@
             botaoCadastrarCliente = new ToolStripButton();
             panel1 = new Panel();
             tabControl1 = new TabControl();
-            botaoCadastrarPessoa = new ToolStripButton();
+            botaoCadastrarFuncionario = new ToolStripButton();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -41,7 +41,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarPessoa });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarFuncionario });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(1029, 27);
@@ -77,15 +77,15 @@
             tabControl1.Size = new Size(1029, 508);
             tabControl1.TabIndex = 0;
             // 
-            // botaoCadastrarPessoa
+            // botaoCadastrarFuncionario
             // 
-            botaoCadastrarPessoa.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            botaoCadastrarPessoa.Image = (Image)resources.GetObject("botaoCadastrarPessoa.Image");
-            botaoCadastrarPessoa.ImageTransparentColor = Color.Magenta;
-            botaoCadastrarPessoa.Name = "botaoCadastrarPessoa";
-            botaoCadastrarPessoa.Size = new Size(29, 24);
-            botaoCadastrarPessoa.Text = "toolStripButton1";
-            botaoCadastrarPessoa.Click += botaoCadastrarPessoa_Click;
+            botaoCadastrarFuncionario.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            botaoCadastrarFuncionario.Image = (Image)resources.GetObject("botaoCadastrarFuncionario.Image");
+            botaoCadastrarFuncionario.ImageTransparentColor = Color.Magenta;
+            botaoCadastrarFuncionario.Name = "botaoCadastrarFuncionario";
+            botaoCadastrarFuncionario.Size = new Size(29, 24);
+            botaoCadastrarFuncionario.Text = "toolStripButton1";
+            botaoCadastrarFuncionario.Click += botaoCadastrarFuncionario_Click;
             // 
             // FInicio
             // 
@@ -112,6 +112,6 @@
         private ToolStripButton botaoCadastrarCliente;
         private Panel panel1;
         private TabControl tabControl1;
-        private ToolStripButton botaoCadastrarPessoa;
+        private ToolStripButton botaoCadastrarFuncionario;
     }
 }

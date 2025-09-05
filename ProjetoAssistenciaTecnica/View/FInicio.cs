@@ -42,17 +42,17 @@ namespace ProjetoAssistenciaTecnica
             tabControl1.TabPages[abas - 1].ImageIndex = 0;
         }
 
-        private void botaoCadastrarPessoa_Click(object sender, EventArgs e)
+        private void botaoCadastrarFuncionario_Click(object sender, EventArgs e)
         {
             /* Abrindo a tela de cadastro de cliente */
 
-            FPessoa tela = new FPessoa();
+            FFuncionario tela = new FFuncionario();
 
             tela.TopLevel = false;
             tela.FormBorderStyle = FormBorderStyle.None;
 
             /* Adicionar uma nova aba ja existente */
-            tabControl1.TabPages.Add("Pessoa");
+            tabControl1.TabPages.Add("Funcionario");
 
             /* Identificar quantas abas ja existem abertas */
             int abas = tabControl1.TabPages.Count;

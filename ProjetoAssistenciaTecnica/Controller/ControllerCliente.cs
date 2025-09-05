@@ -8,17 +8,17 @@ using ProjetoAssistenciaTecnica.Model;
 
 namespace ProjetoAssistenciaTecnica.Controller
 {
-    class ControllerPessoa
+    class ControllerCliente
     {
         /* Vincular ao banco de dados */
         private MySqlConnection conexao; 
 
-        public ControllerPessoa ()
+        public ControllerCliente ()
         {
             this.conexao = new Conexao().GetConnection();
         }
 
-        public bool cadastrarPessoa(Pessoa obj)
+        public bool cadastrarCliente(Cliente obj)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace ProjetoAssistenciaTecnica.Controller
                 @nome,
                 @cpf_cnpj,
                 @telefone,
-                DATE_FORMAT(@data_nascimento,   '%d/%m/%Y'),
+                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d'),
                 @email
                 );";
 
