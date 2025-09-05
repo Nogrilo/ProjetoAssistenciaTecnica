@@ -125,7 +125,7 @@
             // 
             botaoSalvar.Location = new Point(680, 30);
             botaoSalvar.Name = "botaoSalvar";
-            botaoSalvar.Size = new Size(268, 244);
+            botaoSalvar.Size = new Size(268, 219);
             botaoSalvar.TabIndex = 18;
             botaoSalvar.Text = "SALVAR";
             botaoSalvar.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@
             txtEmail.Size = new Size(426, 34);
             txtEmail.TabIndex = 21;
             // 
-            // FPessoa
+            // FCliente
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -176,7 +176,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
-            Name = "FPessoa";
+            Name = "FCliente";
             Text = "FPessoa";
             ResumeLayout(false);
             PerformLayout();
