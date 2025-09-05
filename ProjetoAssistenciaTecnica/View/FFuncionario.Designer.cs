@@ -28,252 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtID = new TextBox();
-            label2 = new Label();
-            txtNomeFuncionario = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            txtTelefoneFuncionario = new TextBox();
-            label5 = new Label();
-            txtCPFFuncionario = new TextBox();
-            txtEmailFuncionario = new TextBox();
-            txtDataNascimentoFuncionario = new MaskedTextBox();
-            label6 = new Label();
-            botaoSalvar = new Button();
-            txtCodigoFuncionario = new TextBox();
-            label7 = new Label();
-            txtPorcentagem = new TextBox();
-            label8 = new Label();
-            txtDataAdmissao = new MaskedTextBox();
-            label9 = new Label();
-            txtIDPessoa = new TextBox();
-            label10 = new Label();
-            label11 = new Label();
-            txtAtivo = new TextBox();
-            comboTipo = new ComboBox();
             panel1 = new Panel();
             label12 = new Label();
-            tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            txtTelefoneFuncionario = new TextBox();
+            label4 = new Label();
+            txtCPFFuncionario = new TextBox();
+            label3 = new Label();
+            label11 = new Label();
+            label5 = new Label();
+            label2 = new Label();
+            txtNomeFuncionario = new TextBox();
+            txtDataNascimentoFuncionario = new MaskedTextBox();
+            label7 = new Label();
+            txtCodigoFuncionario = new TextBox();
+            label10 = new Label();
+            comboTipo = new ComboBox();
+            txtIDPessoa = new TextBox();
+            label9 = new Label();
+            txtAtivo = new TextBox();
+            txtDataAdmissao = new MaskedTextBox();
+            botaoSalvar = new Button();
+            label8 = new Label();
+            label6 = new Label();
+            txtPorcentagem = new TextBox();
+            txtEmailFuncionario = new TextBox();
+            txtID = new TextBox();
+            label1 = new Label();
+            tabControl1 = new TabControl();
             tabPage2 = new TabPage();
+            panel2 = new Panel();
+            comboBox1 = new ComboBox();
+            button1 = new Button();
+            label13 = new Label();
             panel1.SuspendLayout();
-            tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 13);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(98, 28);
-            label1.TabIndex = 22;
-            label1.Text = "ID Pessoa:";
-            // 
-            // txtID
-            // 
-            txtID.Location = new Point(118, 10);
-            txtID.Name = "txtID";
-            txtID.Size = new Size(74, 34);
-            txtID.TabIndex = 23;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(41, 50);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 28);
-            label2.TabIndex = 24;
-            label2.Text = "Nome:";
-            // 
-            // txtNomeFuncionario
-            // 
-            txtNomeFuncionario.Location = new Point(118, 50);
-            txtNomeFuncionario.Name = "txtNomeFuncionario";
-            txtNomeFuncionario.Size = new Size(428, 34);
-            txtNomeFuncionario.TabIndex = 25;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(59, 94);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 28);
-            label3.TabIndex = 27;
-            label3.Text = "CPF:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(21, 136);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(88, 28);
-            label4.TabIndex = 30;
-            label4.Text = "Telefone:";
-            // 
-            // txtTelefoneFuncionario
-            // 
-            txtTelefoneFuncionario.Location = new Point(120, 133);
-            txtTelefoneFuncionario.Name = "txtTelefoneFuncionario";
-            txtTelefoneFuncionario.Size = new Size(184, 34);
-            txtTelefoneFuncionario.TabIndex = 28;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(26, 216);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(166, 28);
-            label5.TabIndex = 31;
-            label5.Text = "Data Nascimento:";
-            // 
-            // txtCPFFuncionario
-            // 
-            txtCPFFuncionario.Location = new Point(118, 91);
-            txtCPFFuncionario.Name = "txtCPFFuncionario";
-            txtCPFFuncionario.Size = new Size(428, 34);
-            txtCPFFuncionario.TabIndex = 26;
-            // 
-            // txtEmailFuncionario
-            // 
-            txtEmailFuncionario.Location = new Point(120, 176);
-            txtEmailFuncionario.Name = "txtEmailFuncionario";
-            txtEmailFuncionario.Size = new Size(426, 34);
-            txtEmailFuncionario.TabIndex = 34;
-            // 
-            // txtDataNascimentoFuncionario
-            // 
-            txtDataNascimentoFuncionario.Location = new Point(199, 216);
-            txtDataNascimentoFuncionario.Mask = "0000/00/00";
-            txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
-            txtDataNascimentoFuncionario.Size = new Size(105, 34);
-            txtDataNascimentoFuncionario.TabIndex = 29;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(42, 176);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(63, 28);
-            label6.TabIndex = 33;
-            label6.Text = "Email:";
-            // 
-            // botaoSalvar
-            // 
-            botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
-            botaoSalvar.FlatStyle = FlatStyle.Popup;
-            botaoSalvar.Font = new Font("Geometr415 Blk BT", 12.2F);
-            botaoSalvar.ForeColor = Color.White;
-            botaoSalvar.Location = new Point(821, 230);
-            botaoSalvar.Name = "botaoSalvar";
-            botaoSalvar.Size = new Size(92, 42);
-            botaoSalvar.TabIndex = 32;
-            botaoSalvar.Text = "Salvar";
-            botaoSalvar.UseVisualStyleBackColor = false;
-            botaoSalvar.Click += botaoSalvar_Click;
-            // 
-            // txtCodigoFuncionario
-            // 
-            txtCodigoFuncionario.Location = new Point(821, 98);
-            txtCodigoFuncionario.Name = "txtCodigoFuncionario";
-            txtCodigoFuncionario.Size = new Size(125, 34);
-            txtCodigoFuncionario.TabIndex = 36;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(733, 94);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(81, 28);
-            label7.TabIndex = 37;
-            label7.Text = "Codigo:";
-            // 
-            // txtPorcentagem
-            // 
-            txtPorcentagem.Location = new Point(821, 180);
-            txtPorcentagem.Name = "txtPorcentagem";
-            txtPorcentagem.Size = new Size(125, 34);
-            txtPorcentagem.TabIndex = 38;
-            // 
-            // label8
-            // 
-            label8.AccessibleRole = AccessibleRole.WhiteSpace;
-            label8.AutoSize = true;
-            label8.Location = new Point(686, 180);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(128, 28);
-            label8.TabIndex = 39;
-            label8.Text = "Comissão(%):";
-            // 
-            // txtDataAdmissao
-            // 
-            txtDataAdmissao.Location = new Point(821, 138);
-            txtDataAdmissao.Mask = "0000/00/00";
-            txtDataAdmissao.Name = "txtDataAdmissao";
-            txtDataAdmissao.Size = new Size(184, 34);
-            txtDataAdmissao.TabIndex = 40;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(667, 139);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(147, 28);
-            label9.TabIndex = 41;
-            label9.Text = "Data Admissao:";
-            // 
-            // txtIDPessoa
-            // 
-            txtIDPessoa.Location = new Point(821, 10);
-            txtIDPessoa.Name = "txtIDPessoa";
-            txtIDPessoa.Size = new Size(64, 34);
-            txtIDPessoa.TabIndex = 43;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(671, 13);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(143, 28);
-            label10.TabIndex = 42;
-            label10.Text = "ID Funcionario:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(759, 53);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(55, 28);
-            label11.TabIndex = 45;
-            label11.Text = "Tipo:";
-            // 
-            // txtAtivo
-            // 
-            txtAtivo.Location = new Point(891, 10);
-            txtAtivo.Name = "txtAtivo";
-            txtAtivo.Size = new Size(106, 34);
-            txtAtivo.TabIndex = 46;
-            // 
-            // comboTipo
-            // 
-            comboTipo.FormattingEnabled = true;
-            comboTipo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
-            comboTipo.Location = new Point(821, 53);
-            comboTipo.Name = "comboTipo";
-            comboTipo.Size = new Size(151, 36);
-            comboTipo.TabIndex = 47;
             // 
             // panel1
             // 
@@ -296,6 +89,253 @@
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Funcionarios";
             // 
+            // tabPage1
+            // 
+            tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(label1);
+            tabPage1.Controls.Add(txtID);
+            tabPage1.Controls.Add(txtEmailFuncionario);
+            tabPage1.Controls.Add(txtPorcentagem);
+            tabPage1.Controls.Add(txtAtivo);
+            tabPage1.Controls.Add(txtIDPessoa);
+            tabPage1.Controls.Add(txtCodigoFuncionario);
+            tabPage1.Controls.Add(txtNomeFuncionario);
+            tabPage1.Controls.Add(txtCPFFuncionario);
+            tabPage1.Controls.Add(txtTelefoneFuncionario);
+            tabPage1.Controls.Add(label6);
+            tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(botaoSalvar);
+            tabPage1.Controls.Add(txtDataAdmissao);
+            tabPage1.Controls.Add(label9);
+            tabPage1.Controls.Add(comboTipo);
+            tabPage1.Controls.Add(label10);
+            tabPage1.Controls.Add(label7);
+            tabPage1.Controls.Add(txtDataNascimentoFuncionario);
+            tabPage1.Controls.Add(label2);
+            tabPage1.Controls.Add(label5);
+            tabPage1.Controls.Add(label11);
+            tabPage1.Controls.Add(label3);
+            tabPage1.Controls.Add(label4);
+            tabPage1.Location = new Point(4, 37);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1205, 492);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Dados";
+            // 
+            // txtTelefoneFuncionario
+            // 
+            txtTelefoneFuncionario.Location = new Point(126, 142);
+            txtTelefoneFuncionario.Name = "txtTelefoneFuncionario";
+            txtTelefoneFuncionario.Size = new Size(184, 34);
+            txtTelefoneFuncionario.TabIndex = 28;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(27, 145);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(88, 28);
+            label4.TabIndex = 30;
+            label4.Text = "Telefone:";
+            // 
+            // txtCPFFuncionario
+            // 
+            txtCPFFuncionario.Location = new Point(124, 100);
+            txtCPFFuncionario.Name = "txtCPFFuncionario";
+            txtCPFFuncionario.Size = new Size(428, 34);
+            txtCPFFuncionario.TabIndex = 26;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(65, 103);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(49, 28);
+            label3.TabIndex = 27;
+            label3.Text = "CPF:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(765, 62);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(55, 28);
+            label11.TabIndex = 45;
+            label11.Text = "Tipo:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(32, 225);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(166, 28);
+            label5.TabIndex = 31;
+            label5.Text = "Data Nascimento:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(47, 59);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 28);
+            label2.TabIndex = 24;
+            label2.Text = "Nome:";
+            // 
+            // txtNomeFuncionario
+            // 
+            txtNomeFuncionario.Location = new Point(124, 59);
+            txtNomeFuncionario.Name = "txtNomeFuncionario";
+            txtNomeFuncionario.Size = new Size(428, 34);
+            txtNomeFuncionario.TabIndex = 25;
+            // 
+            // txtDataNascimentoFuncionario
+            // 
+            txtDataNascimentoFuncionario.Location = new Point(205, 225);
+            txtDataNascimentoFuncionario.Mask = "0000/00/00";
+            txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
+            txtDataNascimentoFuncionario.Size = new Size(105, 34);
+            txtDataNascimentoFuncionario.TabIndex = 29;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(739, 103);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(81, 28);
+            label7.TabIndex = 37;
+            label7.Text = "Codigo:";
+            // 
+            // txtCodigoFuncionario
+            // 
+            txtCodigoFuncionario.Location = new Point(827, 107);
+            txtCodigoFuncionario.Name = "txtCodigoFuncionario";
+            txtCodigoFuncionario.Size = new Size(125, 34);
+            txtCodigoFuncionario.TabIndex = 36;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(677, 22);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(143, 28);
+            label10.TabIndex = 42;
+            label10.Text = "ID Funcionario:";
+            // 
+            // comboTipo
+            // 
+            comboTipo.FormattingEnabled = true;
+            comboTipo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
+            comboTipo.Location = new Point(827, 62);
+            comboTipo.Name = "comboTipo";
+            comboTipo.Size = new Size(151, 36);
+            comboTipo.TabIndex = 47;
+            // 
+            // txtIDPessoa
+            // 
+            txtIDPessoa.Location = new Point(827, 19);
+            txtIDPessoa.Name = "txtIDPessoa";
+            txtIDPessoa.Size = new Size(64, 34);
+            txtIDPessoa.TabIndex = 43;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(673, 148);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(147, 28);
+            label9.TabIndex = 41;
+            label9.Text = "Data Admissao:";
+            // 
+            // txtAtivo
+            // 
+            txtAtivo.Location = new Point(897, 19);
+            txtAtivo.Name = "txtAtivo";
+            txtAtivo.Size = new Size(106, 34);
+            txtAtivo.TabIndex = 46;
+            // 
+            // txtDataAdmissao
+            // 
+            txtDataAdmissao.Location = new Point(827, 147);
+            txtDataAdmissao.Mask = "0000/00/00";
+            txtDataAdmissao.Name = "txtDataAdmissao";
+            txtDataAdmissao.Size = new Size(184, 34);
+            txtDataAdmissao.TabIndex = 40;
+            // 
+            // botaoSalvar
+            // 
+            botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
+            botaoSalvar.FlatStyle = FlatStyle.Popup;
+            botaoSalvar.Font = new Font("Geometr415 Blk BT", 12.2F);
+            botaoSalvar.ForeColor = Color.White;
+            botaoSalvar.Location = new Point(827, 239);
+            botaoSalvar.Name = "botaoSalvar";
+            botaoSalvar.Size = new Size(92, 42);
+            botaoSalvar.TabIndex = 32;
+            botaoSalvar.Text = "Salvar";
+            botaoSalvar.UseVisualStyleBackColor = false;
+            botaoSalvar.Click += botaoSalvar_Click;
+            // 
+            // label8
+            // 
+            label8.AccessibleRole = AccessibleRole.WhiteSpace;
+            label8.AutoSize = true;
+            label8.Location = new Point(692, 189);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(128, 28);
+            label8.TabIndex = 39;
+            label8.Text = "Comissão(%):";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(48, 185);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(63, 28);
+            label6.TabIndex = 33;
+            label6.Text = "Email:";
+            // 
+            // txtPorcentagem
+            // 
+            txtPorcentagem.Location = new Point(827, 189);
+            txtPorcentagem.Name = "txtPorcentagem";
+            txtPorcentagem.Size = new Size(125, 34);
+            txtPorcentagem.TabIndex = 38;
+            // 
+            // txtEmailFuncionario
+            // 
+            txtEmailFuncionario.Location = new Point(126, 185);
+            txtEmailFuncionario.Name = "txtEmailFuncionario";
+            txtEmailFuncionario.Size = new Size(426, 34);
+            txtEmailFuncionario.TabIndex = 34;
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(124, 19);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(74, 34);
+            txtID.TabIndex = 23;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(19, 22);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(98, 28);
+            label1.TabIndex = 22;
+            label1.Text = "ID Pessoa:";
+            // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage1);
@@ -304,58 +344,62 @@
             tabControl1.Location = new Point(0, 71);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1213, 384);
+            tabControl1.Size = new Size(1213, 533);
             tabControl1.TabIndex = 49;
-            // 
-            // tabPage1
-            // 
-            tabPage1.BackColor = Color.FromArgb(224, 224, 224);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(txtID);
-            tabPage1.Controls.Add(txtEmailFuncionario);
-            tabPage1.Controls.Add(txtPorcentagem);
-            tabPage1.Controls.Add(label6);
-            tabPage1.Controls.Add(label8);
-            tabPage1.Controls.Add(botaoSalvar);
-            tabPage1.Controls.Add(txtDataAdmissao);
-            tabPage1.Controls.Add(txtAtivo);
-            tabPage1.Controls.Add(label9);
-            tabPage1.Controls.Add(txtIDPessoa);
-            tabPage1.Controls.Add(comboTipo);
-            tabPage1.Controls.Add(label10);
-            tabPage1.Controls.Add(txtCodigoFuncionario);
-            tabPage1.Controls.Add(label7);
-            tabPage1.Controls.Add(txtDataNascimentoFuncionario);
-            tabPage1.Controls.Add(txtNomeFuncionario);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(label5);
-            tabPage1.Controls.Add(label11);
-            tabPage1.Controls.Add(label3);
-            tabPage1.Controls.Add(txtCPFFuncionario);
-            tabPage1.Controls.Add(label4);
-            tabPage1.Controls.Add(txtTelefoneFuncionario);
-            tabPage1.Location = new Point(4, 37);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1205, 343);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Dados";
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(panel2);
             tabPage2.Location = new Point(4, 37);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 343);
+            tabPage2.Size = new Size(1205, 492);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label13);
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(comboBox1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1199, 61);
+            panel2.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(91, 12);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(247, 36);
+            comboBox1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(356, 11);
+            button1.Name = "button1";
+            button1.Size = new Size(144, 36);
+            button1.TabIndex = 1;
+            button1.Text = "Pesquisar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(16, 15);
+            label13.Name = "label13";
+            label13.Size = new Size(69, 28);
+            label13.TabIndex = 2;
+            label13.Text = "Cargo:";
             // 
             // FFuncionario
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1213, 455);
+            ClientSize = new Size(1213, 604);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -364,42 +408,48 @@
             Text = "Cadastro de Funcionario";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Label label1;
-        private TextBox txtID;
-        private Label label2;
-        private TextBox txtNomeFuncionario;
-        private Label label3;
-        private Label label4;
-        private TextBox txtTelefoneFuncionario;
-        private Label label5;
-        private TextBox txtCPFFuncionario;
-        private TextBox txtEmailFuncionario;
-        private MaskedTextBox txtDataNascimentoFuncionario;
-        private Label label6;
-        private Button botaoSalvar;
-        private TextBox txtCodigoFuncionario;
-        private Label label7;
-        private TextBox txtPorcentagem;
-        private Label label8;
-        private MaskedTextBox txtDataAdmissao;
-        private Label label9;
-        private TextBox txtIDPessoa;
-        private Label label10;
-        private Label label11;
-        private TextBox txtAtivo;
-        private ComboBox comboTipo;
         private Panel panel1;
         private Label label12;
-        private TabControl tabControl1;
         private TabPage tabPage1;
+        private Label label1;
+        private TextBox txtID;
+        private TextBox txtEmailFuncionario;
+        private TextBox txtPorcentagem;
+        private TextBox txtAtivo;
+        private TextBox txtIDPessoa;
+        private TextBox txtCodigoFuncionario;
+        private TextBox txtNomeFuncionario;
+        private TextBox txtCPFFuncionario;
+        private TextBox txtTelefoneFuncionario;
+        private Label label6;
+        private Label label8;
+        private Button botaoSalvar;
+        private MaskedTextBox txtDataAdmissao;
+        private Label label9;
+        private ComboBox comboTipo;
+        private Label label10;
+        private Label label7;
+        private MaskedTextBox txtDataNascimentoFuncionario;
+        private Label label2;
+        private Label label5;
+        private Label label11;
+        private Label label3;
+        private Label label4;
+        private TabControl tabControl1;
         private TabPage tabPage2;
+        private Panel panel2;
+        private Label label13;
+        private Button button1;
+        private ComboBox comboBox1;
     }
 }
