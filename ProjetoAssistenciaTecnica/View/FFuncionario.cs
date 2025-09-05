@@ -41,6 +41,7 @@ namespace ProjetoAssistenciaTecnica.View
 
         private void botaoSalvar_Click(object sender, EventArgs e)
         {
+            /* Atributos de Pessoa */
             Funcionario obj         = new Funcionario();
             obj.nome                = txtNomeFuncionario.Text;
             obj.cpf_cnpj            = txtCPFFuncionario.Text;
@@ -48,9 +49,10 @@ namespace ProjetoAssistenciaTecnica.View
             obj.data_nascimento     = txtDataNascimentoFuncionario.Text;
             obj.email               = txtEmailFuncionario.Text;
 
+            /* Atributos de Funcionario */
             obj.idPessoa            = int.Parse(txtIDPessoa.Text); // Converter int para TXT
             obj.ativo               = int.Parse(txtAtivo.Text);
-            obj.tipo                = txtTipo.Text;
+            obj.tipo                = comboTipo.Text;
             obj.dataAdmissao        = txtDataAdmissao.Text;
             obj.codigoFuncionario   = txtCodigoFuncionario.Text;
             obj.porcentagemComissao = float.Parse(txtPorcentagem.Text); // Converter float para TXT

@@ -49,9 +49,9 @@
             label9 = new Label();
             txtIDPessoa = new TextBox();
             label10 = new Label();
-            txtTipo = new TextBox();
             label11 = new Label();
             txtAtivo = new TextBox();
+            comboTipo = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -237,13 +237,6 @@
             label10.TabIndex = 42;
             label10.Text = "ID";
             // 
-            // txtTipo
-            // 
-            txtTipo.Location = new Point(779, 36);
-            txtTipo.Name = "txtTipo";
-            txtTipo.Size = new Size(125, 34);
-            txtTipo.TabIndex = 44;
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -261,13 +254,22 @@
             txtAtivo.Size = new Size(125, 34);
             txtAtivo.TabIndex = 46;
             // 
+            // comboTipo
+            // 
+            comboTipo.FormattingEnabled = true;
+            comboTipo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
+            comboTipo.Location = new Point(803, 33);
+            comboTipo.Name = "comboTipo";
+            comboTipo.Size = new Size(151, 36);
+            comboTipo.TabIndex = 47;
+            // 
             // FFuncionario
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1019, 426);
+            Controls.Add(comboTipo);
             Controls.Add(txtAtivo);
-            Controls.Add(txtTipo);
             Controls.Add(label11);
             Controls.Add(txtIDPessoa);
             Controls.Add(label10);
@@ -321,8 +323,8 @@
         private Label label9;
         private TextBox txtIDPessoa;
         private Label label10;
-        private TextBox txtTipo;
         private Label label11;
         private TextBox txtAtivo;
+        private ComboBox comboTipo;
     }
 }

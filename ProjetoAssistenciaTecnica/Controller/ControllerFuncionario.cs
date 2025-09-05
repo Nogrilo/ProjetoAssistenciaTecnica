@@ -47,11 +47,16 @@ namespace ProjetoAssistenciaTecnica.Controller
                 executaPessoa.Parameters.AddWithValue("@data_nascimento", obj.data_nascimento);
                 executaPessoa.Parameters.AddWithValue("@email", obj.email);
 
+                /* Abrir a conexao */
+                conexao.Open();
+                executaPessoa.ExecuteNonQuery();
+                conexao.Close();
+
                 /* Inserindo os dados na tabela de funcionario */
                 string sqlFuncionario = @"insert into tb_funcionario (
                 id_pessoa,
                 ativo,
-                data_admissao,
+                data_adimissao,
                 tipo,
                 codigo_funcionario,
                 porcentagem_comissao
@@ -60,7 +65,7 @@ namespace ProjetoAssistenciaTecnica.Controller
                 VALUES (
                 @id_pessoa,
                 @ativo,
-                DATE_FORMAT(@data_admissao,     '%Y/%m/%d'),
+                DATE_FORMAT(@data_adimissao,     '%Y/%m/%d'),
                 @tipo,
                 @codigo_funcionario,   
                 @porcentagem_comissao
@@ -68,8 +73,8 @@ namespace ProjetoAssistenciaTecnica.Controller
 
                 MySqlCommand executaFuncionario = new MySqlCommand(sqlFuncionario, conexao);
                 executaFuncionario.Parameters.AddWithValue("@id_pessoa", obj.idPessoa);
-                executaFuncionario.Parameters.AddWithValue("@ativo", obj.ativo);
-                executaFuncionario.Parameters.AddWithValue("@data_admissao", obj.dataAdmissao);
+                executaFuncionario.Parameters.AddWithValue("@ativo", Convert.ToInt32(obj.ativo));
+                executaFuncionario.Parameters.AddWithValue("@data_adimissao", obj.dataAdmissao);
                 executaFuncionario.Parameters.AddWithValue("@tipo", obj.tipo);
                 executaFuncionario.Parameters.AddWithValue("@codigo_funcionario", obj.codigoFuncionario);
                 executaFuncionario.Parameters.AddWithValue("@porcentagem_comissao", obj.porcentagemComissao);
@@ -77,10 +82,17 @@ namespace ProjetoAssistenciaTecnica.Controller
 
                 /* Abrir a conexao */
                 conexao.Open();
-                executaPessoa.ExecuteNonQuery();
                 executaFuncionario.ExecuteNonQuery();
                 conexao.Close();
                 return true;
+
+                /* Teste de procedure */
+                /*string procedure = @"call sp_insert_cliente(
+                @nome,
+                @72333908922345, 
+                @47984441721, 
+]               @kjsldj@jfpsj.dsi, 
+                @2000-01-01');"; */
             }
             catch (Exception ex)
             {
