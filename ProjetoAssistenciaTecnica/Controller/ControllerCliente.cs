@@ -22,15 +22,8 @@ namespace ProjetoAssistenciaTecnica.Controller
         {
             try
             {
-                string sql = @"insert into tb_pessoa (
-                nome,
-                cpf_cnpj,
-                telefone,
-                data_nascimento,
-                email
-                ) 
-
-                VALUES (
+                /* Chamando a procudre que o filipe criou, para fazer o cadastro de cliente de forma mais fácil */
+                string sql = @"call sp_insert_cliente (
                 @nome,
                 @cpf_cnpj,
                 @telefone,
