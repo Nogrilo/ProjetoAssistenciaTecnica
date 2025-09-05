@@ -29,6 +29,7 @@ namespace ProjetoAssistenciaTecnica.View
             txtEmailFuncionario.Enabled = true;
         }
 
+        /* Funcao para limpar os campos */
         public void limparCampos()
         {
             txtID.Clear();
