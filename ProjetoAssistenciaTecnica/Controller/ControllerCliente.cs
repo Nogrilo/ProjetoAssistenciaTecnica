@@ -22,15 +22,7 @@ namespace ProjetoAssistenciaTecnica.Controller
         {
             try
             {
-                string sql = @"insert into tb_pessoa (
-                nome,
-                cpf_cnpj,
-                telefone,
-                data_nascimento,
-                email
-                ) 
-
-                VALUES (
+                string sql = @"call sp_insert_cliente (
                 @nome,
                 @cpf_cnpj,
                 @telefone,

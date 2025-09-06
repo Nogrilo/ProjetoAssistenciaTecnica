@@ -23,24 +23,16 @@ namespace ProjetoAssistenciaTecnica.Controller
             try
             {
                 /* Inserindo os dados na tabela de pessoa */
-                string sqlPessoa = @"insert into tb_pessoa (
-                nome,
-                cpf_cnpj,
-                telefone,
-                data_nascimento,
-                email
-                ) 
-
-                VALUES (
+                string sqlPessoa = @"call sp_insert_cliente (
                 @nome,
                 @cpf_cnpj,
                 @telefone,
-                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d'),
                 @email,
-                );
-                SELECT LAST_INSERT_ID();"; // Funcao de SQL para pegar o ultimo ID adicionado na tabela Pessoa
+                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d')
+                )";
 
                 /* Inserindo os dados na tabela pessoa */
+
                 MySqlCommand executaPessoa = new MySqlCommand(sqlPessoa, conexao);
                 executaPessoa.Parameters.AddWithValue("@nome", obj.nome);
                 executaPessoa.Parameters.AddWithValue("@cpf_cnpj", obj.cpf_cnpj);
@@ -54,22 +46,8 @@ namespace ProjetoAssistenciaTecnica.Controller
                 conexao.Close();
 
                 /* Inserindo os dados na tabela de funcionario */
-                string sqlFuncionario = @"insert into tb_funcionario (
-                id_pessoa,
-                ativo,
-                data_adimissao,
-                tipo,
-                codigo_funcionario,
-                porcentagem_comissao
-                ) 
-
-                VALUES (
-                @id_pessoa,
-                @ativo,
-                DATE_FORMAT(@data_adimissao,     '%Y/%m/%d'),
-                @tipo,
-                @codigo_funcionario,   
-                @porcentagem_comissao
+                string sqlFuncionario = @"call sp_insert_funcionario (
+                @tipo
                 );";
 
                 MySqlCommand executaFuncionario = new MySqlCommand(sqlFuncionario, conexao);
@@ -86,14 +64,6 @@ namespace ProjetoAssistenciaTecnica.Controller
                 executaFuncionario.ExecuteNonQuery();
                 conexao.Close();
                 return true;
-
-                /* Teste de procedure */
-                /*string procedure = @"call sp_insert_cliente(
-                @nome,
-                @72333908922345, 
-                @47984441721, 
-                @kjsldj@jfpsj.dsi, 
-                @2000-01-01');"; */
             }
             catch (Exception ex)
             {
