@@ -58,11 +58,11 @@
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
             panel2 = new Panel();
+            textBox1 = new TextBox();
+            label14 = new Label();
             label13 = new Label();
             button1 = new Button();
             comboBox1 = new ComboBox();
-            label14 = new Label();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -373,6 +373,22 @@
             panel2.Size = new Size(1199, 61);
             panel2.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(107, 15);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(402, 34);
+            textBox1.TabIndex = 4;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(31, 17);
+            label14.Name = "label14";
+            label14.Size = new Size(70, 28);
+            label14.TabIndex = 3;
+            label14.Text = "Nome:";
+            // 
             // label13
             // 
             label13.AutoSize = true;
@@ -384,7 +400,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(855, 13);
+            button1.Location = new Point(888, 13);
             button1.Name = "button1";
             button1.Size = new Size(144, 36);
             button1.TabIndex = 1;
@@ -398,22 +414,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(247, 36);
             comboBox1.TabIndex = 0;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(31, 17);
-            label14.Name = "label14";
-            label14.Size = new Size(70, 28);
-            label14.TabIndex = 3;
-            label14.Text = "Nome:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(107, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(402, 34);
-            textBox1.TabIndex = 4;
             // 
             // FFuncionario
             // 
