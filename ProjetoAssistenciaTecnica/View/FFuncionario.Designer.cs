@@ -57,22 +57,23 @@
             label4 = new Label();
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
+            dataGridView1 = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            Nome = new DataGridViewTextBoxColumn();
+            Cargo = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             textBox1 = new TextBox();
             label14 = new Label();
             label13 = new Label();
             button1 = new Button();
             comboBox1 = new ComboBox();
-            dataGridView1 = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
-            Cargo = new DataGridViewTextBoxColumn();
+            button2 = new Button();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -111,6 +112,7 @@
             tabPage1.Controls.Add(txtTelefoneFuncionario);
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(button2);
             tabPage1.Controls.Add(botaoSalvar);
             tabPage1.Controls.Add(txtDataAdmissao);
             tabPage1.Controls.Add(label9);
@@ -126,7 +128,7 @@
             tabPage1.Location = new Point(4, 37);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1205, 320);
+            tabPage1.Size = new Size(1205, 356);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
@@ -193,14 +195,14 @@
             // 
             txtCPFFuncionario.Location = new Point(124, 100);
             txtCPFFuncionario.Name = "txtCPFFuncionario";
-            txtCPFFuncionario.Size = new Size(428, 34);
+            txtCPFFuncionario.Size = new Size(225, 34);
             txtCPFFuncionario.TabIndex = 26;
             // 
             // txtTelefoneFuncionario
             // 
             txtTelefoneFuncionario.Location = new Point(126, 142);
             txtTelefoneFuncionario.Name = "txtTelefoneFuncionario";
-            txtTelefoneFuncionario.Size = new Size(184, 34);
+            txtTelefoneFuncionario.Size = new Size(223, 34);
             txtTelefoneFuncionario.TabIndex = 28;
             // 
             // label6
@@ -290,7 +292,7 @@
             txtDataNascimentoFuncionario.Location = new Point(205, 225);
             txtDataNascimentoFuncionario.Mask = "0000/00/00";
             txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
-            txtDataNascimentoFuncionario.Size = new Size(105, 34);
+            txtDataNascimentoFuncionario.Size = new Size(144, 34);
             txtDataNascimentoFuncionario.TabIndex = 29;
             // 
             // label2
@@ -351,7 +353,7 @@
             tabControl1.Location = new Point(0, 71);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1213, 361);
+            tabControl1.Size = new Size(1213, 397);
             tabControl1.TabIndex = 49;
             // 
             // tabPage2
@@ -361,10 +363,42 @@
             tabPage2.Location = new Point(4, 37);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 320);
+            tabPage2.Size = new Size(1205, 356);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome, Cargo });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 64);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1199, 289);
+            dataGridView1.TabIndex = 1;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 6;
+            ID.Name = "ID";
+            ID.Width = 125;
+            // 
+            // Nome
+            // 
+            Nome.HeaderText = "Nome";
+            Nome.MinimumWidth = 6;
+            Nome.Name = "Nome";
+            Nome.Width = 700;
+            // 
+            // Cargo
+            // 
+            Cargo.HeaderText = "Cargo";
+            Cargo.MinimumWidth = 6;
+            Cargo.Name = "Cargo";
+            Cargo.Width = 200;
             // 
             // panel2
             // 
@@ -421,43 +455,25 @@
             comboBox1.Size = new Size(227, 36);
             comboBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // button2
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome, Cargo });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 64);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 253);
-            dataGridView1.TabIndex = 1;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.MinimumWidth = 6;
-            ID.Name = "ID";
-            ID.Width = 125;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.MinimumWidth = 6;
-            Nome.Name = "Nome";
-            Nome.Width = 700;
-            // 
-            // Cargo
-            // 
-            Cargo.HeaderText = "Cargo";
-            Cargo.MinimumWidth = 6;
-            Cargo.Name = "Cargo";
-            Cargo.Width = 200;
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(827, 287);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 42);
+            button2.TabIndex = 32;
+            button2.Text = "Editar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += botaoSalvar_Click;
             // 
             // FFuncionario
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1213, 432);
+            ClientSize = new Size(1213, 468);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -470,9 +486,9 @@
             tabPage1.PerformLayout();
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -516,5 +532,6 @@
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Cargo;
+        private Button button2;
     }
 }
