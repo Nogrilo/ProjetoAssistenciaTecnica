@@ -43,6 +43,7 @@
             txtTelefoneFuncionario = new TextBox();
             label6 = new Label();
             label8 = new Label();
+            button2 = new Button();
             botaoSalvar = new Button();
             txtDataAdmissao = new MaskedTextBox();
             label9 = new Label();
@@ -67,7 +68,6 @@
             label13 = new Label();
             button1 = new Button();
             comboBox1 = new ComboBox();
-            button2 = new Button();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -78,7 +78,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Gray;
+            panel1.BackColor = Color.FromArgb(64, 64, 64);
             panel1.Controls.Add(label12);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -226,6 +226,20 @@
             label8.TabIndex = 39;
             label8.Text = "Comissão(%):";
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(827, 287);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 42);
+            button2.TabIndex = 32;
+            button2.Text = "Editar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += botaoSalvar_Click;
+            // 
             // botaoSalvar
             // 
             botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
@@ -360,10 +374,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 37);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 356);
+            tabPage2.Size = new Size(1205, 364);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -376,7 +390,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 289);
+            dataGridView1.Size = new Size(1199, 297);
             dataGridView1.TabIndex = 1;
             // 
             // ID
@@ -454,20 +468,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(227, 36);
             comboBox1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(827, 287);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 42);
-            button2.TabIndex = 32;
-            button2.Text = "Editar";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += botaoSalvar_Click;
             // 
             // FFuncionario
             // 

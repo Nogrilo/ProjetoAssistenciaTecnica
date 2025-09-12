@@ -44,22 +44,22 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            button3 = new Button();
+            button2 = new Button();
             tabPage2 = new TabPage();
+            dataGridView1 = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            Nome = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
-            button2 = new Button();
-            button3 = new Button();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -167,7 +167,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Gray;
+            panel1.BackColor = Color.FromArgb(64, 64, 64);
             panel1.Controls.Add(label12);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -221,17 +221,68 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(64, 64, 64);
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(812, 76);
+            button3.Name = "button3";
+            button3.Size = new Size(125, 42);
+            button3.TabIndex = 33;
+            button3.Text = "Editar";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(812, 28);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 42);
+            button2.TabIndex = 33;
+            button2.Text = "Cadastrar";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // tabPage2
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 37);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1137, 317);
+            tabPage2.Size = new Size(1137, 325);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 64);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1131, 258);
+            dataGridView1.TabIndex = 2;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 6;
+            ID.Name = "ID";
+            ID.Width = 125;
+            // 
+            // Nome
+            // 
+            Nome.HeaderText = "Nome";
+            Nome.MinimumWidth = 6;
+            Nome.Name = "Nome";
+            Nome.Width = 700;
             // 
             // panel2
             // 
@@ -269,57 +320,6 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 64);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1131, 250);
-            dataGridView1.TabIndex = 2;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.MinimumWidth = 6;
-            ID.Name = "ID";
-            ID.Width = 125;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.MinimumWidth = 6;
-            Nome.Name = "Nome";
-            Nome.Width = 700;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(812, 28);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 42);
-            button2.TabIndex = 33;
-            button2.Text = "Cadastrar";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 64, 64);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Geometr415 Blk BT", 12.2F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(812, 76);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 42);
-            button3.TabIndex = 33;
-            button3.Text = "Editar";
-            button3.UseVisualStyleBackColor = false;
-            // 
             // FCliente
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -337,9 +337,9 @@
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
