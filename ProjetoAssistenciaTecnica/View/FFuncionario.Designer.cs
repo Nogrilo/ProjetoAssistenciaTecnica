@@ -263,10 +263,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 30);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 327);
+            tabPage2.Size = new Size(1205, 333);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -279,7 +279,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 260);
+            dataGridView1.Size = new Size(1199, 266);
             dataGridView1.TabIndex = 1;
             // 
             // ID
