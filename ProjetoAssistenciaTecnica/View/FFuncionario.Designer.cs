@@ -93,6 +93,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
+            label12.Size = new Size(339, 32);
             label12.Size = new Size(330, 34);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Funcionarios";
@@ -128,7 +129,7 @@
             tabPage1.Location = new Point(4, 37);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1205, 356);
+            tabPage1.Size = new Size(1205, 327);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
@@ -195,14 +196,14 @@
             // 
             txtCPFFuncionario.Location = new Point(124, 100);
             txtCPFFuncionario.Name = "txtCPFFuncionario";
-            txtCPFFuncionario.Size = new Size(225, 34);
+            txtCPFFuncionario.Size = new Size(428, 29);
             txtCPFFuncionario.TabIndex = 26;
             // 
             // txtTelefoneFuncionario
             // 
             txtTelefoneFuncionario.Location = new Point(126, 142);
             txtTelefoneFuncionario.Name = "txtTelefoneFuncionario";
-            txtTelefoneFuncionario.Size = new Size(223, 34);
+            txtTelefoneFuncionario.Size = new Size(184, 29);
             txtTelefoneFuncionario.TabIndex = 28;
             // 
             // label6
@@ -306,7 +307,7 @@
             txtDataNascimentoFuncionario.Location = new Point(205, 225);
             txtDataNascimentoFuncionario.Mask = "0000/00/00";
             txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
-            txtDataNascimentoFuncionario.Size = new Size(144, 34);
+            txtDataNascimentoFuncionario.Size = new Size(105, 29);
             txtDataNascimentoFuncionario.TabIndex = 29;
             // 
             // label2
@@ -335,7 +336,7 @@
             label11.Location = new Point(765, 62);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(55, 28);
+            label11.Size = new Size(55, 21);
             label11.TabIndex = 45;
             label11.Text = "Tipo:";
             // 
@@ -374,10 +375,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 30);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 364);
+            tabPage2.Size = new Size(1205, 327);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -390,7 +391,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 297);
+            dataGridView1.Size = new Size(1199, 260);
             dataGridView1.TabIndex = 1;
             // 
             // ID
@@ -429,10 +430,10 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(107, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(402, 34);
-            textBox1.TabIndex = 4;
+            txtPesquisarFuncionario.Location = new Point(107, 15);
+            txtPesquisarFuncionario.Name = "txtPesquisarFuncionario";
+            txtPesquisarFuncionario.Size = new Size(402, 29);
+            txtPesquisarFuncionario.TabIndex = 4;
             // 
             // label14
             // 
