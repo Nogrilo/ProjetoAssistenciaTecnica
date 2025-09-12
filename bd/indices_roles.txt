@@ -1,0 +1,26 @@
+/*Criação de índices para otimizar consultas */
+CREATE INDEX IDX_PECA ON tb_estoque_pecas(codigo);
+CREATE INDEX IDX_TICK ON tb_ordem_servico(tick);
+CREATE INDEX IDX_TECNICO ON tb_concerto(id_tecnico);
+CREATE INDEX IDX_PESSOA ON tb_pessoa(cpf_cnpj);
+
+/*Criação de roles para usuarios*/
+CREATE ROLE if not exists 'app_dev', 'app_read', 'app_write';
+
+/*
+app_read = Permissão de usuario para consultas SQL
+app_write = Permissão de usuario para inserção de dados
+app_dev = Administrador 
+*/
+
+GRANT ALL ON db_eletro.* TO 'app_dev';
+GRANT SELECT ON db_eletro.* TO 'app_read';
+GRANT INSERT, UPDATE, DELETE ON db_eletro.* TO 'app_write';  	
+
+CREATE USER 'app_dev1'@'localhost' IDENTIFIED BY 'dev1_pass';
+CREATE USER	'app_read1'@'localhost' IDENTIFIED BY 'read1_pass';
+CREATE USER 'app_write1'@'localhost' IDENTIFIED BY 'write1_pass';
+
+GRANT 'app_dev' TO 'app_dev1'@'localhost';
+GRANT 'app_read' TO 'app_read1'@'localhost';
+GRANT 'app_write' TO 'app_write1'@'localhost';

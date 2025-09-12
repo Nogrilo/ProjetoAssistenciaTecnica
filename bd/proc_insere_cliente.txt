@@ -1,0 +1,48 @@
+drop trigger tg_insert_cliente;
+-- 1. Alteração do Procedimento `sp_insert_cliente`
+DELIMITER $
+
+CREATE PROCEDURE sp_insert_cliente(
+    IN v_nome VARCHAR(155),
+    IN v_cpf_cnpj VARCHAR(20),
+    IN v_telefone VARCHAR(14),
+    IN v_email VARCHAR(200),
+    IN v_data_nasc DATE
+)
+BEGIN
+    DECLARE ex_cpf_cnpj_invalido CONDITION FOR SQLSTATE '95959';
+    DECLARE v_id_pessoa INT;
+
+    -- Verifica se o CPF/CNPJ possui 11 ou 14 caracteres
+    IF LENGTH(v_cpf_cnpj) = 11 OR LENGTH(v_cpf_cnpj) = 14 THEN
+        -- Inserção na tabela tb_pessoa
+        INSERT INTO tb_pessoa(
+            nome, 
+            cpf_cnpj, 
+            telefone, 
+            email, 
+            data_nascimento, 
+            data_cadastro
+        ) 
+        VALUES (
+            v_nome, 
+            v_cpf_cnpj, 
+            v_telefone, 
+            v_email, 
+            v_data_nasc, 
+            CURDATE()  -- Usando CURDATE() para a data atual no formato padrão 'YYYY-MM-DD'
+        );
+        
+        -- Captura o id_pessoa recém-criado
+        SET v_id_pessoa = LAST_INSERT_ID();
+
+        -- Inserção na tabela tb_cliente utilizando o id_pessoa
+        INSERT INTO tb_cliente(id_pessoa) 
+        VALUES (v_id_pessoa);
+
+    ELSE
+        -- Lança um erro se o CPF/CNPJ for inválido
+        SIGNAL ex_cpf_cnpj_invalido SET MESSAGE_TEXT = 'O valor não está em formato CPF/CNPJ';
+    END IF;
+END$
+DELIMITER ;

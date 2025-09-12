@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +70,41 @@ namespace ProjetoAssistenciaTecnica.Controller
             {
                 MessageBox.Show("Erro ao cadastrar: " + ex.Message);
                 return false;
+            }
+        }
+
+        /* Funcao que ira retornar uma tabela com todos os funcionarios cadastrados */
+        public DataTable listarFuncionarios()
+        {
+            try
+            {
+                DataTable tabelaFuncionarios = new DataTable();
+
+                string sql = "select a.idPessoa, " +
+                    "a.nome, " +
+                    //"a.cpf_cnpj, " +
+                    //"a.telefone, " +
+                    //"a.email, " +
+                    //"a.data_nascimento, " +
+                    //"b.ativo, " +
+                    "b.tipo from tb_pessoa a\r\ninner join tb_funcionario b\r\non a.idPessoa = b.idFuncionario;";
+
+                MySqlCommand executaFuncionario = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executaFuncionario.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executaFuncionario);
+                da.Fill(tabelaFuncionarios);
+
+                conexao.Close(); 
+
+                return tabelaFuncionarios;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao consultar: \n" + ex.Message);
+                return null;
             }
         }
     }
