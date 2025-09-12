@@ -42,30 +42,25 @@ namespace ProjetoAssistenciaTecnica.View
         private void botaoSalvar_Click(object sender, EventArgs e)
         {
             /* Atributos de Pessoa */
-            Funcionario obj = new Funcionario();
-            obj.nome = txtNomeFuncionario.Text;
-            obj.cpf_cnpj = txtCPFFuncionario.Text;
-            obj.telefone = txtTelefoneFuncionario.Text;
-            obj.data_nascimento = txtDataNascimentoFuncionario.Text;
-            obj.email = txtEmailFuncionario.Text;
+            Funcionario obj         = new Funcionario();
+            obj.nome                = txtNomeFuncionario.Text;
+            obj.cpf_cnpj            = txtCPFFuncionario.Text;
+            obj.telefone            = txtTelefoneFuncionario.Text;
+            obj.data_nascimento     = txtDataNascimentoFuncionario.Text;
+            obj.email               = txtEmailFuncionario.Text;
 
             /* Atributos de Funcionario */
-            obj.idPessoa = int.Parse(txtIDPessoa.Text); // Converter int para TXT
-            obj.ativo = int.Parse(txtAtivo.Text);
-            obj.tipo = comboTipo.Text;
-            obj.dataAdmissao = txtDataAdmissao.Text;
-            obj.codigoFuncionario = txtCodigoFuncionario.Text;
+            obj.idPessoa            = int.Parse(txtIDPessoa.Text); // Converter int para TXT
+            obj.ativo               = int.Parse(txtAtivo.Text);
+            obj.tipo                = comboTipo.Text;
+            obj.dataAdmissao        = txtDataAdmissao.Text;
+            obj.codigoFuncionario   = txtCodigoFuncionario.Text;
             obj.porcentagemComissao = float.Parse(txtPorcentagem.Text); // Converter float para TXT
 
             ControllerFuncionario controllerFuncionario = new ControllerFuncionario();
 
             controllerFuncionario.cadastrarFuncionario(obj);
             MessageBox.Show("Funcionario Cadastrado com sucesso");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
