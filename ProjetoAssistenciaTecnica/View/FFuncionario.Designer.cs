@@ -54,7 +54,6 @@
             Nome = new DataGridViewTextBoxColumn();
             Cargo = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
-            textBox1 = new TextBox();
             label14 = new Label();
             botaoPesquisarFuncionario = new Button();
             panel1.SuspendLayout();
@@ -327,13 +326,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1199, 61);
             panel2.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(124, 14);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 29);
-            textBox1.TabIndex = 0;
             // 
             // label14
             // 
