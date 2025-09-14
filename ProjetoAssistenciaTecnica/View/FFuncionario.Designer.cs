@@ -297,6 +297,7 @@
             // 
             // ID
             // 
+            ID.DataPropertyName = "idPessoa";
             ID.HeaderText = "ID";
             ID.MinimumWidth = 6;
             ID.Name = "ID";
@@ -304,6 +305,7 @@
             // 
             // Nome
             // 
+            Nome.DataPropertyName = "nome";
             Nome.HeaderText = "Nome";
             Nome.MinimumWidth = 6;
             Nome.Name = "Nome";
@@ -311,6 +313,7 @@
             // 
             // Cargo
             // 
+            Cargo.DataPropertyName = "tipo";
             Cargo.HeaderText = "Cargo";
             Cargo.MinimumWidth = 6;
             Cargo.Name = "Cargo";
@@ -318,7 +321,6 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(txtPesquisarFuncionario);
             panel2.Controls.Add(label14);
             panel2.Controls.Add(botaoPesquisarFuncionario);
             panel2.Dock = DockStyle.Top;
@@ -344,6 +346,7 @@
             botaoPesquisarFuncionario.TabIndex = 1;
             botaoPesquisarFuncionario.Text = "Pesquisar";
             botaoPesquisarFuncionario.UseVisualStyleBackColor = true;
+            botaoPesquisarFuncionario.Click += botaoPesquisarFuncionario_Click;
             // 
             // FFuncionario
             // 
@@ -405,9 +408,9 @@
         private TextBox txtPesquisarFuncionario;
         private Label label14;
         private DataGridView dataGridView1;
+        private Button button2;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Cargo;
-        private Button button2;
     }
 }
