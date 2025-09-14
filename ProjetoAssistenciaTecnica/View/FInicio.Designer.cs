@@ -93,13 +93,14 @@
             // 
             // FInicio
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 535);
-            ControlBox = false;
             Controls.Add(panel1);
             Controls.Add(toolStrip1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            HelpButton = true;
             Margin = new Padding(4);
             Name = "FInicio";
             StartPosition = FormStartPosition.CenterScreen;

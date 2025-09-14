@@ -428,13 +428,6 @@
             panel2.Size = new Size(1199, 61);
             panel2.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            txtPesquisarFuncionario.Location = new Point(107, 15);
-            txtPesquisarFuncionario.Name = "txtPesquisarFuncionario";
-            txtPesquisarFuncionario.Size = new Size(402, 29);
-            txtPesquisarFuncionario.TabIndex = 4;
-            // 
             // label14
             // 
             label14.AutoSize = true;
