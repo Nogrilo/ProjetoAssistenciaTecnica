@@ -59,6 +59,8 @@
             label13 = new Label();
             button1 = new Button();
             comboBox1 = new ComboBox();
+            label7 = new Label();
+            textBox2 = new TextBox();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -93,9 +95,11 @@
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
             tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(txtID);
+            tabPage1.Controls.Add(textBox2);
             tabPage1.Controls.Add(txtEmailFuncionario);
             tabPage1.Controls.Add(txtNomeFuncionario);
             tabPage1.Controls.Add(txtCPFFuncionario);
+            tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(txtTelefoneFuncionario);
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(button2);
@@ -374,6 +378,23 @@
             comboBox1.Size = new Size(227, 36);
             comboBox1.TabIndex = 0;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 270);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(97, 28);
+            label7.TabIndex = 33;
+            label7.Text = "Endereço:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(124, 270);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(426, 34);
+            textBox2.TabIndex = 34;
+            // 
             // FFuncionario
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -429,5 +450,7 @@
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Cargo;
         private Button button2;
+        private TextBox textBox2;
+        private Label label7;
     }
 }
