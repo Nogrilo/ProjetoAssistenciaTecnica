@@ -50,12 +50,12 @@ namespace ProjetoAssistenciaTecnica.View
             obj.email = txtEmailFuncionario.Text;
 
             /* Atributos de Funcionario */
-            obj.idPessoa = int.Parse(txtIDPessoa.Text); // Converter int para TXT
-            obj.ativo = int.Parse(txtAtivo.Text);
+            //obj.idPessoa = int.Parse(txtIDPessoa.Text); // Converter int para TXT
+            //obj.ativo = int.Parse(txtAtivo.Text);
             obj.tipo = comboTipo.Text;
-            obj.dataAdmissao = txtDataAdmissao.Text;
-            obj.codigoFuncionario = txtCodigoFuncionario.Text;
-            obj.porcentagemComissao = float.Parse(txtPorcentagem.Text); // Converter float para TXT
+            //obj.dataAdmissao = txtDataAdmissao.Text;
+            //obj.codigoFuncionario = txtCodigoFuncionario.Text;
+            //obj.porcentagemComissao = float.Parse(txtPorcentagem.Text); // Converter float para TXT
 
             ControllerFuncionario controllerFuncionario = new ControllerFuncionario();
 
