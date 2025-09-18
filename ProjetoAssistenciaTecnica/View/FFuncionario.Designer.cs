@@ -80,11 +80,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Geometr415 Blk BT", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
-            label12.Size = new Size(330, 34);
+            label12.Size = new Size(339, 32);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Funcionarios";
             // 
@@ -173,7 +173,7 @@
             // 
             button2.BackColor = Color.FromArgb(64, 64, 64);
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button2.Font = new Font("Microsoft Sans Serif", 12.2F);
             button2.ForeColor = Color.White;
             button2.Location = new Point(840, 125);
             button2.Name = "button2";
@@ -187,7 +187,7 @@
             // 
             botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
             botaoSalvar.FlatStyle = FlatStyle.Popup;
-            botaoSalvar.Font = new Font("Geometr415 Blk BT", 12.2F);
+            botaoSalvar.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoSalvar.ForeColor = Color.White;
             botaoSalvar.Location = new Point(840, 77);
             botaoSalvar.Name = "botaoSalvar";
@@ -365,6 +365,7 @@
             button1.TabIndex = 1;
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // comboBox1
             // 
