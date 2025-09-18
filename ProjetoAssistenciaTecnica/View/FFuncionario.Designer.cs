@@ -82,11 +82,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Geometr415 Blk BT", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
-            label12.Size = new Size(330, 34);
+            label12.Size = new Size(339, 32);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Funcionarios";
             // 
@@ -194,7 +194,7 @@
             // 
             button2.BackColor = Color.FromArgb(64, 64, 64);
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button2.Font = new Font("Microsoft Sans Serif", 12.2F);
             button2.ForeColor = Color.White;
             button2.Location = new Point(840, 125);
             button2.Name = "button2";
@@ -208,7 +208,7 @@
             // 
             botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
             botaoSalvar.FlatStyle = FlatStyle.Popup;
-            botaoSalvar.Font = new Font("Geometr415 Blk BT", 12.2F);
+            botaoSalvar.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoSalvar.ForeColor = Color.White;
             botaoSalvar.Location = new Point(840, 77);
             botaoSalvar.Name = "botaoSalvar";
@@ -300,10 +300,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 37);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 364);
+            tabPage2.Size = new Size(1205, 356);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -316,7 +316,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 297);
+            dataGridView1.Size = new Size(1199, 289);
             dataGridView1.TabIndex = 1;
             // 
             // ID
