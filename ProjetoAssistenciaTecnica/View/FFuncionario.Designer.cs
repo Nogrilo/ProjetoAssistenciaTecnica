@@ -59,7 +59,7 @@
             textBox1 = new TextBox();
             label14 = new Label();
             label13 = new Label();
-            button1 = new Button();
+            botaoPesquisarFuncionario = new Button();
             comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -321,6 +321,7 @@
             // 
             // ID
             // 
+            ID.DataPropertyName = "idPessoa";
             ID.HeaderText = "ID";
             ID.MinimumWidth = 6;
             ID.Name = "ID";
@@ -328,6 +329,7 @@
             // 
             // Nome
             // 
+            Nome.DataPropertyName = "nome";
             Nome.HeaderText = "Nome";
             Nome.MinimumWidth = 6;
             Nome.Name = "Nome";
@@ -335,6 +337,7 @@
             // 
             // Cargo
             // 
+            Cargo.DataPropertyName = "tipo";
             Cargo.HeaderText = "Cargo";
             Cargo.MinimumWidth = 6;
             Cargo.Name = "Cargo";
@@ -345,7 +348,7 @@
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label14);
             panel2.Controls.Add(label13);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(botaoPesquisarFuncionario);
             panel2.Controls.Add(comboBox1);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(3, 3);
@@ -378,14 +381,15 @@
             label13.TabIndex = 2;
             label13.Text = "Cargo:";
             // 
-            // button1
+            // botaoPesquisarFuncionario
             // 
-            button1.Location = new Point(833, 14);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 36);
-            button1.TabIndex = 1;
-            button1.Text = "Pesquisar";
-            button1.UseVisualStyleBackColor = true;
+            botaoPesquisarFuncionario.Location = new Point(833, 14);
+            botaoPesquisarFuncionario.Name = "botaoPesquisarFuncionario";
+            botaoPesquisarFuncionario.Size = new Size(144, 36);
+            botaoPesquisarFuncionario.TabIndex = 1;
+            botaoPesquisarFuncionario.Text = "Pesquisar";
+            botaoPesquisarFuncionario.UseVisualStyleBackColor = true;
+            botaoPesquisarFuncionario.Click += botaoPesquisarFuncionario_Click;
             // 
             // comboBox1
             // 
@@ -441,16 +445,16 @@
         private TabPage tabPage2;
         private Panel panel2;
         private Label label13;
-        private Button button1;
+        private Button botaoPesquisarFuncionario;
         private ComboBox comboBox1;
         private TextBox textBox1;
         private Label label14;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn Nome;
-        private DataGridViewTextBoxColumn Cargo;
         private Button button2;
         private TextBox textBox2;
         private Label label7;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Nome;
+        private DataGridViewTextBoxColumn Cargo;
     }
 }
