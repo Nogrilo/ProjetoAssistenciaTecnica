@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient; // Importar o SQL no codigo
-using ProjetoAssistenciaTecnica.Model; 
+using ProjetoAssistenciaTecnica.Model;
+using System.Windows.Forms;
 
 namespace ProjetoAssistenciaTecnica.Controller
 {
@@ -18,17 +19,36 @@ namespace ProjetoAssistenciaTecnica.Controller
             this.conexao = new Conexao().GetConnection();
         }
 
-        public bool cadastrarCliente(Cliente obj)
+        public bool cadastrarCliente(Cliente obj, string modalidade)
         {
             try
             {
-                string sql = @"call sp_insert_cliente (
-                @nome,
-                @cpf_cnpj,
-                @telefone,
-                @email,
-                DATE_FORMAT(@data_nascimento,   '%Y/%m/%d')
-                );";
+                string sql = "";
+                if (modalidade == "Cliente")
+                {
+                    sql = @"call sp_insert_cliente (
+                    @nome,
+                    @cpf_cnpj,
+                    @telefone,
+                    @email,
+                    DATE_FORMAT(@data_nascimento,   '%Y/%m/%d')
+                    );";
+                }
+                else if (modalidade == "Funcionario")
+                {
+                    sql = @"call sp_insert_funcionario (
+                        @nome,
+                        @cpf_cnpj,
+                        @telefone,
+                        @email,
+                        DATE_FORMAT(@data_nascimento, '%Y/%m/%d')
+                    );";
+                }
+                else
+                {
+                    MessageBox.Show("Modalidade invalida!");
+                    return false;
+                }
 
                 MySqlCommand executa = new MySqlCommand(sql, conexao);
                 executa.Parameters.AddWithValue("@nome", obj.nome);
@@ -37,11 +57,11 @@ namespace ProjetoAssistenciaTecnica.Controller
                 executa.Parameters.AddWithValue("@data_nascimento", obj.data_nascimento);
                 executa.Parameters.AddWithValue("@email", obj.email);
 
-                /* Abrir a conexao */
                 conexao.Open();
                 executa.ExecuteNonQuery();
                 conexao.Close();
-                return true;
+
+                return true; // garante retorno se tudo deu certo
             }
             catch (Exception ex)
             {

@@ -44,6 +44,8 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            txtNumero = new TextBox();
+            label15 = new Label();
             txtComplemento = new TextBox();
             label13 = new Label();
             txtBairro = new TextBox();
@@ -67,8 +69,8 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
-            txtNumero = new TextBox();
-            label15 = new Label();
+            comboModalidade = new ComboBox();
+            label16 = new Label();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -215,6 +217,8 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(comboModalidade);
+            tabPage1.Controls.Add(label16);
             tabPage1.Controls.Add(txtNumero);
             tabPage1.Controls.Add(label15);
             tabPage1.Controls.Add(txtComplemento);
@@ -250,6 +254,25 @@
             tabPage1.Size = new Size(1342, 555);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
+            // 
+            // txtNumero
+            // 
+            txtNumero.Location = new Point(106, 497);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(59, 34);
+            txtNumero.TabIndex = 51;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = SystemColors.ControlText;
+            label15.Location = new Point(57, 503);
+            label15.Margin = new Padding(4, 0, 4, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(40, 28);
+            label15.TabIndex = 50;
+            label15.Text = "Nº:";
             // 
             // txtComplemento
             // 
@@ -378,7 +401,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Microsoft Sans Serif", 12.2F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(827, 114);
+            button3.Location = new Point(909, 155);
             button3.Name = "button3";
             button3.Size = new Size(125, 42);
             button3.TabIndex = 33;
@@ -391,7 +414,7 @@
             botaoCadastrarCliente.FlatStyle = FlatStyle.Popup;
             botaoCadastrarCliente.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoCadastrarCliente.ForeColor = Color.White;
-            botaoCadastrarCliente.Location = new Point(827, 66);
+            botaoCadastrarCliente.Location = new Point(909, 107);
             botaoCadastrarCliente.Name = "botaoCadastrarCliente";
             botaoCadastrarCliente.Size = new Size(125, 42);
             botaoCadastrarCliente.TabIndex = 33;
@@ -472,24 +495,24 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // txtNumero
+            // comboModalidade
             // 
-            txtNumero.Location = new Point(106, 497);
-            txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(59, 34);
-            txtNumero.TabIndex = 51;
+            comboModalidade.FormattingEnabled = true;
+            comboModalidade.Items.AddRange(new object[] { "Cliente", "Funcionario" });
+            comboModalidade.Location = new Point(909, 64);
+            comboModalidade.Name = "comboModalidade";
+            comboModalidade.Size = new Size(151, 36);
+            comboModalidade.TabIndex = 53;
             // 
-            // label15
+            // label16
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.ForeColor = SystemColors.ControlText;
-            label15.Location = new Point(57, 503);
-            label15.Margin = new Padding(4, 0, 4, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(40, 28);
-            label15.TabIndex = 50;
-            label15.Text = "Nº:";
+            label16.AutoSize = true;
+            label16.Location = new Point(780, 67);
+            label16.Margin = new Padding(4, 0, 4, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(122, 28);
+            label16.TabIndex = 52;
+            label16.Text = "Modalidade:";
             // 
             // FCliente
             // 
@@ -557,5 +580,7 @@
         private Label label11;
         private TextBox txtNumero;
         private Label label15;
+        private ComboBox comboModalidade;
+        private Label label16;
     }
 }

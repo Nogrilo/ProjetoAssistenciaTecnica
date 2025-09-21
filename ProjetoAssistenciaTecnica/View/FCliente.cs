@@ -52,9 +52,12 @@ namespace ProjetoAssistenciaTecnica.View
             obj.data_nascimento = txtDataNascimento.Text;
             obj.email = txtEmail.Text;
 
+            // teste modalidade 
+            string modalidade = comboModalidade.Text;
+
             ControllerCliente controllerPessoa = new ControllerCliente();
 
-            controllerPessoa.cadastrarCliente(obj);
+            controllerPessoa.cadastrarCliente(obj, modalidade);
             MessageBox.Show("Pessoa Cadastrada com Sucesso!");
             limparCampos();
         }
