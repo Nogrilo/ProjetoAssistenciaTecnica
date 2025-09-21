@@ -8,18 +8,18 @@ namespace ProjetoAssistenciaTecnica.Model
 {
     public class Cliente : Pessoa
     {
-        public int idCliente { get; set; }
+        public int idCliente { get; set; } = 0;
 
-        public string nome { get; set; }
+        public string nome { get; set; } = string.Empty;
 
-        public string cpf_cnpj { get; set; }
+        public string cpf_cnpj { get; set; } = string.Empty;
 
-        public string telefone { get; set; }
+        public string telefone { get; set; } = string.Empty;
 
-        public string email { get; set; }
+        public string email { get; set; } = string.Empty;
 
-        public string data_nascimento { get; set; }
+        public string data_nascimento { get; set; } = string.Empty;
 
-        public string data_cadastro { get; set; }
+        public string data_cadastro { get; set; } = string.Empty;
     }
 }

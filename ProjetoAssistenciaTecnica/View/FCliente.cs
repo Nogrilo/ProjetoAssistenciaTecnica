@@ -51,15 +51,22 @@ namespace ProjetoAssistenciaTecnica.View
             obj.telefone = txtTelefone.Text;
             obj.data_nascimento = txtDataNascimento.Text;
             obj.email = txtEmail.Text;
+            obj.modalidade = comboModalidade.Text;
 
-            // teste modalidade 
-            string modalidade = comboModalidade.Text;
+            //Endereco
+            obj.endereco.cep = maskedCEP.Text;
+            obj.endereco.estado = comboUF.Text;
+            obj.endereco.municipio = txtMunicipio.Text;
+            obj.endereco.rua = txtRua.Text;
+            obj.endereco.bairro = txtBairro.Text;
+            obj.endereco.complemento = txtComplemento.Text;
+            obj.endereco.n_casa = txtNumeroCasa.Text;
 
             ControllerCliente controllerPessoa = new ControllerCliente();
 
-            controllerPessoa.cadastrarCliente(obj, modalidade);
+            controllerPessoa.cadastrarCliente(obj);
             MessageBox.Show("Pessoa Cadastrada com Sucesso!");
-            limparCampos();
+            //limparCampos();
         }
 
         private void botaoBuscarCEP_Click(object sender, EventArgs e)
