@@ -23,12 +23,12 @@ namespace ProjetoAssistenciaTecnica.View
         /* Funcao para habilitar os campos, EXCETO o ID */
         public void habilitarCampos()
         {
-            txtID.Enabled               = false;
-            txtNome.Enabled             = true;
-            txtCPF.Enabled              = true;
-            txtTelefone.Enabled         = true;
-            txtDataNascimento.Enabled   = true;
-            txtEmail.Enabled            = true;
+            txtID.Enabled = false;
+            txtNome.Enabled = true;
+            txtCPF.Enabled = true;
+            txtTelefone.Enabled = true;
+            txtDataNascimento.Enabled = true;
+            txtEmail.Enabled = true;
         }
 
         /* Funcao para limpar os campos */
@@ -39,16 +39,17 @@ namespace ProjetoAssistenciaTecnica.View
             txtCPF.Clear();
             txtTelefone.Clear();
             txtDataNascimento.Clear();
-            txtEmail.Clear();   
+            txtEmail.Clear();
         }
-        private void botaoSalvar_Click(object sender, EventArgs e)
+
+        private void botaoCadastrarCliente_Click(object sender, EventArgs e)
         {
-            Cliente obj         = new Cliente();
-            obj.nome            = txtNome.Text;
-            obj.cpf_cnpj        = txtCPF.Text;
-            obj.telefone        = txtTelefone.Text;
+            Cliente obj = new Cliente();
+            obj.nome = txtNome.Text;
+            obj.cpf_cnpj = txtCPF.Text;
+            obj.telefone = txtTelefone.Text;
             obj.data_nascimento = txtDataNascimento.Text;
-            obj.email           = txtEmail.Text;
+            obj.email = txtEmail.Text;
 
             ControllerCliente controllerPessoa = new ControllerCliente();
 

@@ -44,8 +44,10 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            textBox2 = new TextBox();
+            label7 = new Label();
             button3 = new Button();
-            button2 = new Button();
+            botaoCadastrarCliente = new Button();
             tabPage2 = new TabPage();
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -126,7 +128,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(29, 230);
+            label5.Location = new Point(737, 25);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(166, 28);
@@ -142,7 +144,7 @@
             // 
             // txtDataNascimento
             // 
-            txtDataNascimento.Location = new Point(202, 227);
+            txtDataNascimento.Location = new Point(910, 22);
             txtDataNascimento.Mask = "0000/00/00";
             txtDataNascimento.Name = "txtDataNascimento";
             txtDataNascimento.Size = new Size(164, 34);
@@ -178,11 +180,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Geometr415 Blk BT", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
-            label12.Size = new Size(260, 34);
+            label12.Size = new Size(265, 32);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Cliente";
             // 
@@ -200,8 +202,10 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(textBox2);
+            tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(button3);
-            tabPage1.Controls.Add(button2);
+            tabPage1.Controls.Add(botaoCadastrarCliente);
             tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(txtID);
             tabPage1.Controls.Add(txtEmail);
@@ -221,31 +225,49 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(104, 231);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(414, 34);
+            textBox2.TabIndex = 36;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(4, 231);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(97, 28);
+            label7.TabIndex = 35;
+            label7.Text = "Endereço:";
+            // 
             // button3
             // 
             button3.BackColor = Color.FromArgb(64, 64, 64);
             button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Geometr415 Blk BT", 12.2F);
+            button3.Font = new Font("Microsoft Sans Serif", 12.2F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(812, 76);
+            button3.Location = new Point(827, 114);
             button3.Name = "button3";
             button3.Size = new Size(125, 42);
             button3.TabIndex = 33;
             button3.Text = "Editar";
             button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // botaoCadastrarCliente
             // 
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Geometr415 Blk BT", 12.2F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(812, 28);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 42);
-            button2.TabIndex = 33;
-            button2.Text = "Cadastrar";
-            button2.UseVisualStyleBackColor = false;
+            botaoCadastrarCliente.BackColor = Color.FromArgb(64, 64, 64);
+            botaoCadastrarCliente.FlatStyle = FlatStyle.Popup;
+            botaoCadastrarCliente.Font = new Font("Microsoft Sans Serif", 12.2F);
+            botaoCadastrarCliente.ForeColor = Color.White;
+            botaoCadastrarCliente.Location = new Point(827, 66);
+            botaoCadastrarCliente.Name = "botaoCadastrarCliente";
+            botaoCadastrarCliente.Size = new Size(125, 42);
+            botaoCadastrarCliente.TabIndex = 33;
+            botaoCadastrarCliente.Text = "Cadastrar";
+            botaoCadastrarCliente.UseVisualStyleBackColor = false;
+            botaoCadastrarCliente.Click += botaoCadastrarCliente_Click;
             // 
             // tabPage2
             // 
@@ -370,6 +392,8 @@
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nome;
         private Button button3;
-        private Button button2;
+        private Button botaoCadastrarCliente;
+        private TextBox textBox2;
+        private Label label7;
     }
 }
