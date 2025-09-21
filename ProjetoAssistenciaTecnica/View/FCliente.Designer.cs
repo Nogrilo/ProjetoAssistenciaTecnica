@@ -44,6 +44,15 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            txtComplemento = new TextBox();
+            label13 = new Label();
+            txtBairro = new TextBox();
+            label11 = new Label();
+            txtRua = new TextBox();
+            label10 = new Label();
+            txtMunicipio = new TextBox();
+            label9 = new Label();
+            comboUF = new ComboBox();
             maskedCEP = new MaskedTextBox();
             botaoBuscarCEP = new Button();
             label8 = new Label();
@@ -58,7 +67,8 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
-            comboUF = new ComboBox();
+            txtNumero = new TextBox();
+            label15 = new Label();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -199,12 +209,22 @@
             tabControl1.Location = new Point(0, 71);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1350, 519);
+            tabControl1.Size = new Size(1350, 596);
             tabControl1.TabIndex = 50;
             // 
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(txtNumero);
+            tabPage1.Controls.Add(label15);
+            tabPage1.Controls.Add(txtComplemento);
+            tabPage1.Controls.Add(label13);
+            tabPage1.Controls.Add(txtBairro);
+            tabPage1.Controls.Add(label11);
+            tabPage1.Controls.Add(txtRua);
+            tabPage1.Controls.Add(label10);
+            tabPage1.Controls.Add(txtMunicipio);
+            tabPage1.Controls.Add(label9);
             tabPage1.Controls.Add(comboUF);
             tabPage1.Controls.Add(maskedCEP);
             tabPage1.Controls.Add(botaoBuscarCEP);
@@ -227,9 +247,88 @@
             tabPage1.Location = new Point(4, 37);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1342, 478);
+            tabPage1.Size = new Size(1342, 555);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
+            // 
+            // txtComplemento
+            // 
+            txtComplemento.Location = new Point(106, 457);
+            txtComplemento.Name = "txtComplemento";
+            txtComplemento.Size = new Size(426, 34);
+            txtComplemento.TabIndex = 49;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = SystemColors.ControlText;
+            label13.Location = new Point(6, 469);
+            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(93, 17);
+            label13.TabIndex = 48;
+            label13.Text = "Complemento:";
+            // 
+            // txtBairro
+            // 
+            txtBairro.Location = new Point(104, 417);
+            txtBairro.Name = "txtBairro";
+            txtBairro.Size = new Size(426, 34);
+            txtBairro.TabIndex = 47;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(31, 423);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(68, 28);
+            label11.TabIndex = 46;
+            label11.Text = "Bairro:";
+            // 
+            // txtRua
+            // 
+            txtRua.Location = new Point(104, 377);
+            txtRua.Name = "txtRua";
+            txtRua.Size = new Size(426, 34);
+            txtRua.TabIndex = 45;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(48, 383);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(49, 28);
+            label10.TabIndex = 44;
+            label10.Text = "Rua:";
+            // 
+            // txtMunicipio
+            // 
+            txtMunicipio.Location = new Point(104, 326);
+            txtMunicipio.Name = "txtMunicipio";
+            txtMunicipio.Size = new Size(426, 34);
+            txtMunicipio.TabIndex = 43;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(0, 332);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(104, 28);
+            label9.TabIndex = 42;
+            label9.Text = "Municipio:";
+            // 
+            // comboUF
+            // 
+            comboUF.FormattingEnabled = true;
+            comboUF.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            comboUF.Location = new Point(104, 284);
+            comboUF.Name = "comboUF";
+            comboUF.Size = new Size(151, 36);
+            comboUF.TabIndex = 41;
             // 
             // maskedCEP
             // 
@@ -307,7 +406,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1342, 486);
+            tabPage2.Size = new Size(1342, 563);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -320,7 +419,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1336, 419);
+            dataGridView1.Size = new Size(1336, 496);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -373,20 +472,30 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // comboUF
+            // txtNumero
             // 
-            comboUF.FormattingEnabled = true;
-            comboUF.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
-            comboUF.Location = new Point(104, 284);
-            comboUF.Name = "comboUF";
-            comboUF.Size = new Size(151, 36);
-            comboUF.TabIndex = 41;
+            txtNumero.Location = new Point(106, 497);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(59, 34);
+            txtNumero.TabIndex = 51;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = SystemColors.ControlText;
+            label15.Location = new Point(57, 503);
+            label15.Margin = new Padding(4, 0, 4, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(40, 28);
+            label15.TabIndex = 50;
+            label15.Text = "Nº:";
             // 
             // FCliente
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1350, 590);
+            ClientSize = new Size(1350, 667);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -438,5 +547,15 @@
         private Label label8;
         private MaskedTextBox maskedCEP;
         private ComboBox comboUF;
+        private TextBox txtMunicipio;
+        private Label label9;
+        private TextBox txtRua;
+        private Label label10;
+        private TextBox txtComplemento;
+        private Label label13;
+        private TextBox txtBairro;
+        private Label label11;
+        private TextBox txtNumero;
+        private Label label15;
     }
 }
