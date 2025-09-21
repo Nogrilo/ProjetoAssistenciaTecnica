@@ -61,11 +61,11 @@ namespace ProjetoAssistenciaTecnica.View
 
         private void botaoBuscarCEP_Click(object sender, EventArgs e)
         {
-            string cep = txtCEP.Text;   
+            string cep = maskedCEP.Text;   
             
             var resultado       = new ViaCepClient().Search(cep);
             
-            txtEstado.Text = resultado.StateInitials;
+            comboUF.Text = resultado.StateInitials;
         }
     }
 }

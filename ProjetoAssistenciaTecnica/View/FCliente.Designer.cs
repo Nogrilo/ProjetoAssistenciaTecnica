@@ -44,7 +44,9 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            txtCEP = new TextBox();
+            maskedCEP = new MaskedTextBox();
+            botaoBuscarCEP = new Button();
+            label8 = new Label();
             label7 = new Label();
             button3 = new Button();
             botaoCadastrarCliente = new Button();
@@ -56,9 +58,7 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
-            txtEstado = new TextBox();
-            label8 = new Label();
-            botaoBuscarCEP = new Button();
+            comboUF = new ComboBox();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -205,10 +205,10 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(comboUF);
+            tabPage1.Controls.Add(maskedCEP);
             tabPage1.Controls.Add(botaoBuscarCEP);
-            tabPage1.Controls.Add(txtEstado);
             tabPage1.Controls.Add(label8);
-            tabPage1.Controls.Add(txtCEP);
             tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(button3);
             tabPage1.Controls.Add(botaoCadastrarCliente);
@@ -231,12 +231,37 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
-            // txtCEP
+            // maskedCEP
             // 
-            txtCEP.Location = new Point(106, 231);
-            txtCEP.Name = "txtCEP";
-            txtCEP.Size = new Size(424, 34);
-            txtCEP.TabIndex = 36;
+            maskedCEP.Location = new Point(106, 231);
+            maskedCEP.Mask = "#####-###";
+            maskedCEP.Name = "maskedCEP";
+            maskedCEP.Size = new Size(260, 34);
+            maskedCEP.TabIndex = 40;
+            // 
+            // botaoBuscarCEP
+            // 
+            botaoBuscarCEP.BackColor = Color.FromArgb(64, 64, 64);
+            botaoBuscarCEP.FlatStyle = FlatStyle.Popup;
+            botaoBuscarCEP.Font = new Font("Microsoft Sans Serif", 12.2F);
+            botaoBuscarCEP.ForeColor = Color.White;
+            botaoBuscarCEP.Location = new Point(405, 232);
+            botaoBuscarCEP.Name = "botaoBuscarCEP";
+            botaoBuscarCEP.Size = new Size(125, 34);
+            botaoBuscarCEP.TabIndex = 39;
+            botaoBuscarCEP.Text = "Buscar";
+            botaoBuscarCEP.UseVisualStyleBackColor = false;
+            botaoBuscarCEP.Click += botaoBuscarCEP_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(48, 292);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(40, 28);
+            label8.TabIndex = 37;
+            label8.Text = "UF:";
             // 
             // label7
             // 
@@ -282,7 +307,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1137, 325);
+            tabPage2.Size = new Size(1342, 486);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -295,7 +320,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1131, 258);
+            dataGridView1.Size = new Size(1336, 419);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -320,7 +345,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1131, 61);
+            panel2.Size = new Size(1336, 61);
             panel2.TabIndex = 1;
             // 
             // textBox1
@@ -348,36 +373,14 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // txtEstado
+            // comboUF
             // 
-            txtEstado.Location = new Point(104, 281);
-            txtEstado.Name = "txtEstado";
-            txtEstado.Size = new Size(414, 34);
-            txtEstado.TabIndex = 38;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(26, 287);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(71, 28);
-            label8.TabIndex = 37;
-            label8.Text = "Estado";
-            // 
-            // botaoBuscarCEP
-            // 
-            botaoBuscarCEP.BackColor = Color.FromArgb(64, 64, 64);
-            botaoBuscarCEP.FlatStyle = FlatStyle.Popup;
-            botaoBuscarCEP.Font = new Font("Microsoft Sans Serif", 12.2F);
-            botaoBuscarCEP.ForeColor = Color.White;
-            botaoBuscarCEP.Location = new Point(549, 231);
-            botaoBuscarCEP.Name = "botaoBuscarCEP";
-            botaoBuscarCEP.Size = new Size(125, 34);
-            botaoBuscarCEP.TabIndex = 39;
-            botaoBuscarCEP.Text = "Buscar";
-            botaoBuscarCEP.UseVisualStyleBackColor = false;
-            botaoBuscarCEP.Click += botaoBuscarCEP_Click;
+            comboUF.FormattingEnabled = true;
+            comboUF.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            comboUF.Location = new Point(104, 284);
+            comboUF.Name = "comboUF";
+            comboUF.Size = new Size(151, 36);
+            comboUF.TabIndex = 41;
             // 
             // FCliente
             // 
@@ -430,10 +433,10 @@
         private DataGridViewTextBoxColumn Nome;
         private Button button3;
         private Button botaoCadastrarCliente;
-        private TextBox txtCEP;
         private Label label7;
         private Button botaoBuscarCEP;
-        private TextBox txtEstado;
         private Label label8;
+        private MaskedTextBox maskedCEP;
+        private ComboBox comboUF;
     }
 }
