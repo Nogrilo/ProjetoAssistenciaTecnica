@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ViaCep; // Biblioteca do VIA CEP
 
 namespace ProjetoAssistenciaTecnica.View
 {
@@ -56,6 +57,15 @@ namespace ProjetoAssistenciaTecnica.View
             controllerPessoa.cadastrarCliente(obj);
             MessageBox.Show("Pessoa Cadastrada com Sucesso!");
             limparCampos();
+        }
+
+        private void botaoBuscarCEP_Click(object sender, EventArgs e)
+        {
+            string cep = txtCEP.Text;   
+            
+            var resultado       = new ViaCepClient().Search(cep);
+            
+            txtEstado.Text = resultado.StateInitials;
         }
     }
 }

@@ -44,7 +44,7 @@
             label12 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            textBox2 = new TextBox();
+            txtCEP = new TextBox();
             label7 = new Label();
             button3 = new Button();
             botaoCadastrarCliente = new Button();
@@ -56,6 +56,9 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
+            txtEstado = new TextBox();
+            label8 = new Label();
+            botaoBuscarCEP = new Button();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -174,7 +177,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1145, 71);
+            panel1.Size = new Size(1350, 71);
             panel1.TabIndex = 49;
             // 
             // label12
@@ -196,13 +199,16 @@
             tabControl1.Location = new Point(0, 71);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1145, 358);
+            tabControl1.Size = new Size(1350, 519);
             tabControl1.TabIndex = 50;
             // 
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
-            tabPage1.Controls.Add(textBox2);
+            tabPage1.Controls.Add(botaoBuscarCEP);
+            tabPage1.Controls.Add(txtEstado);
+            tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(txtCEP);
             tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(button3);
             tabPage1.Controls.Add(botaoCadastrarCliente);
@@ -221,26 +227,26 @@
             tabPage1.Location = new Point(4, 37);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1137, 317);
+            tabPage1.Size = new Size(1342, 478);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
-            // textBox2
+            // txtCEP
             // 
-            textBox2.Location = new Point(104, 231);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(414, 34);
-            textBox2.TabIndex = 36;
+            txtCEP.Location = new Point(106, 231);
+            txtCEP.Name = "txtCEP";
+            txtCEP.Size = new Size(424, 34);
+            txtCEP.TabIndex = 36;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(4, 231);
+            label7.Location = new Point(48, 234);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(97, 28);
+            label7.Size = new Size(49, 28);
             label7.TabIndex = 35;
-            label7.Text = "Endereço:";
+            label7.Text = "CEP:";
             // 
             // button3
             // 
@@ -342,11 +348,42 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
+            // txtEstado
+            // 
+            txtEstado.Location = new Point(104, 281);
+            txtEstado.Name = "txtEstado";
+            txtEstado.Size = new Size(414, 34);
+            txtEstado.TabIndex = 38;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(26, 287);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(71, 28);
+            label8.TabIndex = 37;
+            label8.Text = "Estado";
+            // 
+            // botaoBuscarCEP
+            // 
+            botaoBuscarCEP.BackColor = Color.FromArgb(64, 64, 64);
+            botaoBuscarCEP.FlatStyle = FlatStyle.Popup;
+            botaoBuscarCEP.Font = new Font("Microsoft Sans Serif", 12.2F);
+            botaoBuscarCEP.ForeColor = Color.White;
+            botaoBuscarCEP.Location = new Point(549, 231);
+            botaoBuscarCEP.Name = "botaoBuscarCEP";
+            botaoBuscarCEP.Size = new Size(125, 34);
+            botaoBuscarCEP.TabIndex = 39;
+            botaoBuscarCEP.Text = "Buscar";
+            botaoBuscarCEP.UseVisualStyleBackColor = false;
+            botaoBuscarCEP.Click += botaoBuscarCEP_Click;
+            // 
             // FCliente
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1145, 429);
+            ClientSize = new Size(1350, 590);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -393,7 +430,10 @@
         private DataGridViewTextBoxColumn Nome;
         private Button button3;
         private Button botaoCadastrarCliente;
-        private TextBox textBox2;
+        private TextBox txtCEP;
         private Label label7;
+        private Button botaoBuscarCEP;
+        private TextBox txtEstado;
+        private Label label8;
     }
 }
