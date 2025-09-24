@@ -59,7 +59,7 @@ namespace ProjetoAssistenciaTecnica.View
             obj.endereco.municipio = txtMunicipio.Text;
             obj.endereco.rua = txtRua.Text;
             obj.endereco.bairro = txtBairro.Text;
-            obj.endereco.complemento = txtComplemento.Text;
+            obj.endereco.complemento = maskedComplemento.Text;
             obj.endereco.n_casa = txtNumeroCasa.Text;
 
             ControllerCliente controllerPessoa = new ControllerCliente();

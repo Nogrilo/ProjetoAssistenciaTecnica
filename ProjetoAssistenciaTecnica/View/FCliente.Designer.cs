@@ -42,12 +42,15 @@
             panel1 = new Panel();
             label12 = new Label();
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            maskedComplemento = new TabPage();
+            comboBox1 = new ComboBox();
+            comboCargo = new ComboBox();
+            label17 = new Label();
+            maskedTelefone = new MaskedTextBox();
             comboModalidade = new ComboBox();
             label16 = new Label();
             txtNumeroCasa = new TextBox();
             label15 = new Label();
-            txtComplemento = new TextBox();
             label13 = new Label();
             txtBairro = new TextBox();
             label11 = new Label();
@@ -70,10 +73,9 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
-            maskedTelefone = new MaskedTextBox();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            maskedComplemento.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -198,7 +200,7 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(maskedComplemento);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 71);
@@ -207,46 +209,84 @@
             tabControl1.Size = new Size(1350, 596);
             tabControl1.TabIndex = 50;
             // 
-            // tabPage1
+            // maskedComplemento
             // 
-            tabPage1.BackColor = Color.FromArgb(224, 224, 224);
-            tabPage1.Controls.Add(maskedTelefone);
-            tabPage1.Controls.Add(comboModalidade);
-            tabPage1.Controls.Add(label16);
-            tabPage1.Controls.Add(txtNumeroCasa);
-            tabPage1.Controls.Add(label15);
-            tabPage1.Controls.Add(txtComplemento);
-            tabPage1.Controls.Add(label13);
-            tabPage1.Controls.Add(txtBairro);
-            tabPage1.Controls.Add(label11);
-            tabPage1.Controls.Add(txtRua);
-            tabPage1.Controls.Add(label10);
-            tabPage1.Controls.Add(txtMunicipio);
-            tabPage1.Controls.Add(label9);
-            tabPage1.Controls.Add(comboUF);
-            tabPage1.Controls.Add(maskedCEP);
-            tabPage1.Controls.Add(botaoBuscarCEP);
-            tabPage1.Controls.Add(label8);
-            tabPage1.Controls.Add(label7);
-            tabPage1.Controls.Add(button3);
-            tabPage1.Controls.Add(botaoCadastrarCliente);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(txtID);
-            tabPage1.Controls.Add(txtEmail);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(label6);
-            tabPage1.Controls.Add(txtNome);
-            tabPage1.Controls.Add(txtDataNascimento);
-            tabPage1.Controls.Add(label3);
-            tabPage1.Controls.Add(txtCPF);
-            tabPage1.Controls.Add(label5);
-            tabPage1.Controls.Add(label4);
-            tabPage1.Location = new Point(4, 37);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1342, 555);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Dados";
+            maskedComplemento.BackColor = Color.FromArgb(224, 224, 224);
+            maskedComplemento.Controls.Add(comboBox1);
+            maskedComplemento.Controls.Add(comboCargo);
+            maskedComplemento.Controls.Add(label17);
+            maskedComplemento.Controls.Add(maskedTelefone);
+            maskedComplemento.Controls.Add(comboModalidade);
+            maskedComplemento.Controls.Add(label16);
+            maskedComplemento.Controls.Add(txtNumeroCasa);
+            maskedComplemento.Controls.Add(label15);
+            maskedComplemento.Controls.Add(label13);
+            maskedComplemento.Controls.Add(txtBairro);
+            maskedComplemento.Controls.Add(label11);
+            maskedComplemento.Controls.Add(txtRua);
+            maskedComplemento.Controls.Add(label10);
+            maskedComplemento.Controls.Add(txtMunicipio);
+            maskedComplemento.Controls.Add(label9);
+            maskedComplemento.Controls.Add(comboUF);
+            maskedComplemento.Controls.Add(maskedCEP);
+            maskedComplemento.Controls.Add(botaoBuscarCEP);
+            maskedComplemento.Controls.Add(label8);
+            maskedComplemento.Controls.Add(label7);
+            maskedComplemento.Controls.Add(button3);
+            maskedComplemento.Controls.Add(botaoCadastrarCliente);
+            maskedComplemento.Controls.Add(label1);
+            maskedComplemento.Controls.Add(txtID);
+            maskedComplemento.Controls.Add(txtEmail);
+            maskedComplemento.Controls.Add(label2);
+            maskedComplemento.Controls.Add(label6);
+            maskedComplemento.Controls.Add(txtNome);
+            maskedComplemento.Controls.Add(txtDataNascimento);
+            maskedComplemento.Controls.Add(label3);
+            maskedComplemento.Controls.Add(txtCPF);
+            maskedComplemento.Controls.Add(label5);
+            maskedComplemento.Controls.Add(label4);
+            maskedComplemento.Location = new Point(4, 37);
+            maskedComplemento.Name = "maskedComplemento";
+            maskedComplemento.Padding = new Padding(3);
+            maskedComplemento.Size = new Size(1342, 555);
+            maskedComplemento.TabIndex = 0;
+            maskedComplemento.Text = "Dados";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Casa", "Apartamento", "Bloco", "Outro" });
+            comboBox1.Location = new Point(106, 457);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 36);
+            comboBox1.TabIndex = 57;
+            // 
+            // comboCargo
+            // 
+            comboCargo.FormattingEnabled = true;
+            comboCargo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
+            comboCargo.Location = new Point(909, 116);
+            comboCargo.Name = "comboCargo";
+            comboCargo.Size = new Size(151, 36);
+            comboCargo.TabIndex = 56;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(833, 119);
+            label17.Margin = new Padding(4, 0, 4, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(69, 28);
+            label17.TabIndex = 55;
+            label17.Text = "Cargo:";
+            // 
+            // maskedTelefone
+            // 
+            maskedTelefone.Location = new Point(106, 147);
+            maskedTelefone.Mask = "(##) # ####-####";
+            maskedTelefone.Name = "maskedTelefone";
+            maskedTelefone.Size = new Size(260, 34);
+            maskedTelefone.TabIndex = 54;
             // 
             // comboModalidade
             // 
@@ -269,7 +309,7 @@
             // 
             // txtNumeroCasa
             // 
-            txtNumeroCasa.Location = new Point(106, 497);
+            txtNumeroCasa.Location = new Point(106, 503);
             txtNumeroCasa.Name = "txtNumeroCasa";
             txtNumeroCasa.Size = new Size(59, 34);
             txtNumeroCasa.TabIndex = 51;
@@ -285,13 +325,6 @@
             label15.Size = new Size(40, 28);
             label15.TabIndex = 50;
             label15.Text = "Nº:";
-            // 
-            // txtComplemento
-            // 
-            txtComplemento.Location = new Point(106, 457);
-            txtComplemento.Name = "txtComplemento";
-            txtComplemento.Size = new Size(426, 34);
-            txtComplemento.TabIndex = 49;
             // 
             // label13
             // 
@@ -413,7 +446,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Microsoft Sans Serif", 12.2F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(909, 155);
+            button3.Location = new Point(909, 462);
             button3.Name = "button3";
             button3.Size = new Size(125, 42);
             button3.TabIndex = 33;
@@ -426,7 +459,7 @@
             botaoCadastrarCliente.FlatStyle = FlatStyle.Popup;
             botaoCadastrarCliente.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoCadastrarCliente.ForeColor = Color.White;
-            botaoCadastrarCliente.Location = new Point(909, 107);
+            botaoCadastrarCliente.Location = new Point(909, 414);
             botaoCadastrarCliente.Name = "botaoCadastrarCliente";
             botaoCadastrarCliente.Size = new Size(125, 42);
             botaoCadastrarCliente.TabIndex = 33;
@@ -507,14 +540,6 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // maskedTelefone
-            // 
-            maskedTelefone.Location = new Point(106, 147);
-            maskedTelefone.Mask = "(##) # ####-####";
-            maskedTelefone.Name = "maskedTelefone";
-            maskedTelefone.Size = new Size(260, 34);
-            maskedTelefone.TabIndex = 54;
-            // 
             // FCliente
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -529,8 +554,8 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
+            maskedComplemento.ResumeLayout(false);
+            maskedComplemento.PerformLayout();
             tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
@@ -554,7 +579,7 @@
         private Panel panel1;
         private Label label12;
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        private TabPage maskedComplemento;
         private TabPage tabPage2;
         private Panel panel2;
         private TextBox textBox1;
@@ -574,7 +599,6 @@
         private Label label9;
         private TextBox txtRua;
         private Label label10;
-        private TextBox txtComplemento;
         private Label label13;
         private TextBox txtBairro;
         private Label label11;
@@ -583,5 +607,8 @@
         private ComboBox comboModalidade;
         private Label label16;
         private MaskedTextBox maskedTelefone;
+        private ComboBox comboCargo;
+        private Label label17;
+        private ComboBox comboBox1;
     }
 }
