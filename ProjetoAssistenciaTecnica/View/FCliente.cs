@@ -26,7 +26,7 @@ namespace ProjetoAssistenciaTecnica.View
         {
             txtID.Enabled = false;
             txtNome.Enabled = true;
-            txtCPF.Enabled = true;
+            maskCPFcnpj.Enabled = true;
             maskedTelefone.Enabled = true;
             txtDataNascimento.Enabled = true;
             txtEmail.Enabled = true;
@@ -37,7 +37,7 @@ namespace ProjetoAssistenciaTecnica.View
         {
             txtID.Clear();
             txtNome.Clear();
-            txtCPF.Clear();
+            maskCPFcnpj.Clear();
             maskedTelefone.Clear();
             txtDataNascimento.Clear();
             txtEmail.Clear();
@@ -47,7 +47,7 @@ namespace ProjetoAssistenciaTecnica.View
         {
             Cliente obj = new Cliente();
             obj.nome = txtNome.Text;
-            obj.cpf_cnpj = txtCPF.Text;
+            obj.cpf_cnpj = maskCPFcnpj.Text;
             obj.telefone = maskedTelefone.Text;
             obj.data_nascimento = txtDataNascimento.Text;
             obj.email = txtEmail.Text;
@@ -59,7 +59,7 @@ namespace ProjetoAssistenciaTecnica.View
             obj.endereco.municipio = txtMunicipio.Text;
             obj.endereco.rua = txtRua.Text;
             obj.endereco.bairro = txtBairro.Text;
-            obj.endereco.complemento = maskedComplemento.Text;
+            obj.endereco.complemento = comboComplemento.Text;
             obj.endereco.n_casa = txtNumeroCasa.Text;
 
             ControllerCliente controllerPessoa = new ControllerCliente();
@@ -79,6 +79,25 @@ namespace ProjetoAssistenciaTecnica.View
             txtMunicipio.Text = resultado.City;
             txtRua.Text = resultado.Street;
             txtBairro.Text = resultado.Neighborhood;
+        }
+
+        private void maskedCEP_MaskChanged(object sender, EventArgs e)
+        {
+            /* Teste para alterar a mascara dependendo do numero de caracteres, CPF ou CNPJ */
+
+            /* Definindo as varias */
+            string maskCPF  = "000.000.000-00";
+            string maskCNPJ = "00.000.000/0000-00";
+
+            /* Verificar a quantidade de caracteres do campo, e apicar a mascara defvida */
+            if (maskCPFcnpj.Text.Length <= 14)
+            {
+                maskCPFcnpj.Mask = maskCPF;
+            }
+            else
+            {
+                maskCPFcnpj.Mask = maskCNPJ;
+            }
         }
     }
 }
