@@ -33,7 +33,6 @@
             txtNome = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            txtTelefone = new TextBox();
             label4 = new Label();
             label5 = new Label();
             txtCPF = new TextBox();
@@ -71,6 +70,7 @@
             textBox1 = new TextBox();
             label14 = new Label();
             button1 = new Button();
+            maskedTelefone = new MaskedTextBox();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -85,7 +85,7 @@
             label1.Location = new Point(64, 28);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(28, 21);
+            label1.Size = new Size(35, 28);
             label1.TabIndex = 0;
             label1.Text = "ID:";
             // 
@@ -93,14 +93,14 @@
             // 
             txtID.Location = new Point(106, 25);
             txtID.Name = "txtID";
-            txtID.Size = new Size(82, 29);
+            txtID.Size = new Size(82, 34);
             txtID.TabIndex = 1;
             // 
             // txtNome
             // 
             txtNome.Location = new Point(106, 66);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(529, 29);
+            txtNome.Size = new Size(529, 34);
             txtNome.TabIndex = 3;
             // 
             // label2
@@ -109,7 +109,7 @@
             label2.Location = new Point(29, 66);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(56, 21);
+            label2.Size = new Size(70, 28);
             label2.TabIndex = 2;
             label2.Text = "Nome:";
             // 
@@ -119,16 +119,9 @@
             label3.Location = new Point(48, 107);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(40, 21);
+            label3.Size = new Size(49, 28);
             label3.TabIndex = 4;
             label3.Text = "CPF:";
-            // 
-            // txtTelefone
-            // 
-            txtTelefone.Location = new Point(106, 147);
-            txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(260, 29);
-            txtTelefone.TabIndex = 5;
             // 
             // label4
             // 
@@ -136,7 +129,7 @@
             label4.Location = new Point(9, 145);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(70, 21);
+            label4.Size = new Size(88, 28);
             label4.TabIndex = 6;
             label4.Text = "Telefone:";
             // 
@@ -146,7 +139,7 @@
             label5.Location = new Point(737, 25);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(132, 21);
+            label5.Size = new Size(166, 28);
             label5.TabIndex = 8;
             label5.Text = "Data Nascimento:";
             // 
@@ -154,7 +147,7 @@
             // 
             txtCPF.Location = new Point(106, 107);
             txtCPF.Name = "txtCPF";
-            txtCPF.Size = new Size(260, 29);
+            txtCPF.Size = new Size(260, 34);
             txtCPF.TabIndex = 4;
             // 
             // txtDataNascimento
@@ -162,7 +155,7 @@
             txtDataNascimento.Location = new Point(910, 22);
             txtDataNascimento.Mask = "0000/00/00";
             txtDataNascimento.Name = "txtDataNascimento";
-            txtDataNascimento.Size = new Size(164, 29);
+            txtDataNascimento.Size = new Size(164, 34);
             txtDataNascimento.TabIndex = 6;
             // 
             // label6
@@ -171,7 +164,7 @@
             label6.Location = new Point(34, 187);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(51, 21);
+            label6.Size = new Size(63, 28);
             label6.TabIndex = 20;
             label6.Text = "Email:";
             // 
@@ -179,7 +172,7 @@
             // 
             txtEmail.Location = new Point(104, 187);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(426, 29);
+            txtEmail.Size = new Size(426, 34);
             txtEmail.TabIndex = 21;
             // 
             // panel1
@@ -199,7 +192,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
-            label12.Size = new Size(204, 26);
+            label12.Size = new Size(265, 32);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Cliente";
             // 
@@ -217,6 +210,7 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(224, 224, 224);
+            tabPage1.Controls.Add(maskedTelefone);
             tabPage1.Controls.Add(comboModalidade);
             tabPage1.Controls.Add(label16);
             tabPage1.Controls.Add(txtNumeroCasa);
@@ -247,11 +241,10 @@
             tabPage1.Controls.Add(txtCPF);
             tabPage1.Controls.Add(label5);
             tabPage1.Controls.Add(label4);
-            tabPage1.Controls.Add(txtTelefone);
-            tabPage1.Location = new Point(4, 30);
+            tabPage1.Location = new Point(4, 37);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1342, 562);
+            tabPage1.Size = new Size(1342, 555);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
@@ -261,7 +254,7 @@
             comboModalidade.Items.AddRange(new object[] { "Cliente", "Funcionario" });
             comboModalidade.Location = new Point(909, 64);
             comboModalidade.Name = "comboModalidade";
-            comboModalidade.Size = new Size(151, 29);
+            comboModalidade.Size = new Size(151, 36);
             comboModalidade.TabIndex = 53;
             // 
             // label16
@@ -270,7 +263,7 @@
             label16.Location = new Point(780, 67);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
-            label16.Size = new Size(95, 21);
+            label16.Size = new Size(122, 28);
             label16.TabIndex = 52;
             label16.Text = "Modalidade:";
             // 
@@ -278,7 +271,7 @@
             // 
             txtNumeroCasa.Location = new Point(106, 497);
             txtNumeroCasa.Name = "txtNumeroCasa";
-            txtNumeroCasa.Size = new Size(59, 29);
+            txtNumeroCasa.Size = new Size(59, 34);
             txtNumeroCasa.TabIndex = 51;
             // 
             // label15
@@ -289,7 +282,7 @@
             label15.Location = new Point(57, 503);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
-            label15.Size = new Size(32, 21);
+            label15.Size = new Size(40, 28);
             label15.TabIndex = 50;
             label15.Text = "Nº:";
             // 
@@ -297,7 +290,7 @@
             // 
             txtComplemento.Location = new Point(106, 457);
             txtComplemento.Name = "txtComplemento";
-            txtComplemento.Size = new Size(426, 29);
+            txtComplemento.Size = new Size(426, 34);
             txtComplemento.TabIndex = 49;
             // 
             // label13
@@ -308,7 +301,7 @@
             label13.Location = new Point(6, 469);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
-            label13.Size = new Size(82, 13);
+            label13.Size = new Size(93, 17);
             label13.TabIndex = 48;
             label13.Text = "Complemento:";
             // 
@@ -316,7 +309,7 @@
             // 
             txtBairro.Location = new Point(104, 417);
             txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(426, 29);
+            txtBairro.Size = new Size(426, 34);
             txtBairro.TabIndex = 47;
             // 
             // label11
@@ -325,7 +318,7 @@
             label11.Location = new Point(31, 423);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(55, 21);
+            label11.Size = new Size(68, 28);
             label11.TabIndex = 46;
             label11.Text = "Bairro:";
             // 
@@ -333,7 +326,7 @@
             // 
             txtRua.Location = new Point(104, 377);
             txtRua.Name = "txtRua";
-            txtRua.Size = new Size(426, 29);
+            txtRua.Size = new Size(426, 34);
             txtRua.TabIndex = 45;
             // 
             // label10
@@ -342,7 +335,7 @@
             label10.Location = new Point(48, 383);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(40, 21);
+            label10.Size = new Size(49, 28);
             label10.TabIndex = 44;
             label10.Text = "Rua:";
             // 
@@ -350,7 +343,7 @@
             // 
             txtMunicipio.Location = new Point(104, 326);
             txtMunicipio.Name = "txtMunicipio";
-            txtMunicipio.Size = new Size(426, 29);
+            txtMunicipio.Size = new Size(426, 34);
             txtMunicipio.TabIndex = 43;
             // 
             // label9
@@ -359,7 +352,7 @@
             label9.Location = new Point(0, 332);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(82, 21);
+            label9.Size = new Size(104, 28);
             label9.TabIndex = 42;
             label9.Text = "Municipio:";
             // 
@@ -369,7 +362,7 @@
             comboUF.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
             comboUF.Location = new Point(104, 284);
             comboUF.Name = "comboUF";
-            comboUF.Size = new Size(151, 29);
+            comboUF.Size = new Size(151, 36);
             comboUF.TabIndex = 41;
             // 
             // maskedCEP
@@ -377,7 +370,7 @@
             maskedCEP.Location = new Point(106, 231);
             maskedCEP.Mask = "#####-###";
             maskedCEP.Name = "maskedCEP";
-            maskedCEP.Size = new Size(260, 29);
+            maskedCEP.Size = new Size(260, 34);
             maskedCEP.TabIndex = 40;
             // 
             // botaoBuscarCEP
@@ -400,7 +393,7 @@
             label8.Location = new Point(48, 292);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(32, 21);
+            label8.Size = new Size(40, 28);
             label8.TabIndex = 37;
             label8.Text = "UF:";
             // 
@@ -410,7 +403,7 @@
             label7.Location = new Point(48, 234);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(40, 21);
+            label7.Size = new Size(49, 28);
             label7.TabIndex = 35;
             label7.Text = "CEP:";
             // 
@@ -445,10 +438,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1342, 568);
+            tabPage2.Size = new Size(1342, 563);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -461,7 +454,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1336, 501);
+            dataGridView1.Size = new Size(1336, 496);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -493,7 +486,7 @@
             // 
             textBox1.Location = new Point(107, 15);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(402, 29);
+            textBox1.Size = new Size(402, 34);
             textBox1.TabIndex = 4;
             // 
             // label14
@@ -501,7 +494,7 @@
             label14.AutoSize = true;
             label14.Location = new Point(31, 17);
             label14.Name = "label14";
-            label14.Size = new Size(56, 21);
+            label14.Size = new Size(70, 28);
             label14.TabIndex = 3;
             label14.Text = "Nome:";
             // 
@@ -514,9 +507,17 @@
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
+            // maskedTelefone
+            // 
+            maskedTelefone.Location = new Point(106, 147);
+            maskedTelefone.Mask = "(##) # ####-####";
+            maskedTelefone.Name = "maskedTelefone";
+            maskedTelefone.Size = new Size(260, 34);
+            maskedTelefone.TabIndex = 54;
+            // 
             // FCliente
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 667);
             Controls.Add(tabControl1);
@@ -544,7 +545,6 @@
         private TextBox txtNome;
         private Label label2;
         private Label label3;
-        private TextBox txtTelefone;
         private Label label4;
         private Label label5;
         private TextBox txtCPF;
@@ -582,5 +582,6 @@
         private Label label15;
         private ComboBox comboModalidade;
         private Label label16;
+        private MaskedTextBox maskedTelefone;
     }
 }

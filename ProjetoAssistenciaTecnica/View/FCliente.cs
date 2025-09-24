@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ViaCep; // Biblioteca do VIA CEP
+using ViaCep; /* Biblioteca do VIA CEP */
 
 namespace ProjetoAssistenciaTecnica.View
 {
@@ -27,7 +27,7 @@ namespace ProjetoAssistenciaTecnica.View
             txtID.Enabled = false;
             txtNome.Enabled = true;
             txtCPF.Enabled = true;
-            txtTelefone.Enabled = true;
+            maskedTelefone.Enabled = true;
             txtDataNascimento.Enabled = true;
             txtEmail.Enabled = true;
         }
@@ -38,7 +38,7 @@ namespace ProjetoAssistenciaTecnica.View
             txtID.Clear();
             txtNome.Clear();
             txtCPF.Clear();
-            txtTelefone.Clear();
+            maskedTelefone.Clear();
             txtDataNascimento.Clear();
             txtEmail.Clear();
         }
@@ -48,7 +48,7 @@ namespace ProjetoAssistenciaTecnica.View
             Cliente obj = new Cliente();
             obj.nome = txtNome.Text;
             obj.cpf_cnpj = txtCPF.Text;
-            obj.telefone = txtTelefone.Text;
+            obj.telefone = maskedTelefone.Text;
             obj.data_nascimento = txtDataNascimento.Text;
             obj.email = txtEmail.Text;
             obj.modalidade = comboModalidade.Text;
