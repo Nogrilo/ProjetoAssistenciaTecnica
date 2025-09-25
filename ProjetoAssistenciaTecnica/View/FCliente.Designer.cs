@@ -296,6 +296,7 @@
             comboModalidade.Name = "comboModalidade";
             comboModalidade.Size = new Size(151, 29);
             comboModalidade.TabIndex = 53;
+            comboModalidade.SelectedIndexChanged += comboModalidade_SelectedIndexChanged;
             // 
             // label16
             // 

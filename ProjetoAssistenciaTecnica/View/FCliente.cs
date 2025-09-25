@@ -19,6 +19,9 @@ namespace ProjetoAssistenciaTecnica.View
         {
             InitializeComponent();
             habilitarCampos();
+
+            /* Desabilitar o campo de cargo do funcionario */
+            comboCargo.Enabled = false;
         }
 
         /* Funcao para habilitar os campos, EXCETO o ID */
@@ -30,6 +33,21 @@ namespace ProjetoAssistenciaTecnica.View
             maskedTelefone.Enabled = true;
             txtDataNascimento.Enabled = true;
             txtEmail.Enabled = true;
+        }
+
+        /* Funcao para desabilitar os campos do funcionario */
+        public void desabilitarCamposFuncionario()
+        {
+            /* Ele comecara desabilitado, e caso a modalidade da pessoa for funcionario, irá habilitar */
+
+            if (comboModalidade.SelectedItem != null && comboModalidade.SelectedItem.ToString() == "Funcionario")
+            {
+                comboCargo.Enabled = true;
+            }
+            else
+            {
+                comboCargo.Enabled = false;
+            }
         }
 
         /* Funcao para limpar os campos */
@@ -86,7 +104,7 @@ namespace ProjetoAssistenciaTecnica.View
             /* Teste para alterar a mascara dependendo do numero de caracteres, CPF ou CNPJ */
 
             /* Definindo as varias */
-            string maskCPF  = "000.000.000-00";
+            string maskCPF = "000.000.000-00";
             string maskCNPJ = "00.000.000/0000-00";
 
             /* Verificar a quantidade de caracteres do campo, e apicar a mascara defvida */
@@ -98,6 +116,11 @@ namespace ProjetoAssistenciaTecnica.View
             {
                 maskCPFcnpj.Mask = maskCNPJ;
             }
+        }
+
+        private void comboModalidade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            desabilitarCamposFuncionario();
         }
     }
 }
