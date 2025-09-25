@@ -99,7 +99,12 @@ namespace ProjetoAssistenciaTecnica.View
             txtBairro.Text = resultado.Neighborhood;
         }
 
-        private void maskedCEP_MaskChanged(object sender, EventArgs e)
+        private void comboModalidade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            desabilitarCamposFuncionario();
+        }
+
+        private void maskCPFcnpj_TextChanged(object sender, EventArgs e)
         {
             /* Teste para alterar a mascara dependendo do numero de caracteres, CPF ou CNPJ */
 
@@ -107,8 +112,10 @@ namespace ProjetoAssistenciaTecnica.View
             string maskCPF = "000.000.000-00";
             string maskCNPJ = "00.000.000/0000-00";
 
+            string apenasNumeros = new string(maskCPFcnpj.Text.Where(char.IsDigit).ToArray());
+
             /* Verificar a quantidade de caracteres do campo, e apicar a mascara defvida */
-            if (maskCPFcnpj.Text.Length <= 14)
+            if (maskCPFcnpj.Text.Length <= 11)
             {
                 maskCPFcnpj.Mask = maskCPF;
             }
@@ -116,11 +123,6 @@ namespace ProjetoAssistenciaTecnica.View
             {
                 maskCPFcnpj.Mask = maskCNPJ;
             }
-        }
-
-        private void comboModalidade_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            desabilitarCamposFuncionario();
         }
     }
 }

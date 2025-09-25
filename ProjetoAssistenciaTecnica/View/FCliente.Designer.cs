@@ -251,6 +251,7 @@
             maskCPFcnpj.Name = "maskCPFcnpj";
             maskCPFcnpj.Size = new Size(260, 29);
             maskCPFcnpj.TabIndex = 58;
+            maskCPFcnpj.TextChanged += maskCPFcnpj_TextChanged;
             // 
             // comboComplemento
             // 
@@ -406,7 +407,6 @@
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(260, 29);
             maskedCEP.TabIndex = 40;
-            maskedCEP.MaskChanged += maskedCEP_MaskChanged;
             // 
             // botaoBuscarCEP
             // 
@@ -448,7 +448,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Microsoft Sans Serif", 12.2F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(909, 462);
+            button3.Location = new Point(910, 228);
             button3.Name = "button3";
             button3.Size = new Size(125, 42);
             button3.TabIndex = 33;
@@ -461,7 +461,7 @@
             botaoCadastrarCliente.FlatStyle = FlatStyle.Popup;
             botaoCadastrarCliente.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoCadastrarCliente.ForeColor = Color.White;
-            botaoCadastrarCliente.Location = new Point(909, 414);
+            botaoCadastrarCliente.Location = new Point(910, 180);
             botaoCadastrarCliente.Name = "botaoCadastrarCliente";
             botaoCadastrarCliente.Size = new Size(125, 42);
             botaoCadastrarCliente.TabIndex = 33;
@@ -473,10 +473,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 30);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1342, 568);
+            tabPage2.Size = new Size(1342, 562);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -489,7 +489,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1336, 501);
+            dataGridView1.Size = new Size(1336, 495);
             dataGridView1.TabIndex = 2;
             // 
             // ID
