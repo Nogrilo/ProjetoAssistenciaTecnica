@@ -18,7 +18,7 @@ namespace ProjetoAssistenciaTecnica.Model
 
         public string email { get; set; } = string.Empty;
             
-        public string data_nascimento { get; set; } = string.Empty;
+        public DateTime data_nascimento { get; set; }
 
         public string data_cadastro { get; set; } = string.Empty;
 

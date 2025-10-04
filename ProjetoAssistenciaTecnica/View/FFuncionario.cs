@@ -47,7 +47,7 @@ namespace ProjetoAssistenciaTecnica.View
             obj.nome = txtNomeFuncionario.Text;
             obj.cpf_cnpj = txtCPFFuncionario.Text;
             obj.telefone = txtTelefoneFuncionario.Text;
-            obj.data_nascimento = txtDataNascimentoFuncionario.Text;
+            obj.data_nascimento = DateTime.Parse(txtDataNascimentoFuncionario.Text);
             obj.email = txtEmailFuncionario.Text;
 
             /* Atributos de Funcionario */

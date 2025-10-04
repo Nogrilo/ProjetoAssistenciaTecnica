@@ -63,11 +63,25 @@ namespace ProjetoAssistenciaTecnica.View
 
         private void botaoCadastrarCliente_Click(object sender, EventArgs e)
         {
-            Cliente obj = new Cliente();
+            Pessoa obj = new Pessoa();
+
+            // Verificar se o objeto que vamos instanciar vai ser Funcionario, ou cliente
+
+            if (comboModalidade.Text == "Funcionario")
+            {
+                obj = new Funcionario();
+                
+                ((Funcionario)obj).tipo = comboCargo.Text;
+            }
+            else
+            {
+                obj = new Cliente();
+            }
+            
             obj.nome = txtNome.Text;
             obj.cpf_cnpj = maskCPFcnpj.Text;
             obj.telefone = maskedTelefone.Text;
-            obj.data_nascimento = txtDataNascimento.Text;
+            obj.data_nascimento = DateTime.Parse(txtDataNascimento.Text); // Converter para DateTime
             obj.email = txtEmail.Text;
             obj.modalidade = comboModalidade.Text;
 
@@ -82,7 +96,7 @@ namespace ProjetoAssistenciaTecnica.View
 
             ControllerCliente controllerPessoa = new ControllerCliente();
 
-            controllerPessoa.cadastrarCliente(obj);
+            controllerPessoa.cadastrarPessoa(obj);
             MessageBox.Show("Pessoa Cadastrada com Sucesso!");
             //limparCampos();
         }
@@ -103,18 +117,19 @@ namespace ProjetoAssistenciaTecnica.View
         {
             desabilitarCamposFuncionario();
         }
-
+        
         private void maskCPFcnpj_TextChanged(object sender, EventArgs e)
         {
-            /* Teste para alterar a mascara dependendo do numero de caracteres, CPF ou CNPJ */
+            /*
+            /* Teste para alterar a mascara dependendo do numero de caracteres, CPF ou CNPJ 
 
-            /* Definindo as varias */
+            /* Definindo as varias 
             string maskCPF = "000.000.000-00";
             string maskCNPJ = "00.000.000/0000-00";
 
             string apenasNumeros = new string(maskCPFcnpj.Text.Where(char.IsDigit).ToArray());
 
-            /* Verificar a quantidade de caracteres do campo, e apicar a mascara defvida */
+            /* Verificar a quantidade de caracteres do campo, e apicar a mascara defvida 
             if (maskCPFcnpj.Text.Length <= 11)
             {
                 maskCPFcnpj.Mask = maskCPF;
@@ -123,6 +138,7 @@ namespace ProjetoAssistenciaTecnica.View
             {
                 maskCPFcnpj.Mask = maskCNPJ;
             }
+            */
         }
     }
 }

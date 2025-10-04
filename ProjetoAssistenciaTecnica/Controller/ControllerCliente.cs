@@ -19,14 +19,12 @@ namespace ProjetoAssistenciaTecnica.Controller
             this.conexao = new Conexao().GetConnection();
         }
 
-        public bool cadastrarCliente(Cliente obj)
+        public bool cadastrarPessoa(Pessoa pessoa)
         {
             try
             {
                 string sql = "";
-                if (obj.modalidade == "Cliente")
-                {
-                    sql = @"call sp_insert_cliente (
+                 sql = @"call sp_insert_cliente (
                     @nome,
                     @cpf_cnpj,
                     @telefone,
@@ -40,43 +38,39 @@ namespace ProjetoAssistenciaTecnica.Controller
                     @n_complemento,
                     @cep
                     );";
-                }
-                else if (obj.modalidade == "Funcionario")
-                {
-                    sql = @"call sp_insert_funcionario (
-                        @nome,
-                        @cpf_cnpj,
-                        @telefone,
-                        @email,
-                        DATE_FORMAT(@data_nascimento, '%Y/%m/%d')
-                    );";
-                }
-                else
-                {
-                    MessageBox.Show("Modalidade invalida!");
-                    return false;
-                }
-
                 
                 MySqlCommand executa = new MySqlCommand(sql, conexao);
-                executa.Parameters.AddWithValue("@nome", obj.nome);
-                executa.Parameters.AddWithValue("@cpf_cnpj", obj.cpf_cnpj);
-                executa.Parameters.AddWithValue("@telefone", obj.telefone);
-                executa.Parameters.AddWithValue("@data_nascimento", obj.data_nascimento);
-                executa.Parameters.AddWithValue("@email", obj.email);
+                executa.Parameters.AddWithValue("@nome", pessoa.nome);
+                executa.Parameters.AddWithValue("@cpf_cnpj", pessoa.cpf_cnpj);
+                executa.Parameters.AddWithValue("@telefone", pessoa.telefone);
+                executa.Parameters.AddWithValue("@data_nascimento", pessoa.data_nascimento);
+                executa.Parameters.AddWithValue("@email", pessoa.email);
 
                 // Passando os parametros de endereco
 
-                executa.Parameters.AddWithValue("@estado", obj.endereco.estado);
-                executa.Parameters.AddWithValue("@municipio", obj.endereco.municipio);
-                executa.Parameters.AddWithValue("@bairro", obj.endereco.bairro);
-                executa.Parameters.AddWithValue("@rua", obj.endereco.rua);
-                executa.Parameters.AddWithValue("@complemento", obj.endereco.complemento);
-                executa.Parameters.AddWithValue("@n_complemento", obj.endereco.n_casa);
-                executa.Parameters.AddWithValue("@cep", obj.endereco.cep);
+                executa.Parameters.AddWithValue("@estado", pessoa.endereco.estado);
+                executa.Parameters.AddWithValue("@municipio", pessoa.endereco.municipio);
+                executa.Parameters.AddWithValue("@bairro", pessoa.endereco.bairro);
+                executa.Parameters.AddWithValue("@rua", pessoa.endereco.rua);
+                executa.Parameters.AddWithValue("@complemento", pessoa.endereco.complemento);
+                executa.Parameters.AddWithValue("@n_complemento", pessoa.endereco.n_casa);
+                executa.Parameters.AddWithValue("@cep", pessoa.endereco.cep);
 
                 conexao.Open();
                 executa.ExecuteNonQuery();
+
+                if (pessoa is Funcionario funcionario)
+                {
+                    string sqlFuncionario = @"call sp_insert_funcionario (
+                        @tipo
+                    );";
+
+                    MySqlCommand executaFuncionario = new MySqlCommand(sqlFuncionario, conexao);
+
+                    executaFuncionario.Parameters.AddWithValue("@tipo", funcionario.tipo);
+                    executaFuncionario.ExecuteNonQuery();
+
+                }
                 conexao.Close();
 
                 return true; // garante retorno se tudo deu certo

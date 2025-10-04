@@ -10,16 +10,6 @@ namespace ProjetoAssistenciaTecnica.Model
     {
         public int idCliente { get; set; } = 0;
 
-        public string nome { get; set; } = string.Empty;
-
-        public string cpf_cnpj { get; set; } = string.Empty;
-
-        public string telefone { get; set; } = string.Empty;
-
-        public string email { get; set; } = string.Empty;
-
-        public string data_nascimento { get; set; } = string.Empty;
-
-        public string data_cadastro { get; set; } = string.Empty;
+        public int idPesosa { get; set; } = 0;
     }
 }
