@@ -13,9 +13,9 @@ using ViaCep; /* Biblioteca do VIA CEP */
 
 namespace ProjetoAssistenciaTecnica.View
 {
-    public partial class FCliente : Form
+    public partial class FPessoa : Form
     {
-        public FCliente()
+        public FPessoa()
         {
             InitializeComponent();
             habilitarCampos();

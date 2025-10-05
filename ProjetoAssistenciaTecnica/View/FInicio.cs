@@ -14,7 +14,7 @@ namespace ProjetoAssistenciaTecnica
         {
             /* Abrindo a tela de cadastro de cliente */
 
-            FCliente tela = new FCliente();
+            FPessoa tela = new FPessoa();
 
             tela.TopLevel = false;
             tela.FormBorderStyle = FormBorderStyle.None;

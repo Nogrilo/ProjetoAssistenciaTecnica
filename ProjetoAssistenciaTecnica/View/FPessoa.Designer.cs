@@ -1,6 +1,6 @@
 ﻿namespace ProjetoAssistenciaTecnica.View
 {
-    partial class FCliente
+    partial class FPessoa
     {
         /// <summary>
         /// Required designer variable.
@@ -188,9 +188,9 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(23, 18);
             label12.Name = "label12";
-            label12.Size = new Size(204, 26);
+            label12.Size = new Size(209, 26);
             label12.TabIndex = 0;
-            label12.Text = "Cadastro de Cliente";
+            label12.Text = "Cadastro de Pessoa";
             // 
             // tabControl1
             // 
@@ -543,7 +543,7 @@
             botaoPesquisarPessoa.Text = "Pesquisar";
             botaoPesquisarPessoa.UseVisualStyleBackColor = true;
             // 
-            // FCliente
+            // FPessoa
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -552,7 +552,7 @@
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
-            Name = "FCliente";
+            Name = "FPessoa";
             Text = "FPessoa";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
