@@ -63,16 +63,17 @@
             botaoBuscarCEP = new Button();
             label8 = new Label();
             label7 = new Label();
-            button3 = new Button();
             botaoCadastrarCliente = new Button();
             tabPage2 = new TabPage();
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
             Nome = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             textBox1 = new TextBox();
             label14 = new Label();
-            button1 = new Button();
+            botaoPesquisarPessoa = new Button();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             TabPage1.SuspendLayout();
@@ -103,7 +104,7 @@
             txtNome.Location = new Point(106, 66);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(529, 29);
-            txtNome.TabIndex = 3;
+            txtNome.TabIndex = 2;
             // 
             // label2
             // 
@@ -151,7 +152,7 @@
             txtDataNascimento.Mask = "0000/00/00";
             txtDataNascimento.Name = "txtDataNascimento";
             txtDataNascimento.Size = new Size(164, 29);
-            txtDataNascimento.TabIndex = 6;
+            txtDataNascimento.TabIndex = 14;
             // 
             // label6
             // 
@@ -168,7 +169,7 @@
             txtEmail.Location = new Point(104, 187);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(426, 29);
-            txtEmail.TabIndex = 21;
+            txtEmail.TabIndex = 5;
             // 
             // panel1
             // 
@@ -226,7 +227,6 @@
             TabPage1.Controls.Add(botaoBuscarCEP);
             TabPage1.Controls.Add(label8);
             TabPage1.Controls.Add(label7);
-            TabPage1.Controls.Add(button3);
             TabPage1.Controls.Add(botaoCadastrarCliente);
             TabPage1.Controls.Add(label1);
             TabPage1.Controls.Add(txtID);
@@ -250,7 +250,7 @@
             maskCPFcnpj.Location = new Point(106, 107);
             maskCPFcnpj.Name = "maskCPFcnpj";
             maskCPFcnpj.Size = new Size(260, 29);
-            maskCPFcnpj.TabIndex = 58;
+            maskCPFcnpj.TabIndex = 3;
             maskCPFcnpj.TextChanged += maskCPFcnpj_TextChanged;
             // 
             // comboComplemento
@@ -260,7 +260,7 @@
             comboComplemento.Location = new Point(106, 457);
             comboComplemento.Name = "comboComplemento";
             comboComplemento.Size = new Size(151, 29);
-            comboComplemento.TabIndex = 57;
+            comboComplemento.TabIndex = 12;
             // 
             // comboCargo
             // 
@@ -269,7 +269,7 @@
             comboCargo.Location = new Point(909, 116);
             comboCargo.Name = "comboCargo";
             comboCargo.Size = new Size(151, 29);
-            comboCargo.TabIndex = 56;
+            comboCargo.TabIndex = 16;
             // 
             // label17
             // 
@@ -287,7 +287,7 @@
             maskedTelefone.Mask = "(##) # ####-####";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(260, 29);
-            maskedTelefone.TabIndex = 54;
+            maskedTelefone.TabIndex = 4;
             // 
             // comboModalidade
             // 
@@ -296,7 +296,7 @@
             comboModalidade.Location = new Point(909, 64);
             comboModalidade.Name = "comboModalidade";
             comboModalidade.Size = new Size(151, 29);
-            comboModalidade.TabIndex = 53;
+            comboModalidade.TabIndex = 15;
             comboModalidade.SelectedIndexChanged += comboModalidade_SelectedIndexChanged;
             // 
             // label16
@@ -314,7 +314,7 @@
             txtNumeroCasa.Location = new Point(106, 503);
             txtNumeroCasa.Name = "txtNumeroCasa";
             txtNumeroCasa.Size = new Size(59, 29);
-            txtNumeroCasa.TabIndex = 51;
+            txtNumeroCasa.TabIndex = 13;
             // 
             // label15
             // 
@@ -345,7 +345,7 @@
             txtBairro.Location = new Point(104, 417);
             txtBairro.Name = "txtBairro";
             txtBairro.Size = new Size(426, 29);
-            txtBairro.TabIndex = 47;
+            txtBairro.TabIndex = 11;
             // 
             // label11
             // 
@@ -362,7 +362,7 @@
             txtRua.Location = new Point(104, 377);
             txtRua.Name = "txtRua";
             txtRua.Size = new Size(426, 29);
-            txtRua.TabIndex = 45;
+            txtRua.TabIndex = 10;
             // 
             // label10
             // 
@@ -379,7 +379,7 @@
             txtMunicipio.Location = new Point(104, 326);
             txtMunicipio.Name = "txtMunicipio";
             txtMunicipio.Size = new Size(426, 29);
-            txtMunicipio.TabIndex = 43;
+            txtMunicipio.TabIndex = 9;
             // 
             // label9
             // 
@@ -398,7 +398,7 @@
             comboUF.Location = new Point(104, 284);
             comboUF.Name = "comboUF";
             comboUF.Size = new Size(151, 29);
-            comboUF.TabIndex = 41;
+            comboUF.TabIndex = 8;
             // 
             // maskedCEP
             // 
@@ -406,7 +406,7 @@
             maskedCEP.Mask = "#####-###";
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(260, 29);
-            maskedCEP.TabIndex = 40;
+            maskedCEP.TabIndex = 6;
             // 
             // botaoBuscarCEP
             // 
@@ -414,10 +414,10 @@
             botaoBuscarCEP.FlatStyle = FlatStyle.Popup;
             botaoBuscarCEP.Font = new Font("Microsoft Sans Serif", 12.2F);
             botaoBuscarCEP.ForeColor = Color.White;
-            botaoBuscarCEP.Location = new Point(405, 232);
+            botaoBuscarCEP.Location = new Point(405, 231);
             botaoBuscarCEP.Name = "botaoBuscarCEP";
-            botaoBuscarCEP.Size = new Size(125, 34);
-            botaoBuscarCEP.TabIndex = 39;
+            botaoBuscarCEP.Size = new Size(125, 29);
+            botaoBuscarCEP.TabIndex = 7;
             botaoBuscarCEP.Text = "Buscar";
             botaoBuscarCEP.UseVisualStyleBackColor = false;
             botaoBuscarCEP.Click += botaoBuscarCEP_Click;
@@ -442,19 +442,6 @@
             label7.TabIndex = 35;
             label7.Text = "CEP:";
             // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 64, 64);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Microsoft Sans Serif", 12.2F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(910, 228);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 42);
-            button3.TabIndex = 33;
-            button3.Text = "Editar";
-            button3.UseVisualStyleBackColor = false;
-            // 
             // botaoCadastrarCliente
             // 
             botaoCadastrarCliente.BackColor = Color.FromArgb(64, 64, 64);
@@ -473,10 +460,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 30);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1342, 562);
+            tabPage2.Size = new Size(1342, 568);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -484,12 +471,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome, Column1, Column2 });
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1336, 495);
+            dataGridView1.Size = new Size(1336, 501);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -506,11 +493,25 @@
             Nome.Name = "Nome";
             Nome.Width = 700;
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "Cargo";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Data Nascimento";
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            Column2.Width = 125;
+            // 
             // panel2
             // 
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label14);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(botaoPesquisarPessoa);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
@@ -533,14 +534,14 @@
             label14.TabIndex = 3;
             label14.Text = "Nome:";
             // 
-            // button1
+            // botaoPesquisarPessoa
             // 
-            button1.Location = new Point(536, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 36);
-            button1.TabIndex = 1;
-            button1.Text = "Pesquisar";
-            button1.UseVisualStyleBackColor = true;
+            botaoPesquisarPessoa.Location = new Point(536, 15);
+            botaoPesquisarPessoa.Name = "botaoPesquisarPessoa";
+            botaoPesquisarPessoa.Size = new Size(144, 36);
+            botaoPesquisarPessoa.TabIndex = 1;
+            botaoPesquisarPessoa.Text = "Pesquisar";
+            botaoPesquisarPessoa.UseVisualStyleBackColor = true;
             // 
             // FCliente
             // 
@@ -585,11 +586,8 @@
         private Panel panel2;
         private TextBox textBox1;
         private Label label14;
-        private Button button1;
+        private Button botaoPesquisarPessoa;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn Nome;
-        private Button button3;
         private Button botaoCadastrarCliente;
         private Label label7;
         private Button botaoBuscarCEP;
@@ -612,5 +610,9 @@
         private Label label17;
         private ComboBox comboComplemento;
         private MaskedTextBox maskCPFcnpj;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Nome;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
     }
 }

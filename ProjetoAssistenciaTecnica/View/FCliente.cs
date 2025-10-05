@@ -64,19 +64,6 @@ namespace ProjetoAssistenciaTecnica.View
         private void botaoCadastrarCliente_Click(object sender, EventArgs e)
         {
             Pessoa obj = new Pessoa();
-
-            // Verificar se o objeto que vamos instanciar vai ser Funcionario, ou cliente
-
-            if (comboModalidade.Text == "Funcionario")
-            {
-                obj = new Funcionario();
-                
-                ((Funcionario)obj).tipo = comboCargo.Text;
-            }
-            else
-            {
-                obj = new Cliente();
-            }
             
             obj.nome = txtNome.Text;
             obj.cpf_cnpj = maskCPFcnpj.Text;
@@ -93,6 +80,20 @@ namespace ProjetoAssistenciaTecnica.View
             obj.endereco.bairro = txtBairro.Text;
             obj.endereco.complemento = comboComplemento.Text;
             obj.endereco.n_casa = txtNumeroCasa.Text;
+
+
+            // Verificar se o objeto que vamos instanciar vai ser Funcionario, ou cliente
+
+            if (comboModalidade.Text == "Funcionario")
+            {
+                obj = new Funcionario();
+
+                ((Funcionario)obj).tipo = comboCargo.Text;
+            }
+            else
+            {
+                obj = new Cliente();
+            }
 
             ControllerCliente controllerPessoa = new ControllerCliente();
 
