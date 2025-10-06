@@ -90,16 +90,15 @@ namespace ProjetoAssistenciaTecnica.Controller
             {
                 DataTable tabelaPessoa = new DataTable();
 
-                string comandoSql = "";
+                string comandoSql = "select * from tb_pessoa";
 
                 MySqlCommand executaTabelaPessoa = new MySqlCommand(comandoSql, conexao);
-
 
                 /* Abrir conexao */
                 conexao.Open();
                 executaTabelaPessoa.ExecuteNonQuery();
 
-                MySqlDataAdapter adaptador = new MySqlDataAdapter();
+                MySqlDataAdapter adaptador = new MySqlDataAdapter(executaTabelaPessoa);
 
                 adaptador.Fill(tabelaPessoa);
 
@@ -109,7 +108,7 @@ namespace ProjetoAssistenciaTecnica.Controller
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao buscar os dados: \n", ex.Message);
+                MessageBox.Show(ex.Message);
                 return null;
             }
         }

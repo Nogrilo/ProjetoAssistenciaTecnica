@@ -68,7 +68,9 @@
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
             Nome = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             textBox1 = new TextBox();
@@ -471,7 +473,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome, Column1, Column2 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nome, Column3, Column1, Column4, Column2 });
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
@@ -481,6 +483,7 @@
             // 
             // ID
             // 
+            ID.DataPropertyName = "idPessoa";
             ID.HeaderText = "ID";
             ID.MinimumWidth = 6;
             ID.Name = "ID";
@@ -488,10 +491,18 @@
             // 
             // Nome
             // 
+            Nome.DataPropertyName = "nome";
             Nome.HeaderText = "Nome";
             Nome.MinimumWidth = 6;
             Nome.Name = "Nome";
             Nome.Width = 700;
+            // 
+            // Column3
+            // 
+            Column3.DataPropertyName = "cpf_cnpj";
+            Column3.HeaderText = "CPF";
+            Column3.Name = "Column3";
+            Column3.Width = 125;
             // 
             // Column1
             // 
@@ -500,8 +511,16 @@
             Column1.ReadOnly = true;
             Column1.Width = 150;
             // 
+            // Column4
+            // 
+            Column4.DataPropertyName = "telefone";
+            Column4.HeaderText = "Telefone";
+            Column4.Name = "Column4";
+            Column4.Width = 150;
+            // 
             // Column2
             // 
+            Column2.DataPropertyName = "data_nascimento";
             Column2.HeaderText = "Data Nascimento";
             Column2.Name = "Column2";
             Column2.ReadOnly = true;
@@ -613,7 +632,9 @@
         private MaskedTextBox maskCPFcnpj;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nome;
+        private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column2;
     }
 }
