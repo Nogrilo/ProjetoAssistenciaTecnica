@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient; // Importar o SQL no codigo
 using ProjetoAssistenciaTecnica.Model;
 using System.Windows.Forms;
+using System.Data;
 
 namespace ProjetoAssistenciaTecnica.Controller
 {
-    class ControllerCliente
+    class ControllerPessoa
     {
         /* Vincular ao banco de dados */
         private MySqlConnection conexao; 
 
-        public ControllerCliente ()
+        public ControllerPessoa ()
         {
             this.conexao = new Conexao().GetConnection();
         }
@@ -79,6 +80,37 @@ namespace ProjetoAssistenciaTecnica.Controller
             {
                 MessageBox.Show("Erro ao cadastrar: " + ex.Message);
                 return false;
+            }
+        }
+
+        /* Funcao de buscar os dados no banco de dados */
+        public DataTable listarPessoas()
+        {
+            try
+            {
+                DataTable tabelaPessoa = new DataTable();
+
+                string comandoSql = "";
+
+                MySqlCommand executaTabelaPessoa = new MySqlCommand(comandoSql, conexao);
+
+
+                /* Abrir conexao */
+                conexao.Open();
+                executaTabelaPessoa.ExecuteNonQuery();
+
+                MySqlDataAdapter adaptador = new MySqlDataAdapter();
+
+                adaptador.Fill(tabelaPessoa);
+
+                conexao.Close();
+
+                return tabelaPessoa;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar os dados: \n", ex.Message);
+                return null;
             }
         }
     }

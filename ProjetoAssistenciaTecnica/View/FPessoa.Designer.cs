@@ -460,10 +460,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 30);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1342, 568);
+            tabPage2.Size = new Size(1342, 562);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -476,7 +476,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1336, 501);
+            dataGridView1.Size = new Size(1336, 495);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -542,6 +542,7 @@
             botaoPesquisarPessoa.TabIndex = 1;
             botaoPesquisarPessoa.Text = "Pesquisar";
             botaoPesquisarPessoa.UseVisualStyleBackColor = true;
+            botaoPesquisarPessoa.Click += botaoPesquisarPessoa_Click;
             // 
             // FPessoa
             // 

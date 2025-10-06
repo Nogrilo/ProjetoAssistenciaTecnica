@@ -64,7 +64,7 @@ namespace ProjetoAssistenciaTecnica.View
         private void botaoCadastrarCliente_Click(object sender, EventArgs e)
         {
             Pessoa obj = new Pessoa();
-            
+
             obj.nome = txtNome.Text;
             obj.cpf_cnpj = maskCPFcnpj.Text;
             obj.telefone = maskedTelefone.Text;
@@ -95,7 +95,7 @@ namespace ProjetoAssistenciaTecnica.View
                 obj = new Cliente();
             }
 
-            ControllerCliente controllerPessoa = new ControllerCliente();
+            ControllerPessoa controllerPessoa = new ControllerPessoa();
 
             controllerPessoa.cadastrarPessoa(obj);
             MessageBox.Show("Pessoa Cadastrada com Sucesso!");
@@ -118,7 +118,7 @@ namespace ProjetoAssistenciaTecnica.View
         {
             desabilitarCamposFuncionario();
         }
-        
+
         private void maskCPFcnpj_TextChanged(object sender, EventArgs e)
         {
             /*
@@ -140,6 +140,12 @@ namespace ProjetoAssistenciaTecnica.View
                 maskCPFcnpj.Mask = maskCNPJ;
             }
             */
+        }
+
+        private void botaoPesquisarPessoa_Click(object sender, EventArgs e)
+        {
+            ControllerPessoa controllerPessoa = new ControllerPessoa();
+            dataGridView1.DataSource = controllerPessoa.listarPessoas();
         }
     }
 }
