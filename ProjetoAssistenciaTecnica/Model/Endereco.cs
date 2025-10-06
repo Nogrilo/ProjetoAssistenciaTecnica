@@ -8,14 +8,14 @@ namespace ProjetoAssistenciaTecnica.Model
 {
     public class Endereco
     {
-        public int idEndereco { get; set; }
-        public string estado { get; set; }
-        public string municipio { get; set; }
-        public string cep { get; set; }
-        public string rua { get; set; }
-        public string bairro { get; set; }
-        public string complemento { get; set; }
-        public string n_casa { get; set; }
-        public int id_pertencente { get; set; }
+        public int idEndereco { get; set; } = 0;
+        public string estado { get; set; } = string.Empty;
+        public string municipio { get; set; } = string.Empty;
+        public string cep { get; set; } = string.Empty;
+        public string rua { get; set; } = string.Empty;
+        public string bairro { get; set; } = string.Empty;
+        public string complemento { get; set; } = string.Empty;
+        public string n_casa { get; set; } = string.Empty;
+        public int id_pertencente { get; set; } = 0;
     }
 }
