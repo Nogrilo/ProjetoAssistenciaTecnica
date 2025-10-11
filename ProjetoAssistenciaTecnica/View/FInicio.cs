@@ -73,5 +73,10 @@ namespace ProjetoAssistenciaTecnica
             /* Adicionar um icone na aba*/
             tabControl1.TabPages[abas - 1].ImageIndex = 0;
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
