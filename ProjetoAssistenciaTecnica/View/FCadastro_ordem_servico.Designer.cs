@@ -59,12 +59,17 @@
             label21 = new Label();
             txtNumeroCasa = new TextBox();
             label15 = new Label();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(125, 416);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(104, 129);
             label2.Name = "label2";
             label2.Size = new Size(64, 20);
             label2.TabIndex = 0;
@@ -72,7 +77,10 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(221, 413);
+            textBox2.BackColor = Color.FromArgb(64, 64, 64);
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.ForeColor = Color.White;
+            textBox2.Location = new Point(200, 126);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(179, 27);
             textBox2.TabIndex = 1;
@@ -80,7 +88,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(125, 459);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(104, 172);
             label3.Name = "label3";
             label3.Size = new Size(53, 20);
             label3.TabIndex = 0;
@@ -88,7 +97,10 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(221, 456);
+            textBox3.BackColor = Color.FromArgb(64, 64, 64);
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.ForeColor = Color.White;
+            textBox3.Location = new Point(200, 169);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(179, 27);
             textBox3.TabIndex = 1;
@@ -96,7 +108,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(125, 501);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(104, 214);
             label4.Name = "label4";
             label4.Size = new Size(82, 20);
             label4.TabIndex = 0;
@@ -104,7 +117,10 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(221, 498);
+            textBox4.BackColor = Color.FromArgb(64, 64, 64);
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
+            textBox4.ForeColor = Color.White;
+            textBox4.Location = new Point(200, 211);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(179, 27);
             textBox4.TabIndex = 1;
@@ -112,7 +128,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(430, 416);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(409, 129);
             label5.Name = "label5";
             label5.Size = new Size(64, 20);
             label5.TabIndex = 0;
@@ -120,7 +137,10 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(511, 413);
+            textBox5.BackColor = Color.FromArgb(64, 64, 64);
+            textBox5.BorderStyle = BorderStyle.FixedSingle;
+            textBox5.ForeColor = Color.White;
+            textBox5.Location = new Point(490, 126);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(151, 27);
             textBox5.TabIndex = 1;
@@ -129,7 +149,8 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(37, 94);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(23, 20);
             label6.Name = "label6";
             label6.Size = new Size(82, 40);
             label6.TabIndex = 0;
@@ -137,7 +158,9 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(125, 102);
+            textBox6.BackColor = Color.FromArgb(64, 64, 64);
+            textBox6.BorderStyle = BorderStyle.FixedSingle;
+            textBox6.Location = new Point(111, 28);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(239, 27);
             textBox6.TabIndex = 1;
@@ -145,7 +168,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(125, 550);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(104, 263);
             label7.Name = "label7";
             label7.Size = new Size(96, 20);
             label7.TabIndex = 0;
@@ -153,7 +177,10 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(125, 573);
+            textBox7.BackColor = Color.FromArgb(64, 64, 64);
+            textBox7.BorderStyle = BorderStyle.FixedSingle;
+            textBox7.ForeColor = Color.White;
+            textBox7.Location = new Point(104, 286);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(578, 58);
@@ -162,7 +189,8 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(430, 459);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(409, 172);
             label8.Name = "label8";
             label8.Size = new Size(75, 20);
             label8.TabIndex = 0;
@@ -170,8 +198,10 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.FromArgb(64, 64, 64);
+            comboBox1.ForeColor = Color.White;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(511, 456);
+            comboBox1.Location = new Point(490, 169);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 2;
@@ -180,7 +210,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(639, 26);
+            label1.ForeColor = Color.Gray;
+            label1.Location = new Point(670, 26);
             label1.Name = "label1";
             label1.Size = new Size(83, 20);
             label1.TabIndex = 0;
@@ -188,7 +219,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(724, 23);
+            textBox1.Location = new Point(755, 23);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(62, 27);
             textBox1.TabIndex = 1;
@@ -196,7 +227,8 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(123, 299);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(102, 12);
             label9.Name = "label9";
             label9.Size = new Size(129, 20);
             label9.TabIndex = 0;
@@ -204,7 +236,10 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(125, 322);
+            textBox8.BackColor = Color.FromArgb(64, 64, 64);
+            textBox8.BorderStyle = BorderStyle.FixedSingle;
+            textBox8.ForeColor = Color.White;
+            textBox8.Location = new Point(104, 35);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(578, 78);
@@ -214,6 +249,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.White;
             label10.Location = new Point(12, 9);
             label10.Name = "label10";
             label10.Size = new Size(282, 41);
@@ -222,7 +258,9 @@
             // 
             // maskedTelefone
             // 
-            maskedTelefone.Location = new Point(596, 160);
+            maskedTelefone.BackColor = Color.FromArgb(64, 64, 64);
+            maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskedTelefone.Location = new Point(582, 86);
             maskedTelefone.Mask = "(##) # ####-####";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(190, 27);
@@ -230,7 +268,9 @@
             // 
             // txtBairro
             // 
-            txtBairro.Location = new Point(125, 240);
+            txtBairro.BackColor = Color.FromArgb(64, 64, 64);
+            txtBairro.BorderStyle = BorderStyle.FixedSingle;
+            txtBairro.Location = new Point(111, 166);
             txtBairro.Name = "txtBairro";
             txtBairro.Size = new Size(360, 27);
             txtBairro.TabIndex = 63;
@@ -238,7 +278,8 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(37, 243);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(23, 169);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(52, 20);
@@ -247,7 +288,9 @@
             // 
             // txtRua
             // 
-            txtRua.Location = new Point(125, 201);
+            txtRua.BackColor = Color.FromArgb(64, 64, 64);
+            txtRua.BorderStyle = BorderStyle.FixedSingle;
+            txtRua.Location = new Point(111, 127);
             txtRua.Name = "txtRua";
             txtRua.Size = new Size(360, 27);
             txtRua.TabIndex = 62;
@@ -255,7 +298,8 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(37, 201);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(23, 127);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(37, 20);
@@ -264,7 +308,9 @@
             // 
             // txtMunicipio
             // 
-            txtMunicipio.Location = new Point(596, 204);
+            txtMunicipio.BackColor = Color.FromArgb(64, 64, 64);
+            txtMunicipio.BorderStyle = BorderStyle.FixedSingle;
+            txtMunicipio.Location = new Point(582, 130);
             txtMunicipio.Name = "txtMunicipio";
             txtMunicipio.Size = new Size(190, 27);
             txtMunicipio.TabIndex = 61;
@@ -272,7 +318,8 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(508, 204);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(494, 130);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(78, 20);
@@ -282,7 +329,8 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(37, 159);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(23, 85);
             label18.Margin = new Padding(4, 0, 4, 0);
             label18.Name = "label18";
             label18.Size = new Size(53, 20);
@@ -291,7 +339,9 @@
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(125, 156);
+            txtNome.BackColor = Color.FromArgb(64, 64, 64);
+            txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.Location = new Point(111, 82);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(360, 27);
             txtNome.TabIndex = 51;
@@ -299,7 +349,8 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(508, 163);
+            label21.ForeColor = Color.White;
+            label21.Location = new Point(494, 89);
             label21.Margin = new Padding(4, 0, 4, 0);
             label21.Name = "label21";
             label21.Size = new Size(69, 20);
@@ -308,7 +359,9 @@
             // 
             // txtNumeroCasa
             // 
-            txtNumeroCasa.Location = new Point(596, 243);
+            txtNumeroCasa.BackColor = Color.FromArgb(64, 64, 64);
+            txtNumeroCasa.BorderStyle = BorderStyle.FixedSingle;
+            txtNumeroCasa.Location = new Point(582, 169);
             txtNumeroCasa.Name = "txtNumeroCasa";
             txtNumeroCasa.Size = new Size(92, 27);
             txtNumeroCasa.TabIndex = 65;
@@ -317,52 +370,76 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F);
-            label15.ForeColor = SystemColors.ControlText;
-            label15.Location = new Point(508, 246);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(494, 172);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.Size = new Size(29, 20);
             label15.TabIndex = 73;
             label15.Text = "Nº:";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(36, 36, 36);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(maskedTelefone);
+            panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(txtNumeroCasa);
+            panel1.Controls.Add(label21);
+            panel1.Controls.Add(label15);
+            panel1.Controls.Add(txtNome);
+            panel1.Controls.Add(txtBairro);
+            panel1.Controls.Add(label18);
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label14);
+            panel1.Controls.Add(txtRua);
+            panel1.Controls.Add(txtMunicipio);
+            panel1.Controls.Add(label12);
+            panel1.Location = new Point(23, 66);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(794, 219);
+            panel1.TabIndex = 74;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(41, 41, 41);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(textBox4);
+            panel2.Location = new Point(23, 302);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(794, 357);
+            panel2.TabIndex = 75;
+            // 
             // FCadastro_ordem_servico
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(851, 674);
-            Controls.Add(maskedTelefone);
-            Controls.Add(txtNumeroCasa);
-            Controls.Add(label15);
-            Controls.Add(txtBairro);
-            Controls.Add(label11);
-            Controls.Add(txtRua);
-            Controls.Add(label12);
-            Controls.Add(txtMunicipio);
-            Controls.Add(label14);
-            Controls.Add(label18);
-            Controls.Add(txtNome);
-            Controls.Add(label21);
+            BackColor = Color.FromArgb(37, 37, 37);
+            ClientSize = new Size(851, 685);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(label10);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(label8);
-            Controls.Add(textBox5);
-            Controls.Add(label7);
-            Controls.Add(textBox4);
-            Controls.Add(label6);
-            Controls.Add(textBox3);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(textBox8);
-            Controls.Add(textBox2);
-            Controls.Add(label9);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "FCadastro_ordem_servico";
             Text = "Form1";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -401,5 +478,7 @@
         private Label label18;
         private TextBox txtNome;
         private Label label21;
+        private Panel panel1;
+        private Panel panel2;
     }
 }
