@@ -662,6 +662,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1141, 687);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
