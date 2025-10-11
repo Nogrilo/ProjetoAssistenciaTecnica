@@ -69,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(104, 129);
+            label2.Location = new Point(108, 145);
             label2.Name = "label2";
             label2.Size = new Size(64, 20);
             label2.TabIndex = 0;
@@ -80,7 +80,7 @@
             textBox2.BackColor = Color.FromArgb(64, 64, 64);
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(200, 126);
+            textBox2.Location = new Point(217, 139);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(179, 27);
             textBox2.TabIndex = 1;
@@ -89,7 +89,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(104, 172);
+            label3.Location = new Point(108, 188);
             label3.Name = "label3";
             label3.Size = new Size(53, 20);
             label3.TabIndex = 0;
@@ -100,7 +100,7 @@
             textBox3.BackColor = Color.FromArgb(64, 64, 64);
             textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(200, 169);
+            textBox3.Location = new Point(217, 182);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(179, 27);
             textBox3.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.White;
-            label4.Location = new Point(104, 214);
+            label4.Location = new Point(108, 230);
             label4.Name = "label4";
             label4.Size = new Size(82, 20);
             label4.TabIndex = 0;
@@ -120,7 +120,7 @@
             textBox4.BackColor = Color.FromArgb(64, 64, 64);
             textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.ForeColor = Color.White;
-            textBox4.Location = new Point(200, 211);
+            textBox4.Location = new Point(217, 224);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(179, 27);
             textBox4.TabIndex = 1;
@@ -129,7 +129,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.White;
-            label5.Location = new Point(409, 129);
+            label5.Location = new Point(424, 145);
             label5.Name = "label5";
             label5.Size = new Size(64, 20);
             label5.TabIndex = 0;
@@ -140,7 +140,7 @@
             textBox5.BackColor = Color.FromArgb(64, 64, 64);
             textBox5.BorderStyle = BorderStyle.FixedSingle;
             textBox5.ForeColor = Color.White;
-            textBox5.Location = new Point(490, 126);
+            textBox5.Location = new Point(523, 142);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(151, 27);
             textBox5.TabIndex = 1;
@@ -169,7 +169,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.White;
-            label7.Location = new Point(104, 263);
+            label7.Location = new Point(104, 286);
             label7.Name = "label7";
             label7.Size = new Size(96, 20);
             label7.TabIndex = 0;
@@ -180,7 +180,7 @@
             textBox7.BackColor = Color.FromArgb(64, 64, 64);
             textBox7.BorderStyle = BorderStyle.FixedSingle;
             textBox7.ForeColor = Color.White;
-            textBox7.Location = new Point(104, 286);
+            textBox7.Location = new Point(104, 324);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(578, 58);
@@ -190,7 +190,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = Color.White;
-            label8.Location = new Point(409, 172);
+            label8.Location = new Point(424, 188);
             label8.Name = "label8";
             label8.Size = new Size(75, 20);
             label8.TabIndex = 0;
@@ -201,17 +201,18 @@
             comboBox1.BackColor = Color.FromArgb(64, 64, 64);
             comboBox1.ForeColor = Color.White;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(490, 169);
+            comboBox1.Location = new Point(523, 185);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 2;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Gray;
-            label1.Location = new Point(670, 26);
+            label1.Location = new Point(903, 26);
             label1.Name = "label1";
             label1.Size = new Size(83, 20);
             label1.TabIndex = 0;
@@ -219,7 +220,8 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(755, 23);
+            textBox1.Anchor = AnchorStyles.Top;
+            textBox1.Location = new Point(988, 23);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(62, 27);
             textBox1.TabIndex = 1;
@@ -239,7 +241,7 @@
             textBox8.BackColor = Color.FromArgb(64, 64, 64);
             textBox8.BorderStyle = BorderStyle.FixedSingle;
             textBox8.ForeColor = Color.White;
-            textBox8.Location = new Point(104, 35);
+            textBox8.Location = new Point(104, 46);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(578, 78);
@@ -247,10 +249,11 @@
             // 
             // label10
             // 
+            label10.Anchor = AnchorStyles.Top;
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(12, 9);
+            label10.Location = new Point(216, 9);
             label10.Name = "label10";
             label10.Size = new Size(282, 41);
             label10.TabIndex = 3;
@@ -260,7 +263,7 @@
             // 
             maskedTelefone.BackColor = Color.FromArgb(64, 64, 64);
             maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
-            maskedTelefone.Location = new Point(582, 86);
+            maskedTelefone.Location = new Point(640, 89);
             maskedTelefone.Mask = "(##) # ####-####";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(190, 27);
@@ -310,7 +313,7 @@
             // 
             txtMunicipio.BackColor = Color.FromArgb(64, 64, 64);
             txtMunicipio.BorderStyle = BorderStyle.FixedSingle;
-            txtMunicipio.Location = new Point(582, 130);
+            txtMunicipio.Location = new Point(640, 133);
             txtMunicipio.Name = "txtMunicipio";
             txtMunicipio.Size = new Size(190, 27);
             txtMunicipio.TabIndex = 61;
@@ -319,7 +322,7 @@
             // 
             label14.AutoSize = true;
             label14.ForeColor = Color.White;
-            label14.Location = new Point(494, 130);
+            label14.Location = new Point(523, 132);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(78, 20);
@@ -350,7 +353,7 @@
             // 
             label21.AutoSize = true;
             label21.ForeColor = Color.White;
-            label21.Location = new Point(494, 89);
+            label21.Location = new Point(523, 91);
             label21.Margin = new Padding(4, 0, 4, 0);
             label21.Name = "label21";
             label21.Size = new Size(69, 20);
@@ -361,7 +364,7 @@
             // 
             txtNumeroCasa.BackColor = Color.FromArgb(64, 64, 64);
             txtNumeroCasa.BorderStyle = BorderStyle.FixedSingle;
-            txtNumeroCasa.Location = new Point(582, 169);
+            txtNumeroCasa.Location = new Point(640, 172);
             txtNumeroCasa.Name = "txtNumeroCasa";
             txtNumeroCasa.Size = new Size(92, 27);
             txtNumeroCasa.TabIndex = 65;
@@ -371,7 +374,7 @@
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(494, 172);
+            label15.Location = new Point(523, 174);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.Size = new Size(29, 20);
@@ -380,6 +383,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top;
             panel1.BackColor = Color.FromArgb(36, 36, 36);
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label6);
@@ -396,14 +400,16 @@
             panel1.Controls.Add(txtRua);
             panel1.Controls.Add(txtMunicipio);
             panel1.Controls.Add(label12);
-            panel1.Location = new Point(23, 66);
+            panel1.Location = new Point(190, 66);
             panel1.Name = "panel1";
-            panel1.Size = new Size(794, 219);
+            panel1.Size = new Size(860, 219);
             panel1.TabIndex = 74;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(41, 41, 41);
+            panel2.Anchor = AnchorStyles.Top;
+            panel2.BackColor = Color.FromArgb(36, 36, 36);
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
@@ -418,17 +424,17 @@
             panel2.Controls.Add(label7);
             panel2.Controls.Add(textBox3);
             panel2.Controls.Add(textBox4);
-            panel2.Location = new Point(23, 302);
+            panel2.Location = new Point(190, 302);
             panel2.Name = "panel2";
-            panel2.Size = new Size(794, 357);
+            panel2.Size = new Size(860, 402);
             panel2.TabIndex = 75;
             // 
             // FCadastro_ordem_servico
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(37, 37, 37);
-            ClientSize = new Size(851, 685);
+            BackColor = Color.FromArgb(36, 36, 36);
+            ClientSize = new Size(1258, 716);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label10);

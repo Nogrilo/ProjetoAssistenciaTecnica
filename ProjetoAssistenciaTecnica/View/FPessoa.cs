@@ -147,5 +147,10 @@ namespace ProjetoAssistenciaTecnica.View
             ControllerPessoa controllerPessoa = new ControllerPessoa();
             dataGridView1.DataSource = controllerPessoa.listarPessoas();
         }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
