@@ -56,6 +56,8 @@
             textBox12 = new TextBox();
             label14 = new Label();
             textBox13 = new TextBox();
+            label15 = new Label();
+            textBox14 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -283,12 +285,30 @@
             textBox13.Size = new Size(125, 27);
             textBox13.TabIndex = 1;
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(44, 345);
+            label15.Name = "label15";
+            label15.Size = new Size(124, 20);
+            label15.TabIndex = 0;
+            label15.Text = "Descrição serviço";
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(44, 378);
+            textBox14.Multiline = true;
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(391, 67);
+            textBox14.TabIndex = 1;
+            // 
             // FConserto_produto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(comboBox1);
+            Controls.Add(textBox14);
             Controls.Add(textBox13);
             Controls.Add(textBox12);
             Controls.Add(textBox11);
@@ -297,6 +317,7 @@
             Controls.Add(textBox8);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
+            Controls.Add(label15);
             Controls.Add(textBox5);
             Controls.Add(label14);
             Controls.Add(textBox4);
@@ -352,5 +373,7 @@
         private TextBox textBox12;
         private Label label14;
         private TextBox textBox13;
+        private Label label15;
+        private TextBox textBox14;
     }
 }

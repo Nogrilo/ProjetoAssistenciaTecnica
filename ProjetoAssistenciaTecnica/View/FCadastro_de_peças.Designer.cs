@@ -57,12 +57,30 @@
             textBox7 = new TextBox();
             label4 = new Label();
             textBox4 = new TextBox();
+            tabPage3 = new TabPage();
+            panel4 = new Panel();
+            button3 = new Button();
+            label11 = new Label();
+            label12 = new Label();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            label13 = new Label();
+            textBox12 = new TextBox();
+            textBox13 = new TextBox();
+            label14 = new Label();
+            label15 = new Label();
+            textBox14 = new TextBox();
+            label16 = new Label();
+            textBox15 = new TextBox();
+            button4 = new Button();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            tabPage3.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -142,11 +160,12 @@
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 74);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(800, 376);
+            tabControl1.Size = new Size(800, 445);
             tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -319,11 +338,157 @@
             textBox4.Size = new Size(168, 27);
             textBox4.TabIndex = 3;
             // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(panel4);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(792, 412);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Inclusao";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(button4);
+            panel4.Controls.Add(button3);
+            panel4.Controls.Add(label11);
+            panel4.Controls.Add(label12);
+            panel4.Controls.Add(textBox10);
+            panel4.Controls.Add(textBox11);
+            panel4.Controls.Add(label13);
+            panel4.Controls.Add(textBox12);
+            panel4.Controls.Add(textBox15);
+            panel4.Controls.Add(label16);
+            panel4.Controls.Add(textBox13);
+            panel4.Controls.Add(label14);
+            panel4.Controls.Add(label15);
+            panel4.Controls.Add(textBox14);
+            panel4.Location = new Point(57, 43);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(678, 302);
+            panel4.TabIndex = 6;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(567, 45);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 4;
+            button3.Text = "Pesquisar";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(489, 15);
+            label11.Name = "label11";
+            label11.Size = new Size(58, 20);
+            label11.TabIndex = 0;
+            label11.Text = "Codigo";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(37, 83);
+            label12.Name = "label12";
+            label12.Size = new Size(50, 20);
+            label12.TabIndex = 0;
+            label12.Text = "nome:";
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(553, 12);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(108, 27);
+            textBox10.TabIndex = 3;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(106, 83);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(288, 27);
+            textBox11.TabIndex = 3;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(37, 124);
+            label13.Name = "label13";
+            label13.Size = new Size(103, 20);
+            label13.TabIndex = 1;
+            label13.Text = "custo material";
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(156, 124);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(288, 27);
+            textBox12.TabIndex = 3;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(138, 210);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(168, 27);
+            textBox13.TabIndex = 3;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(37, 213);
+            label14.Name = "label14";
+            label14.Size = new Size(86, 20);
+            label14.TabIndex = 1;
+            label14.Text = "valor venda";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(37, 168);
+            label15.Name = "label15";
+            label15.Size = new Size(86, 20);
+            label15.TabIndex = 1;
+            label15.Text = "valor venda";
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(138, 165);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(168, 27);
+            textBox14.TabIndex = 3;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(77, 15);
+            label16.Name = "label16";
+            label16.Size = new Size(32, 20);
+            label16.TabIndex = 1;
+            label16.Text = "tick";
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(124, 12);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(168, 27);
+            textBox15.TabIndex = 3;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(567, 104);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 4;
+            button4.Text = "Adicionar";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // FCadastro_de_peças
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 519);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Name = "FCadastro_de_peças";
@@ -337,6 +502,9 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -370,5 +538,21 @@
         private Label label4;
         private TextBox textBox7;
         private Label label8;
+        private TabPage tabPage3;
+        private Panel panel4;
+        private Button button4;
+        private Button button3;
+        private Label label11;
+        private Label label12;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private Label label13;
+        private TextBox textBox12;
+        private TextBox textBox15;
+        private Label label16;
+        private TextBox textBox13;
+        private Label label14;
+        private Label label15;
+        private TextBox textBox14;
     }
 }
