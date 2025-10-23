@@ -78,7 +78,7 @@ namespace ProjetoAssistenciaTecnica.View
             obj.endereco.municipio = txtMunicipio.Text;
             obj.endereco.rua = txtRua.Text;
             obj.endereco.bairro = txtBairro.Text;
-            obj.endereco.complemento = comboComplemento.Text;
+            obj.endereco.complemento = comboComplemento.Text.Trim();
             obj.endereco.n_casa = txtNumeroCasa.Text;
 
 
