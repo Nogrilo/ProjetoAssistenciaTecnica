@@ -91,7 +91,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(45, 112);
+            label2.Location = new Point(45, 107);
             label2.Name = "label2";
             label2.Size = new Size(157, 20);
             label2.TabIndex = 0;
@@ -103,7 +103,7 @@
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(45, 135);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(155, 27);
+            textBox2.Size = new Size(211, 27);
             textBox2.TabIndex = 1;
             // 
             // label3
@@ -186,7 +186,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.White;
-            label7.Location = new Point(45, 57);
+            label7.Location = new Point(45, 64);
             label7.Name = "label7";
             label7.Size = new Size(52, 20);
             label7.TabIndex = 0;
@@ -196,7 +196,7 @@
             // 
             comboBox1.BackColor = Color.FromArgb(64, 64, 64);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(135, 57);
+            comboBox1.Location = new Point(135, 64);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 28);
             comboBox1.TabIndex = 2;
@@ -370,7 +370,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(64, 20);
+            label16.Location = new Point(134, 22);
             label16.Name = "label16";
             label16.Size = new Size(211, 38);
             label16.TabIndex = 0;
@@ -420,7 +420,7 @@
             panel3.Controls.Add(label10);
             panel3.Location = new Point(683, 107);
             panel3.Name = "panel3";
-            panel3.Size = new Size(427, 374);
+            panel3.Size = new Size(427, 404);
             panel3.TabIndex = 5;
             // 
             // button1
@@ -429,7 +429,7 @@
             button1.ForeColor = Color.White;
             button1.Location = new Point(252, 318);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(94, 51);
             button1.TabIndex = 6;
             button1.Text = "Salvar";
             button1.UseVisualStyleBackColor = false;
