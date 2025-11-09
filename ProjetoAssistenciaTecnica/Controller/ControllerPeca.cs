@@ -33,9 +33,9 @@ namespace ProjetoAssistenciaTecnica.Controller
                 /* Inserindo os dados na tabela peca */
 
                 MySqlCommand executaPeca = new MySqlCommand(sqlPeca, conexao);
-                executaPeca.Parameters.AddWithValue("@nome", obj.tipo);
-                executaPeca.Parameters.AddWithValue("@cpf_cnpj", obj.valorCusto);
-                executaPeca.Parameters.AddWithValue("@telefone", obj.valorRepasse);
+                executaPeca.Parameters.AddWithValue("@tipo", obj.tipo);
+                executaPeca.Parameters.AddWithValue("@valor_custo", obj.valorCusto);
+                executaPeca.Parameters.AddWithValue("@valor_repasse", obj.valorRepasse);
 
                 /* Abrir a conexao */
                 conexao.Open();
