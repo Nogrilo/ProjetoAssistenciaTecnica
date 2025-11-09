@@ -1,0 +1,14 @@
+ALTER TABLE tb_estoque_pecas MODIFY COLUMN codigo VARCHAR(10)
+
+delimiter &
+CREATE TRIGGER T_GERAR_CODIGO_PC
+BEFORE INSERT ON tb_estoque_pecas
+FOR EACH ROW 
+BEGIN 
+ DECLARE cdg VARCHAR(10); 
+ SET cdg := (CONCAT('PC', DAY(CURDATE()), HOUR(CURTIME()),MINUTE(CURTIME()), SECOND(CURTIME())));
+ SET NEW.codigo = cdg;
+END&
+delimiter ;
+
+
