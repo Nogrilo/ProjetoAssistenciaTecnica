@@ -110,13 +110,13 @@ namespace ProjetoAssistenciaTecnica
         {
             /* Abrindo a tela de cadastro de ordem de servico */
 
-            FConserto_produto tela = new FConserto_produto();
+            FCadastro_de_pecas tela = new FCadastro_de_pecas();
 
             tela.TopLevel = false;
             tela.FormBorderStyle = FormBorderStyle.None;
 
             /* Adicionar uma nova aba ja existente */
-            tabControl1.TabPages.Add("Ordem de Servico");
+            tabControl1.TabPages.Add("Cadastro de Peça");
 
             /* Identificar quantas abas ja existem abertas */
             int abas = tabControl1.TabPages.Count;

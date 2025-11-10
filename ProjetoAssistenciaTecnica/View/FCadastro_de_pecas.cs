@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ProjetoAssistenciaTecnica.View
 {
-    public partial class FCadastro_de_peças : Form
+    public partial class FCadastro_de_pecas : Form
     {
-        public FCadastro_de_peças()
+        public FCadastro_de_pecas()
         {
             InitializeComponent();
         }

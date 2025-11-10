@@ -1,6 +1,6 @@
 ﻿namespace ProjetoAssistenciaTecnica.View
 {
-    partial class FCadastro_de_peças
+    partial class FCadastro_de_pecas
     {
         /// <summary>
         /// Required designer variable.
