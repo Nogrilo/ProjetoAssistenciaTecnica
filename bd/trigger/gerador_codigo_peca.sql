@@ -1,4 +1,4 @@
-ALTER TABLE tb_estoque_pecas MODIFY COLUMN codigo VARCHAR(10)
+6ALTER TABLE tb_estoque_pecas MODIFY COLUMN codigo VARCHAR(10)
 
 delimiter &
 CREATE TRIGGER T_GERAR_CODIGO_PC

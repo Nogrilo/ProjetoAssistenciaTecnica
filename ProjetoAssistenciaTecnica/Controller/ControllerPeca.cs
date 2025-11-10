@@ -24,10 +24,10 @@ namespace ProjetoAssistenciaTecnica.Controller
             try
             {
                 /* Inserindo os dados na tabela de pessoa */
-                string sqlPeca = @"insert into tb_estoque_peca (tipo, valor_custo, valor_repasse) values (
+                string sqlPeca = @"insert into tb_estoque_pecas (tipo, valor_custo, valor_repasse) values (
                 @tipo,
                 @valor_custo,
-                @valor_repasse,
+                @valor_repasse
                 );";
 
                 /* Inserindo os dados na tabela peca */
