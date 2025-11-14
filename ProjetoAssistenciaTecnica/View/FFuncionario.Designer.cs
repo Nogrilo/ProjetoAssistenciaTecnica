@@ -31,24 +31,25 @@
             panel1 = new Panel();
             label12 = new Label();
             tabPage1 = new TabPage();
+            panel3 = new Panel();
             label1 = new Label();
+            button2 = new Button();
+            label4 = new Label();
+            botaoSalvar = new Button();
             txtID = new TextBox();
+            comboTipo = new ComboBox();
+            label3 = new Label();
+            label11 = new Label();
             textBox2 = new TextBox();
+            label5 = new Label();
             txtEmailFuncionario = new TextBox();
+            label2 = new Label();
             txtNomeFuncionario = new TextBox();
+            txtDataNascimentoFuncionario = new MaskedTextBox();
             txtCPFFuncionario = new TextBox();
+            label6 = new Label();
             label7 = new Label();
             txtTelefoneFuncionario = new TextBox();
-            label6 = new Label();
-            button2 = new Button();
-            botaoSalvar = new Button();
-            comboTipo = new ComboBox();
-            txtDataNascimentoFuncionario = new MaskedTextBox();
-            label2 = new Label();
-            label5 = new Label();
-            label11 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
             dataGridView1 = new DataGridView();
@@ -61,14 +62,13 @@
             label13 = new Label();
             botaoPesquisarFuncionario = new Button();
             comboBox1 = new ComboBox();
-            panel3 = new Panel();
             panel1.SuspendLayout();
             tabPage1.SuspendLayout();
+            panel3.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -103,6 +103,31 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados";
             // 
+            // panel3
+            // 
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(button2);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(botaoSalvar);
+            panel3.Controls.Add(txtID);
+            panel3.Controls.Add(comboTipo);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(txtEmailFuncionario);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(txtNomeFuncionario);
+            panel3.Controls.Add(txtDataNascimentoFuncionario);
+            panel3.Controls.Add(txtCPFFuncionario);
+            panel3.Controls.Add(label6);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(txtTelefoneFuncionario);
+            panel3.Location = new Point(70, 25);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1052, 530);
+            panel3.TabIndex = 48;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -115,6 +140,46 @@
             label1.TabIndex = 22;
             label1.Text = "ID Pessoa:";
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Microsoft Sans Serif", 12.2F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(895, 192);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 42);
+            button2.TabIndex = 32;
+            button2.Text = "Editar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += botaoSalvar_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(59, 205);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(68, 17);
+            label4.TabIndex = 30;
+            label4.Text = "Telefone:";
+            // 
+            // botaoSalvar
+            // 
+            botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
+            botaoSalvar.FlatStyle = FlatStyle.Popup;
+            botaoSalvar.Font = new Font("Microsoft Sans Serif", 12.2F);
+            botaoSalvar.ForeColor = Color.White;
+            botaoSalvar.Location = new Point(895, 140);
+            botaoSalvar.Name = "botaoSalvar";
+            botaoSalvar.Size = new Size(125, 42);
+            botaoSalvar.TabIndex = 32;
+            botaoSalvar.Text = "Cadastrar";
+            botaoSalvar.UseVisualStyleBackColor = false;
+            botaoSalvar.Click += botaoSalvar_Click;
+            // 
             // txtID
             // 
             txtID.BackColor = Color.FromArgb(64, 64, 64);
@@ -123,6 +188,40 @@
             txtID.Name = "txtID";
             txtID.Size = new Size(74, 34);
             txtID.TabIndex = 23;
+            // 
+            // comboTipo
+            // 
+            comboTipo.BackColor = Color.FromArgb(64, 64, 64);
+            comboTipo.FormattingEnabled = true;
+            comboTipo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
+            comboTipo.Location = new Point(869, 83);
+            comboTipo.Name = "comboTipo";
+            comboTipo.Size = new Size(151, 36);
+            comboTipo.TabIndex = 47;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(61, 133);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 17);
+            label3.TabIndex = 27;
+            label3.Text = "CPF:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(812, 95);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(50, 17);
+            label11.TabIndex = 45;
+            label11.Text = "Cargo:";
             // 
             // textBox2
             // 
@@ -133,6 +232,18 @@
             textBox2.Size = new Size(426, 34);
             textBox2.TabIndex = 34;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(64, 416);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(120, 17);
+            label5.TabIndex = 31;
+            label5.Text = "Data Nascimento:";
+            // 
             // txtEmailFuncionario
             // 
             txtEmailFuncionario.BackColor = Color.FromArgb(64, 64, 64);
@@ -141,6 +252,18 @@
             txtEmailFuncionario.Name = "txtEmailFuncionario";
             txtEmailFuncionario.Size = new Size(426, 34);
             txtEmailFuncionario.TabIndex = 34;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(57, 59);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 17);
+            label2.TabIndex = 24;
+            label2.Text = "Nome:";
             // 
             // txtNomeFuncionario
             // 
@@ -151,6 +274,16 @@
             txtNomeFuncionario.Size = new Size(428, 34);
             txtNomeFuncionario.TabIndex = 25;
             // 
+            // txtDataNascimentoFuncionario
+            // 
+            txtDataNascimentoFuncionario.BackColor = Color.FromArgb(64, 64, 64);
+            txtDataNascimentoFuncionario.BorderStyle = BorderStyle.FixedSingle;
+            txtDataNascimentoFuncionario.Location = new Point(61, 446);
+            txtDataNascimentoFuncionario.Mask = "0000/00/00";
+            txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
+            txtDataNascimentoFuncionario.Size = new Size(166, 34);
+            txtDataNascimentoFuncionario.TabIndex = 29;
+            // 
             // txtCPFFuncionario
             // 
             txtCPFFuncionario.BackColor = Color.FromArgb(64, 64, 64);
@@ -159,6 +292,18 @@
             txtCPFFuncionario.Name = "txtCPFFuncionario";
             txtCPFFuncionario.Size = new Size(239, 34);
             txtCPFFuncionario.TabIndex = 26;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 8.25F);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(59, 272);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 17);
+            label6.TabIndex = 33;
+            label6.Text = "Email:";
             // 
             // label7
             // 
@@ -181,126 +326,6 @@
             txtTelefoneFuncionario.Size = new Size(238, 34);
             txtTelefoneFuncionario.TabIndex = 28;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(59, 272);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(46, 17);
-            label6.TabIndex = 33;
-            label6.Text = "Email:";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Microsoft Sans Serif", 12.2F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(895, 192);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 42);
-            button2.TabIndex = 32;
-            button2.Text = "Editar";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += botaoSalvar_Click;
-            // 
-            // botaoSalvar
-            // 
-            botaoSalvar.BackColor = Color.FromArgb(64, 64, 64);
-            botaoSalvar.FlatStyle = FlatStyle.Popup;
-            botaoSalvar.Font = new Font("Microsoft Sans Serif", 12.2F);
-            botaoSalvar.ForeColor = Color.White;
-            botaoSalvar.Location = new Point(895, 140);
-            botaoSalvar.Name = "botaoSalvar";
-            botaoSalvar.Size = new Size(125, 42);
-            botaoSalvar.TabIndex = 32;
-            botaoSalvar.Text = "Cadastrar";
-            botaoSalvar.UseVisualStyleBackColor = false;
-            botaoSalvar.Click += botaoSalvar_Click;
-            // 
-            // comboTipo
-            // 
-            comboTipo.BackColor = Color.FromArgb(64, 64, 64);
-            comboTipo.FormattingEnabled = true;
-            comboTipo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
-            comboTipo.Location = new Point(869, 83);
-            comboTipo.Name = "comboTipo";
-            comboTipo.Size = new Size(151, 36);
-            comboTipo.TabIndex = 47;
-            // 
-            // txtDataNascimentoFuncionario
-            // 
-            txtDataNascimentoFuncionario.BackColor = Color.FromArgb(64, 64, 64);
-            txtDataNascimentoFuncionario.BorderStyle = BorderStyle.FixedSingle;
-            txtDataNascimentoFuncionario.Location = new Point(61, 446);
-            txtDataNascimentoFuncionario.Mask = "0000/00/00";
-            txtDataNascimentoFuncionario.Name = "txtDataNascimentoFuncionario";
-            txtDataNascimentoFuncionario.Size = new Size(166, 34);
-            txtDataNascimentoFuncionario.TabIndex = 29;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(57, 59);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 17);
-            label2.TabIndex = 24;
-            label2.Text = "Nome:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(64, 416);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(120, 17);
-            label5.TabIndex = 31;
-            label5.Text = "Data Nascimento:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(812, 95);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(50, 17);
-            label11.TabIndex = 45;
-            label11.Text = "Cargo:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(61, 133);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 17);
-            label3.TabIndex = 27;
-            label3.Text = "CPF:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 8.25F);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(59, 205);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(68, 17);
-            label4.TabIndex = 30;
-            label4.Text = "Telefone:";
-            // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage1);
@@ -316,10 +341,10 @@
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 37);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1205, 364);
+            tabPage2.Size = new Size(1205, 563);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -332,7 +357,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1199, 297);
+            dataGridView1.Size = new Size(1199, 496);
             dataGridView1.TabIndex = 1;
             // 
             // ID
@@ -415,31 +440,6 @@
             comboBox1.Size = new Size(227, 36);
             comboBox1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(botaoSalvar);
-            panel3.Controls.Add(txtID);
-            panel3.Controls.Add(comboTipo);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(textBox2);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(txtEmailFuncionario);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(txtNomeFuncionario);
-            panel3.Controls.Add(txtDataNascimentoFuncionario);
-            panel3.Controls.Add(txtCPFFuncionario);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(txtTelefoneFuncionario);
-            panel3.Location = new Point(70, 25);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1052, 530);
-            panel3.TabIndex = 48;
-            // 
             // FFuncionario
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -455,13 +455,13 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             tabPage1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
         }
 

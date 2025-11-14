@@ -33,9 +33,10 @@
             botaoCadastrarCliente = new ToolStripButton();
             botaoCadastrarFuncionario = new ToolStripButton();
             botaoOrdemDeServico = new ToolStripButton();
+            toolStripButton1 = new ToolStripButton();
+            toolStripButton2 = new ToolStripButton();
             panel1 = new Panel();
             tabControl1 = new TabControl();
-            toolStripButton1 = new ToolStripButton();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -46,7 +47,7 @@
             toolStrip1.Dock = DockStyle.Left;
             toolStrip1.GripMargin = new Padding(10, 5, 10, 5);
             toolStrip1.ImageScalingSize = new Size(40, 40);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarFuncionario, botaoOrdemDeServico, toolStripButton1 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarFuncionario, botaoOrdemDeServico, toolStripButton1, toolStripButton2 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -82,8 +83,28 @@
             botaoOrdemDeServico.ImageTransparentColor = Color.Magenta;
             botaoOrdemDeServico.Name = "botaoOrdemDeServico";
             botaoOrdemDeServico.Size = new Size(42, 44);
-            botaoOrdemDeServico.Text = "toolStripButton1";
+            botaoOrdemDeServico.Text = "Ordem de Serviço";
             botaoOrdemDeServico.Click += botaoOrdemDeServico_Click;
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(42, 44);
+            toolStripButton1.Text = "Ticket";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(42, 44);
+            toolStripButton2.Text = "Cadastro Peças";
+            toolStripButton2.Click += toolStripButton2_Click;
             // 
             // panel1
             // 
@@ -102,16 +123,6 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(984, 535);
             tabControl1.TabIndex = 0;
-            // 
-            // toolStripButton1
-            // 
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(42, 44);
-            toolStripButton1.Text = "toolStripButton1";
-            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // FInicio
             // 
@@ -144,5 +155,6 @@
         private ToolStripButton botaoCadastrarFuncionario;
         private ToolStripButton botaoOrdemDeServico;
         private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
     }
 }

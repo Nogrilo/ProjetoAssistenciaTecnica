@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,6 +48,28 @@ namespace ProjetoAssistenciaTecnica.View
             else
             {
                 comboCargo.Enabled = false;
+            }
+        }
+
+        public static class ArredondarControles
+        {
+            public static void Arredondar(Control controle, int raio)
+            {
+                controle.Region = new Region(ArredondarRegiao(controle.ClientRectangle, raio));
+            }
+
+            private static GraphicsPath ArredondarRegiao(Rectangle bounds, int raio)
+            {
+                int diam = raio * 2;
+                GraphicsPath path = new GraphicsPath();
+
+                path.AddArc(bounds.X, bounds.Y, diam, diam, 180, 90);
+                path.AddArc(bounds.Right - diam, bounds.Y, diam, diam, 270, 90);
+                path.AddArc(bounds.Right - diam, bounds.Bottom - diam, diam, diam, 0, 90);
+                path.AddArc(bounds.X, bounds.Bottom - diam, diam, diam, 90, 90);
+                path.CloseAllFigures();
+
+                return path;
             }
         }
 
@@ -152,5 +175,9 @@ namespace ProjetoAssistenciaTecnica.View
 
         }
 
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

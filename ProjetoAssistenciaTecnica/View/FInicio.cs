@@ -108,7 +108,12 @@ namespace ProjetoAssistenciaTecnica
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            /* Abrindo a tela de cadastro de ordem de servico */
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            /* Abrindo a tela de cadastro de peça */
 
             FCadastro_de_pecas tela = new FCadastro_de_pecas();
 
