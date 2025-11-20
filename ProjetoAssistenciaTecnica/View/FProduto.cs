@@ -23,7 +23,7 @@ namespace ProjetoAssistenciaTecnica.View
         {
             Produto obj = new Produto();
 
-            obj.id_pertencente = int.Parse(txtCPFCliente.Text);
+            obj.id_pertencente = txtCPFCliente.Text;
             obj.marca = txtMarca.Text;
             obj.modelo = txtModelo.Text;
             obj.n_serie = txtNumeroSerie.Text;
