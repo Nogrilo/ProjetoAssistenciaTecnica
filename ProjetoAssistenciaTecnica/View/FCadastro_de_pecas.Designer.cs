@@ -89,6 +89,7 @@
             label1.Size = new Size(41, 15);
             label1.TabIndex = 0;
             label1.Text = "nome:";
+            label1.Click += this.label1_Click;
             // 
             // label2
             // 
@@ -98,6 +99,7 @@
             label2.Size = new Size(82, 15);
             label2.TabIndex = 1;
             label2.Text = "custo material";
+            label2.Click += this.label2_Click;
             // 
             // label3
             // 
@@ -107,6 +109,7 @@
             label3.Size = new Size(68, 15);
             label3.TabIndex = 1;
             label3.Text = "valor venda";
+            label3.Click += this.label3_Click;
             // 
             // contextMenuStrip1
             // 
@@ -121,6 +124,7 @@
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(252, 23);
             txtNome.TabIndex = 3;
+            txtNome.TextChanged += this.txtNome_TextChanged;
             // 
             // txtCusto
             // 
@@ -129,6 +133,7 @@
             txtCusto.Name = "txtCusto";
             txtCusto.Size = new Size(252, 23);
             txtCusto.TabIndex = 3;
+            txtCusto.TextChanged += this.txtCusto_TextChanged;
             // 
             // txtCustoRepasse
             // 
@@ -137,6 +142,7 @@
             txtCustoRepasse.Name = "txtCustoRepasse";
             txtCustoRepasse.Size = new Size(148, 23);
             txtCustoRepasse.TabIndex = 3;
+            txtCustoRepasse.TextChanged += txtCustoRepasse_TextChanged;
             // 
             // panel1
             // 
@@ -491,7 +497,7 @@
             textBox14.Size = new Size(148, 23);
             textBox14.TabIndex = 3;
             // 
-            // FCadastro_de_peças
+            // FCadastro_de_pecas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -499,7 +505,7 @@
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "FCadastro_de_peças";
+            Name = "FCadastro_de_pecas";
             Text = "FCadastro_de_peças";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

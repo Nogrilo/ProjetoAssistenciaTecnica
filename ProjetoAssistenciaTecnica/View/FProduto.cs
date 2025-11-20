@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetoAssistenciaTecnica.Controller;
+using ProjetoAssistenciaTecnica.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,22 @@ namespace ProjetoAssistenciaTecnica.View
         public FProduto()
         {
             InitializeComponent();
+        }
+
+        private void botaoCadastrarProduto_Click(object sender, EventArgs e)
+        {
+            Produto obj = new Produto();
+
+            obj.id_pertencente = int.Parse(txtCPFCliente.Text);
+            obj.marca = txtMarca.Text;
+            obj.modelo = txtModelo.Text;
+            obj.n_serie = txtNumeroSerie.Text;
+            obj.tipo = txtTipo.Text;
+            obj.condicao = txtCondicao.Text;
+
+            ControllerProduto controllerProduto = new ControllerProduto();
+
+            controllerProduto.cadastrarProduto(obj);
         }
     }
 }
