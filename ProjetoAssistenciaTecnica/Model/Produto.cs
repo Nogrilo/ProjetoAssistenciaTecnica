@@ -19,5 +19,7 @@ namespace ProjetoAssistenciaTecnica.Model
         public string n_serie { get; set; } = string.Empty;
 
         public string tipo { get; set; } = string.Empty;
+
+        public string condicao { get; set; } = string.Empty;
     }
 }

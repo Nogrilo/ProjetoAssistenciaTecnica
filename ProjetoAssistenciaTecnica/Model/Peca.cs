@@ -17,5 +17,7 @@ namespace ProjetoAssistenciaTecnica.Model
         public float valorRepasse {  get; set; } = 0;
         
         public float codigo { get; set; } = 0;
+
+        public float codigo { get; set; } = 0;
     }
 }
