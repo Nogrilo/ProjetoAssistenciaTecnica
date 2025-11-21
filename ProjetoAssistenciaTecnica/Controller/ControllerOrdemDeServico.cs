@@ -55,18 +55,15 @@ namespace ProjetoAssistenciaTecnica.Controller
                     pessoa.telefone = resultado.GetString("telefone");
                     pessoa.endereco.municipio = resultado.GetString("municipio");
                     pessoa.endereco.n_casa = resultado.GetString("n_complemento");
-
                 }
-                resultado.Close();
-                conexao.Close();
                 return pessoa;
             }
             else
             {
-                resultado.Close();
-                conexao.Close();
                 return null;
             }
+            resultado.Close();
+            conexao.Close();
         }
     }
 }

@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtModelo = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtMarca = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            txtAcessorios = new TextBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtNSerie = new TextBox();
             label6 = new Label();
             txtCPFcnpj = new TextBox();
             label7 = new Label();
-            textBox7 = new TextBox();
+            txtObservacao = new TextBox();
             label8 = new Label();
-            comboBox1 = new ComboBox();
+            txtCondicao = new ComboBox();
             label1 = new Label();
             textBox1 = new TextBox();
             label9 = new Label();
-            textBox8 = new TextBox();
+            txtDefeito = new TextBox();
             label10 = new Label();
             maskedTelefone = new MaskedTextBox();
             txtBairro = new TextBox();
@@ -82,16 +82,16 @@
             label2.TabIndex = 0;
             label2.Text = "Modelo:";
             // 
-            // textBox2
+            // txtModelo
             // 
-            textBox2.BackColor = Color.FromArgb(64, 64, 64);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(209, 104);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(157, 23);
-            textBox2.TabIndex = 1;
+            txtModelo.BackColor = Color.FromArgb(64, 64, 64);
+            txtModelo.BorderStyle = BorderStyle.FixedSingle;
+            txtModelo.ForeColor = Color.White;
+            txtModelo.Location = new Point(209, 104);
+            txtModelo.Margin = new Padding(3, 2, 3, 2);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(157, 23);
+            txtModelo.TabIndex = 1;
             // 
             // label3
             // 
@@ -103,16 +103,16 @@
             label3.TabIndex = 0;
             label3.Text = "Marca:";
             // 
-            // textBox3
+            // txtMarca
             // 
-            textBox3.BackColor = Color.FromArgb(64, 64, 64);
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(209, 136);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(157, 23);
-            textBox3.TabIndex = 1;
+            txtMarca.BackColor = Color.FromArgb(64, 64, 64);
+            txtMarca.BorderStyle = BorderStyle.FixedSingle;
+            txtMarca.ForeColor = Color.White;
+            txtMarca.Location = new Point(209, 136);
+            txtMarca.Margin = new Padding(3, 2, 3, 2);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(157, 23);
+            txtMarca.TabIndex = 1;
             // 
             // label4
             // 
@@ -124,16 +124,16 @@
             label4.TabIndex = 0;
             label4.Text = "Acessórios:";
             // 
-            // textBox4
+            // txtAcessorios
             // 
-            textBox4.BackColor = Color.FromArgb(64, 64, 64);
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.ForeColor = Color.White;
-            textBox4.Location = new Point(209, 168);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(157, 23);
-            textBox4.TabIndex = 1;
+            txtAcessorios.BackColor = Color.FromArgb(64, 64, 64);
+            txtAcessorios.BorderStyle = BorderStyle.FixedSingle;
+            txtAcessorios.ForeColor = Color.White;
+            txtAcessorios.Location = new Point(209, 168);
+            txtAcessorios.Margin = new Padding(3, 2, 3, 2);
+            txtAcessorios.Name = "txtAcessorios";
+            txtAcessorios.Size = new Size(157, 23);
+            txtAcessorios.TabIndex = 1;
             // 
             // label5
             // 
@@ -145,16 +145,16 @@
             label5.TabIndex = 0;
             label5.Text = "N° série:";
             // 
-            // textBox5
+            // txtNSerie
             // 
-            textBox5.BackColor = Color.FromArgb(64, 64, 64);
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.ForeColor = Color.White;
-            textBox5.Location = new Point(477, 106);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(132, 23);
-            textBox5.TabIndex = 1;
+            txtNSerie.BackColor = Color.FromArgb(64, 64, 64);
+            txtNSerie.BorderStyle = BorderStyle.FixedSingle;
+            txtNSerie.ForeColor = Color.White;
+            txtNSerie.Location = new Point(477, 106);
+            txtNSerie.Margin = new Padding(3, 2, 3, 2);
+            txtNSerie.Name = "txtNSerie";
+            txtNSerie.Size = new Size(132, 23);
+            txtNSerie.TabIndex = 1;
             // 
             // label6
             // 
@@ -188,17 +188,17 @@
             label7.TabIndex = 0;
             label7.Text = "Observações:";
             // 
-            // textBox7
+            // txtObservacao
             // 
-            textBox7.BackColor = Color.FromArgb(64, 64, 64);
-            textBox7.BorderStyle = BorderStyle.FixedSingle;
-            textBox7.ForeColor = Color.White;
-            textBox7.Location = new Point(110, 243);
-            textBox7.Margin = new Padding(3, 2, 3, 2);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(506, 44);
-            textBox7.TabIndex = 1;
+            txtObservacao.BackColor = Color.FromArgb(64, 64, 64);
+            txtObservacao.BorderStyle = BorderStyle.FixedSingle;
+            txtObservacao.ForeColor = Color.White;
+            txtObservacao.Location = new Point(110, 243);
+            txtObservacao.Margin = new Padding(3, 2, 3, 2);
+            txtObservacao.Multiline = true;
+            txtObservacao.Name = "txtObservacao";
+            txtObservacao.Size = new Size(506, 44);
+            txtObservacao.TabIndex = 1;
             // 
             // label8
             // 
@@ -210,16 +210,16 @@
             label8.TabIndex = 0;
             label8.Text = "Condição:";
             // 
-            // comboBox1
+            // txtCondicao
             // 
-            comboBox1.BackColor = Color.FromArgb(64, 64, 64);
-            comboBox1.ForeColor = Color.White;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(477, 139);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 2;
+            txtCondicao.BackColor = Color.FromArgb(64, 64, 64);
+            txtCondicao.ForeColor = Color.White;
+            txtCondicao.FormattingEnabled = true;
+            txtCondicao.Location = new Point(477, 139);
+            txtCondicao.Margin = new Padding(3, 2, 3, 2);
+            txtCondicao.Name = "txtCondicao";
+            txtCondicao.Size = new Size(133, 23);
+            txtCondicao.TabIndex = 2;
             // 
             // label1
             // 
@@ -252,17 +252,17 @@
             label9.TabIndex = 0;
             label9.Text = "Descrição defeito:";
             // 
-            // textBox8
+            // txtDefeito
             // 
-            textBox8.BackColor = Color.FromArgb(64, 64, 64);
-            textBox8.BorderStyle = BorderStyle.FixedSingle;
-            textBox8.ForeColor = Color.White;
-            textBox8.Location = new Point(110, 34);
-            textBox8.Margin = new Padding(3, 2, 3, 2);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(506, 59);
-            textBox8.TabIndex = 1;
+            txtDefeito.BackColor = Color.FromArgb(64, 64, 64);
+            txtDefeito.BorderStyle = BorderStyle.FixedSingle;
+            txtDefeito.ForeColor = Color.White;
+            txtDefeito.Location = new Point(110, 34);
+            txtDefeito.Margin = new Padding(3, 2, 3, 2);
+            txtDefeito.Multiline = true;
+            txtDefeito.Name = "txtDefeito";
+            txtDefeito.Size = new Size(506, 59);
+            txtDefeito.TabIndex = 1;
             // 
             // label10
             // 
@@ -436,17 +436,17 @@
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(comboBox1);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(txtCondicao);
+            panel2.Controls.Add(txtModelo);
+            panel2.Controls.Add(txtObservacao);
+            panel2.Controls.Add(txtDefeito);
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(txtNSerie);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label7);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(txtMarca);
+            panel2.Controls.Add(txtAcessorios);
             panel2.Location = new Point(169, 194);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
@@ -526,23 +526,23 @@
 
         #endregion
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtModelo;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtMarca;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox txtAcessorios;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtNSerie;
         private Label label6;
         private TextBox txtCPFcnpj;
         private Label label7;
-        private TextBox textBox7;
+        private TextBox txtObservacao;
         private Label label8;
-        private ComboBox comboBox1;
+        private ComboBox txtCondicao;
         private Label label1;
         private TextBox textBox1;
         private Label label9;
-        private TextBox textBox8;
+        private TextBox txtDefeito;
         private Label label10;
         private ComboBox comboComplemento;
         private MaskedTextBox maskedTelefone;
