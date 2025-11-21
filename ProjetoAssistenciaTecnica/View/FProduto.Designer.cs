@@ -31,7 +31,13 @@
             panel1 = new Panel();
             label5 = new Label();
             tabControl1 = new TabControl();
-            txtCondicao = new TabPage();
+            label100 = new TabPage();
+            txtCondicao = new TextBox();
+            txtTipo = new TextBox();
+            txtNumeroSerie = new TextBox();
+            txtModelo = new TextBox();
+            txtMarca = new TextBox();
+            txtCPFCliente = new TextBox();
             label7 = new Label();
             label6 = new Label();
             label4 = new Label();
@@ -40,15 +46,9 @@
             label2 = new Label();
             label3 = new Label();
             tabPage2 = new TabPage();
-            txtCPFCliente = new TextBox();
-            txtMarca = new TextBox();
-            txtModelo = new TextBox();
-            txtNumeroSerie = new TextBox();
-            txtTipo = new TextBox();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
-            txtCondicao.SuspendLayout();
+            label100.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -72,7 +72,7 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(txtCondicao);
+            tabControl1.Controls.Add(label100);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 100);
@@ -81,28 +81,70 @@
             tabControl1.Size = new Size(800, 350);
             tabControl1.TabIndex = 1;
             // 
+            // label100
+            // 
+            label100.Controls.Add(txtCondicao);
+            label100.Controls.Add(txtTipo);
+            label100.Controls.Add(txtNumeroSerie);
+            label100.Controls.Add(txtModelo);
+            label100.Controls.Add(txtMarca);
+            label100.Controls.Add(txtCPFCliente);
+            label100.Controls.Add(label7);
+            label100.Controls.Add(label6);
+            label100.Controls.Add(label4);
+            label100.Controls.Add(botaoCadastrarProduto);
+            label100.Controls.Add(label1);
+            label100.Controls.Add(label2);
+            label100.Controls.Add(label3);
+            label100.Location = new Point(4, 24);
+            label100.Name = "label100";
+            label100.Padding = new Padding(3);
+            label100.Size = new Size(792, 322);
+            label100.TabIndex = 0;
+            label100.Text = "Cadastro";
+            label100.UseVisualStyleBackColor = true;
+            // 
             // txtCondicao
             // 
-            txtCondicao.Controls.Add(textBox1);
-            txtCondicao.Controls.Add(txtTipo);
-            txtCondicao.Controls.Add(txtNumeroSerie);
-            txtCondicao.Controls.Add(txtModelo);
-            txtCondicao.Controls.Add(txtMarca);
-            txtCondicao.Controls.Add(txtCPFCliente);
-            txtCondicao.Controls.Add(label7);
-            txtCondicao.Controls.Add(label6);
-            txtCondicao.Controls.Add(label4);
-            txtCondicao.Controls.Add(botaoCadastrarProduto);
-            txtCondicao.Controls.Add(label1);
-            txtCondicao.Controls.Add(label2);
-            txtCondicao.Controls.Add(label3);
-            txtCondicao.Location = new Point(4, 24);
+            txtCondicao.Location = new Point(122, 192);
             txtCondicao.Name = "txtCondicao";
-            txtCondicao.Padding = new Padding(3);
-            txtCondicao.Size = new Size(792, 322);
-            txtCondicao.TabIndex = 0;
-            txtCondicao.Text = "Cadastro";
-            txtCondicao.UseVisualStyleBackColor = true;
+            txtCondicao.Size = new Size(195, 23);
+            txtCondicao.TabIndex = 23;
+            // 
+            // txtTipo
+            // 
+            txtTipo.Location = new Point(122, 156);
+            txtTipo.Name = "txtTipo";
+            txtTipo.Size = new Size(195, 23);
+            txtTipo.TabIndex = 22;
+            // 
+            // txtNumeroSerie
+            // 
+            txtNumeroSerie.Location = new Point(122, 120);
+            txtNumeroSerie.Name = "txtNumeroSerie";
+            txtNumeroSerie.Size = new Size(195, 23);
+            txtNumeroSerie.TabIndex = 21;
+            // 
+            // txtModelo
+            // 
+            txtModelo.Location = new Point(122, 83);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(195, 23);
+            txtModelo.TabIndex = 20;
+            // 
+            // txtMarca
+            // 
+            txtMarca.Location = new Point(122, 50);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(195, 23);
+            txtMarca.TabIndex = 19;
+            // 
+            // txtCPFCliente
+            // 
+            txtCPFCliente.Location = new Point(122, 14);
+            txtCPFCliente.Name = "txtCPFCliente";
+            txtCPFCliente.Size = new Size(195, 23);
+            txtCPFCliente.TabIndex = 18;
             // 
             // label7
             // 
@@ -179,48 +221,6 @@
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtCPFCliente
-            // 
-            txtCPFCliente.Location = new Point(122, 14);
-            txtCPFCliente.Name = "txtCPFCliente";
-            txtCPFCliente.Size = new Size(195, 23);
-            txtCPFCliente.TabIndex = 18;
-            // 
-            // txtMarca
-            // 
-            txtMarca.Location = new Point(122, 50);
-            txtMarca.Name = "txtMarca";
-            txtMarca.Size = new Size(195, 23);
-            txtMarca.TabIndex = 19;
-            // 
-            // txtModelo
-            // 
-            txtModelo.Location = new Point(122, 83);
-            txtModelo.Name = "txtModelo";
-            txtModelo.Size = new Size(195, 23);
-            txtModelo.TabIndex = 20;
-            // 
-            // txtNumeroSerie
-            // 
-            txtNumeroSerie.Location = new Point(122, 120);
-            txtNumeroSerie.Name = "txtNumeroSerie";
-            txtNumeroSerie.Size = new Size(195, 23);
-            txtNumeroSerie.TabIndex = 21;
-            // 
-            // txtTipo
-            // 
-            txtTipo.Location = new Point(122, 156);
-            txtTipo.Name = "txtTipo";
-            txtTipo.Size = new Size(195, 23);
-            txtTipo.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(122, 192);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(195, 23);
-            textBox1.TabIndex = 23;
-            // 
             // FProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -233,8 +233,8 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             tabControl1.ResumeLayout(false);
-            txtCondicao.ResumeLayout(false);
-            txtCondicao.PerformLayout();
+            label100.ResumeLayout(false);
+            label100.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -243,7 +243,7 @@
         private Panel panel1;
         private Label label5;
         private TabControl tabControl1;
-        private TabPage txtCondicao;
+        private TabPage label100;
         private TabPage tabPage2;
         private Label label8;
         private TextBox textBox4;
@@ -262,7 +262,7 @@
         private TextBox txtNumeroSerie;
         private TextBox txtModelo;
         private TextBox txtMarca;
-        private TextBox textBox1;
+        private TextBox txtCondicao;
         private TextBox txtTipo;
     }
 }

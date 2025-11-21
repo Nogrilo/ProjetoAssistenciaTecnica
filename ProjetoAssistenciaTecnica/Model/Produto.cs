@@ -10,7 +10,7 @@ namespace ProjetoAssistenciaTecnica.Model
     {
         public int idProduto { get; set; } = 0;
 
-        public string id_pertencente { get; set; } = string.Empty;
+        public string cpf_cliente { get; set; } = string.Empty;
 
         public string marca { get; set; } = string.Empty;
 
