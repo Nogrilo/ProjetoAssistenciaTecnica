@@ -26,7 +26,7 @@ namespace ProjetoAssistenciaTecnica.Controller
             {
                 string sql = "";
                 sql = @"call sp_insert_produto (
-                    @id_pertencente,
+                    @cpf_cliente,
                     @marca,
                     @modelo,
                     @n_serie,
@@ -35,10 +35,10 @@ namespace ProjetoAssistenciaTecnica.Controller
                     );";
 
                 MySqlCommand executa = new MySqlCommand(sql, conexao);
-                executa.Parameters.AddWithValue("@id_pertencente", produto.id_pertencente);
+                executa.Parameters.AddWithValue("@cpf_cliente", produto.id_pertencente);
                 executa.Parameters.AddWithValue("@marca", produto.marca);
                 executa.Parameters.AddWithValue("@n_serie", produto.n_serie);
-                executa.Parameters.AddWithValue("tipo", produto.tipo);
+                executa.Parameters.AddWithValue("@tipo", produto.tipo);
                 executa.Parameters.AddWithValue("@condicao", produto.condicao);
 
                 conexao.Open();
