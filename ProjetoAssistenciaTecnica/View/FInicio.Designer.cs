@@ -35,9 +35,9 @@
             botaoOrdemDeServico = new ToolStripButton();
             toolStripButton1 = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
+            toolStripButton3 = new ToolStripButton();
             panel1 = new Panel();
             tabControl1 = new TabControl();
-            toolStripButton3 = new ToolStripButton();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -95,6 +95,7 @@
             toolStripButton1.Name = "toolStripButton1";
             toolStripButton1.Size = new Size(42, 44);
             toolStripButton1.Text = "Ticket";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripButton2
             // 
@@ -105,6 +106,17 @@
             toolStripButton2.Size = new Size(42, 44);
             toolStripButton2.Text = "Cadastro Peças";
             toolStripButton2.Click += toolStripButton2_Click;
+            // 
+            // toolStripButton3
+            // 
+            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
+            toolStripButton3.ImageTransparentColor = Color.Magenta;
+            toolStripButton3.Name = "toolStripButton3";
+            toolStripButton3.Size = new Size(42, 44);
+            toolStripButton3.Text = "toolStripButton3";
+            toolStripButton3.ToolTipText = "Produto";
+            toolStripButton3.Click += toolStripButton3_Click;
             // 
             // panel1
             // 
@@ -123,17 +135,6 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(984, 535);
             tabControl1.TabIndex = 0;
-            // 
-            // toolStripButton3
-            // 
-            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
-            toolStripButton3.ImageTransparentColor = Color.Magenta;
-            toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(42, 44);
-            toolStripButton3.Text = "toolStripButton3";
-            toolStripButton3.ToolTipText = "Produto";
-            toolStripButton3.Click += toolStripButton3_Click;
             // 
             // FInicio
             // 

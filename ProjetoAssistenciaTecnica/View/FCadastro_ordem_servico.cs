@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace ProjetoAssistenciaTecnica.View
 {
     public partial class FCadastro_ordem_servico : Form
     {
+
         public FCadastro_ordem_servico()
         {
             InitializeComponent();
+        }
+
+        private void txtCPFcnpj_Leave(object sender, EventArgs e)
+        {
+            
         }
     }
 }
