@@ -23,8 +23,8 @@ namespace ProjetoAssistenciaTecnica.View
         private void txtCPFcnpj_Leave(object sender, EventArgs e)
         {
             /* Funcao que ao sair do txt de CPF, dar o select no banco */
-            ControllerOrdemDeServico controllerOrdemDeServico = new ControllerOrdemDeServico();
-            var pessoa = controllerOrdemDeServico.buscarPessoa(txtCPFcnpj.Text);
+            ControllerPessoa controller = new ControllerPessoa();
+            var pessoa = controller.buscarPessoa(txtCPFcnpj.Text);
             if (pessoa != null )
             {
                 txtNome.Text = pessoa.nome;

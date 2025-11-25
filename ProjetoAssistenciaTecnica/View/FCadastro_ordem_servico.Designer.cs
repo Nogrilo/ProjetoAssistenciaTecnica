@@ -41,7 +41,7 @@
             label7 = new Label();
             txtObservacao = new TextBox();
             label8 = new Label();
-            txtCondicao = new ComboBox();
+            comboCondicao = new ComboBox();
             label1 = new Label();
             textBox1 = new TextBox();
             label9 = new Label();
@@ -210,16 +210,17 @@
             label8.TabIndex = 0;
             label8.Text = "Condição:";
             // 
-            // txtCondicao
+            // comboCondicao
             // 
-            txtCondicao.BackColor = Color.FromArgb(64, 64, 64);
-            txtCondicao.ForeColor = Color.White;
-            txtCondicao.FormattingEnabled = true;
-            txtCondicao.Location = new Point(477, 139);
-            txtCondicao.Margin = new Padding(3, 2, 3, 2);
-            txtCondicao.Name = "txtCondicao";
-            txtCondicao.Size = new Size(133, 23);
-            txtCondicao.TabIndex = 2;
+            comboCondicao.BackColor = Color.FromArgb(64, 64, 64);
+            comboCondicao.ForeColor = Color.White;
+            comboCondicao.FormattingEnabled = true;
+            comboCondicao.Items.AddRange(new object[] { "Funcionando", "Defeito", "Quebrado" });
+            comboCondicao.Location = new Point(477, 139);
+            comboCondicao.Margin = new Padding(3, 2, 3, 2);
+            comboCondicao.Name = "comboCondicao";
+            comboCondicao.Size = new Size(133, 23);
+            comboCondicao.TabIndex = 2;
             // 
             // label1
             // 
@@ -436,7 +437,7 @@
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(txtCondicao);
+            panel2.Controls.Add(comboCondicao);
             panel2.Controls.Add(txtModelo);
             panel2.Controls.Add(txtObservacao);
             panel2.Controls.Add(txtDefeito);
@@ -538,7 +539,7 @@
         private Label label7;
         private TextBox txtObservacao;
         private Label label8;
-        private ComboBox txtCondicao;
+        private ComboBox comboCondicao;
         private Label label1;
         private TextBox textBox1;
         private Label label9;
