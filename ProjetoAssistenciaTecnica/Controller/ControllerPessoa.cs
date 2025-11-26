@@ -123,11 +123,11 @@ namespace ProjetoAssistenciaTecnica.Controller
                         e.bairro,
                         e.n_complemento,
                         e.municipio
-                    FROM tb_pessoa p
-                    LEFT JOIN tb_endereco e ON p.idPessoa = e.id_pertencente
-                    WHERE p.cpf_cnpj = @cpf
-                    LIMIT 1;  
-                    ";
+                        FROM tb_pessoa p
+                        LEFT JOIN tb_endereco e ON p.idPessoa = e.id_pertencente
+                        WHERE p.cpf_cnpj = @cpf
+                        LIMIT 1;  
+                        ";
 
             MySqlCommand executaCMD = new MySqlCommand(sql, conexao);
             executaCMD.Parameters.AddWithValue("@cpf", cpfCnpj); // Substituir o none na instrucao sql, com o nome

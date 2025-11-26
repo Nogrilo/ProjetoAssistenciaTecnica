@@ -25,7 +25,7 @@ namespace ProjetoAssistenciaTecnica.View
             /* Funcao que ao sair do txt de CPF, dar o select no banco */
             ControllerPessoa controller = new ControllerPessoa();
             var pessoa = controller.buscarPessoa(txtCPFcnpj.Text);
-            if (pessoa != null )
+            if (pessoa != null)
             {
                 txtNome.Text = pessoa.nome;
                 txtRua.Text = pessoa.endereco.rua;
@@ -37,6 +37,23 @@ namespace ProjetoAssistenciaTecnica.View
             else
             {
                 MessageBox.Show("Cliente não encontrado.");
+            }
+        }
+
+        private void txtModelo_Leave(object sender, EventArgs e)
+        {
+            /* Funcao que ao sair do txt de CPF, dar o select no banco */
+            ControllerProduto controller = new ControllerProduto();
+            var produto = controller.buscarProduto(txtModelo.Text);
+            if (produto != null)
+            {
+                txtMarca.Text = produto.marca;
+                txtNSerie.Text = produto.n_serie;
+                comboCondicao.Text = produto.condicao;
+            }
+            else
+            {
+                MessageBox.Show("Produto não encontrado.");
             }
         }
     }

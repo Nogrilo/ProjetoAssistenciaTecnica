@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient; // Importar o SQL no codigo
 using ProjetoAssistenciaTecnica.Model;
 using System.Windows.Forms;
 using System.Data;
+using Google.Protobuf.WellKnownTypes;
 
 namespace ProjetoAssistenciaTecnica.Controller
 {
@@ -54,6 +55,43 @@ namespace ProjetoAssistenciaTecnica.Controller
                 MessageBox.Show("Erro ao cadastrar: " + ex.Message);
                 return false;
             }
+        }
+
+        public Produto buscarProduto(string modelo)
+        {
+            string sql = @"SELECT 
+                        marca,
+                        n_serie,
+                        condicao
+                        FROM tb_produto
+                        WHERE modelo = @modelo
+                        ";
+
+            MySqlCommand executaCMD = new MySqlCommand(sql, conexao);
+            executaCMD.Parameters.AddWithValue("@modelo", modelo); // Substituir o none na instrucao sql, com o nome
+
+            conexao.Open(); // Abrir a conexao
+
+            MySqlDataReader resultado = executaCMD.ExecuteReader();
+
+            Produto produto = new Produto();
+
+            if (resultado.HasRows)
+            {
+                while (resultado.Read())
+                {
+                    produto.marca = resultado.GetString("marca");
+                    produto.n_serie = resultado.GetString("n_serie");
+                    produto.condicao = resultado.GetString("condicao");
+                }
+                return produto;
+            }
+            else
+            {
+                return null;
+            }
+            resultado.Close();
+            conexao.Close();
         }
     }
 }

@@ -42,8 +42,6 @@
             txtObservacao = new TextBox();
             label8 = new Label();
             comboCondicao = new ComboBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
             label9 = new Label();
             txtDefeito = new TextBox();
             label10 = new Label();
@@ -92,6 +90,7 @@
             txtModelo.Name = "txtModelo";
             txtModelo.Size = new Size(157, 23);
             txtModelo.TabIndex = 1;
+            txtModelo.Leave += txtModelo_Leave;
             // 
             // label3
             // 
@@ -221,27 +220,6 @@
             comboCondicao.Name = "comboCondicao";
             comboCondicao.Size = new Size(133, 23);
             comboCondicao.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Gray;
-            label1.Location = new Point(766, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 15);
-            label1.TabIndex = 0;
-            label1.Text = "N° Ordem:";
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox1.Location = new Point(840, 19);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(55, 23);
-            textBox1.TabIndex = 1;
             // 
             // label9
             // 
@@ -458,8 +436,6 @@
             // 
             panel3.BackColor = Color.FromArgb(36, 36, 36);
             panel3.Controls.Add(label10);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(textBox1);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(3, 2, 3, 2);
@@ -540,8 +516,6 @@
         private TextBox txtObservacao;
         private Label label8;
         private ComboBox comboCondicao;
-        private Label label1;
-        private TextBox textBox1;
         private Label label9;
         private TextBox txtDefeito;
         private Label label10;
