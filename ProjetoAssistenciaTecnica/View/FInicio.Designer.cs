@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FInicio));
             toolStrip1 = new ToolStrip();
             botaoCadastrarCliente = new ToolStripButton();
-            botaoCadastrarFuncionario = new ToolStripButton();
             botaoOrdemDeServico = new ToolStripButton();
             toolStripButton1 = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
@@ -48,7 +47,7 @@
             toolStrip1.Dock = DockStyle.Left;
             toolStrip1.GripMargin = new Padding(10, 5, 10, 5);
             toolStrip1.ImageScalingSize = new Size(40, 40);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoCadastrarFuncionario, botaoOrdemDeServico, toolStripButton1, toolStripButton2, toolStripButton3 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoOrdemDeServico, toolStripButton1, toolStripButton2, toolStripButton3 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -66,16 +65,6 @@
             botaoCadastrarCliente.Text = "Clientes";
             botaoCadastrarCliente.ToolTipText = "Cadastrar Cliente";
             botaoCadastrarCliente.Click += botaoCadastrarCliente_Click;
-            // 
-            // botaoCadastrarFuncionario
-            // 
-            botaoCadastrarFuncionario.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            botaoCadastrarFuncionario.Image = (Image)resources.GetObject("botaoCadastrarFuncionario.Image");
-            botaoCadastrarFuncionario.ImageTransparentColor = Color.Magenta;
-            botaoCadastrarFuncionario.Name = "botaoCadastrarFuncionario";
-            botaoCadastrarFuncionario.Size = new Size(42, 44);
-            botaoCadastrarFuncionario.Text = "Funcionarios";
-            botaoCadastrarFuncionario.Click += botaoCadastrarFuncionario_Click;
             // 
             // botaoOrdemDeServico
             // 
@@ -164,7 +153,6 @@
         private ToolStripButton botaoCadastrarCliente;
         private Panel panel1;
         private TabControl tabControl1;
-        private ToolStripButton botaoCadastrarFuncionario;
         private ToolStripButton botaoOrdemDeServico;
         private ToolStripButton toolStripButton1;
         private ToolStripButton toolStripButton2;
