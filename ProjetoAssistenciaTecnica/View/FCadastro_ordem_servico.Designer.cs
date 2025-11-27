@@ -440,7 +440,7 @@
             botao_cadastrar_ordem_servico.FlatStyle = FlatStyle.Popup;
             botao_cadastrar_ordem_servico.Font = new Font("Microsoft Sans Serif", 12.2F);
             botao_cadastrar_ordem_servico.ForeColor = Color.White;
-            botao_cadastrar_ordem_servico.Location = new Point(623, 243);
+            botao_cadastrar_ordem_servico.Location = new Point(622, 229);
             botao_cadastrar_ordem_servico.Name = "botao_cadastrar_ordem_servico";
             botao_cadastrar_ordem_servico.Size = new Size(125, 44);
             botao_cadastrar_ordem_servico.TabIndex = 76;
@@ -490,7 +490,7 @@
             tabPage2.Margin = new Padding(3, 2, 3, 2);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 2, 3, 2);
-            tabPage2.Size = new Size(1093, 513);
+            tabPage2.Size = new Size(1106, 576);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
