@@ -62,7 +62,8 @@ namespace ProjetoAssistenciaTecnica.Controller
             string sql = @"SELECT 
                         marca,
                         n_serie,
-                        condicao
+                        condicao,
+                        idProduto
                         FROM tb_produto
                         WHERE modelo = @modelo
                         ";
@@ -83,6 +84,7 @@ namespace ProjetoAssistenciaTecnica.Controller
                     produto.marca = resultado.GetString("marca");
                     produto.n_serie = resultado.GetString("n_serie");
                     produto.condicao = resultado.GetString("condicao");
+                    produto.idProduto = resultado.GetInt16("idProduto");
                 }
                 return produto;
             }

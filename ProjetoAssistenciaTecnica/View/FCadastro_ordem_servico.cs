@@ -51,6 +51,7 @@ namespace ProjetoAssistenciaTecnica.View
                 txtMarca.Text = produto.marca;
                 txtNSerie.Text = produto.n_serie;
                 comboCondicao.Text = produto.condicao;
+                txt_id_produto.Text = produto.idProduto.ToString();
             }
             else
             {
