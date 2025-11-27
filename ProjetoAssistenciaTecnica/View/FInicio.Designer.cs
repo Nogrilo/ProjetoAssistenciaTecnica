@@ -32,7 +32,6 @@
             toolStrip1 = new ToolStrip();
             botaoCadastrarCliente = new ToolStripButton();
             botaoOrdemDeServico = new ToolStripButton();
-            toolStripButton1 = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
             toolStripButton3 = new ToolStripButton();
             panel1 = new Panel();
@@ -47,7 +46,7 @@
             toolStrip1.Dock = DockStyle.Left;
             toolStrip1.GripMargin = new Padding(10, 5, 10, 5);
             toolStrip1.ImageScalingSize = new Size(40, 40);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoOrdemDeServico, toolStripButton1, toolStripButton2, toolStripButton3 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoOrdemDeServico, toolStripButton2, toolStripButton3 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -75,16 +74,6 @@
             botaoOrdemDeServico.Size = new Size(42, 44);
             botaoOrdemDeServico.Text = "Ordem de Serviço";
             botaoOrdemDeServico.Click += botaoOrdemDeServico_Click;
-            // 
-            // toolStripButton1
-            // 
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(42, 44);
-            toolStripButton1.Text = "Ticket";
-            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripButton2
             // 
@@ -127,7 +116,7 @@
             // 
             // FInicio
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1029, 535);
@@ -154,7 +143,6 @@
         private Panel panel1;
         private TabControl tabControl1;
         private ToolStripButton botaoOrdemDeServico;
-        private ToolStripButton toolStripButton1;
         private ToolStripButton toolStripButton2;
         private ToolStripButton toolStripButton3;
     }
