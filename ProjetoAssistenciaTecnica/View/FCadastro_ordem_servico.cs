@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using ProjetoAssistenciaTecnica.Controller;
+using ProjetoAssistenciaTecnica.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,6 +56,33 @@ namespace ProjetoAssistenciaTecnica.View
             {
                 MessageBox.Show("Produto não encontrado.");
             }
+        }
+
+        private void botao_cadastrar_ordem_servico_Click(object sender, EventArgs e)
+        {
+            Ordem_servico obj = new Ordem_servico();
+
+            obj.nome = txtNome.Text;
+            obj.cpf_cnpj = maskCPFcnpj.Text;
+            obj.telefone = maskedTelefone.Text;
+            obj.data_nascimento = DateTime.Parse(txtDataNascimento.Text); // Converter para DateTime
+            obj.email = txtEmail.Text;
+            obj.modalidade = comboModalidade.Text;
+
+            //Endereco
+            obj.endereco.cep = maskedCEP.Text;
+            obj.endereco.estado = comboUF.Text;
+            obj.endereco.municipio = txtMunicipio.Text;
+            obj.endereco.rua = txtRua.Text;
+            obj.endereco.bairro = txtBairro.Text;
+            obj.endereco.complemento = comboComplemento.Text.Trim();
+            obj.endereco.n_casa = txtNumeroCasa.Text;
+
+            ControllerPessoa controllerPessoa = new ControllerPessoa();
+
+            controllerPessoa.cadastrarPessoa(obj);
+            MessageBox.Show("Pessoa Cadastrada com Sucesso!");
+            //limparCampos();
         }
     }
 }

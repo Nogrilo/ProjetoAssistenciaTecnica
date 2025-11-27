@@ -24,7 +24,7 @@ namespace ProjetoAssistenciaTecnica.Model
 
         public int id_orcamento_inicial { get; set; } = 0;
 
-        public int id_pertencente { get; set; } = 0;
+        public string cpf_cliente { get; set; } = string.Empty;
 
         public int id_produto { get; set; } = 0;
     }

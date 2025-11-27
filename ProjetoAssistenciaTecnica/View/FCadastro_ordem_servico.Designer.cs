@@ -63,6 +63,7 @@
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
+            botao_cadastrar_ordem_servico = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -412,6 +413,7 @@
             panel2.Anchor = AnchorStyles.Top;
             panel2.BackColor = Color.FromArgb(36, 36, 36);
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(botao_cadastrar_ordem_servico);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
@@ -479,6 +481,20 @@
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // botao_cadastrar_ordem_servico
+            // 
+            botao_cadastrar_ordem_servico.BackColor = Color.FromArgb(64, 64, 64);
+            botao_cadastrar_ordem_servico.FlatStyle = FlatStyle.Popup;
+            botao_cadastrar_ordem_servico.Font = new Font("Microsoft Sans Serif", 12.2F);
+            botao_cadastrar_ordem_servico.ForeColor = Color.White;
+            botao_cadastrar_ordem_servico.Location = new Point(623, 243);
+            botao_cadastrar_ordem_servico.Name = "botao_cadastrar_ordem_servico";
+            botao_cadastrar_ordem_servico.Size = new Size(125, 44);
+            botao_cadastrar_ordem_servico.TabIndex = 76;
+            botao_cadastrar_ordem_servico.Text = "Cadastrar";
+            botao_cadastrar_ordem_servico.UseVisualStyleBackColor = false;
+            botao_cadastrar_ordem_servico.Click += botao_cadastrar_ordem_servico_Click;
+            // 
             // FCadastro_ordem_servico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -539,5 +555,6 @@
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
+        private Button botao_cadastrar_ordem_servico;
     }
 }
