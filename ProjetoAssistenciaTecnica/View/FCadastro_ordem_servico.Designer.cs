@@ -64,6 +64,8 @@
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
+            label1 = new Label();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -167,6 +169,7 @@
             // 
             txtCPFcnpj.BackColor = Color.FromArgb(64, 64, 64);
             txtCPFcnpj.BorderStyle = BorderStyle.FixedSingle;
+            txtCPFcnpj.ForeColor = Color.White;
             txtCPFcnpj.Location = new Point(111, 28);
             txtCPFcnpj.Name = "txtCPFcnpj";
             txtCPFcnpj.Size = new Size(239, 27);
@@ -177,7 +180,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.White;
-            label7.Location = new Point(126, 285);
+            label7.Location = new Point(126, 275);
             label7.Name = "label7";
             label7.Size = new Size(96, 20);
             label7.TabIndex = 0;
@@ -188,7 +191,7 @@
             txtObservacao.BackColor = Color.FromArgb(64, 64, 64);
             txtObservacao.BorderStyle = BorderStyle.FixedSingle;
             txtObservacao.ForeColor = Color.White;
-            txtObservacao.Location = new Point(126, 324);
+            txtObservacao.Location = new Point(126, 314);
             txtObservacao.Multiline = true;
             txtObservacao.Name = "txtObservacao";
             txtObservacao.Size = new Size(578, 58);
@@ -251,6 +254,7 @@
             // 
             maskedTelefone.BackColor = Color.FromArgb(64, 64, 64);
             maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskedTelefone.ForeColor = Color.White;
             maskedTelefone.Location = new Point(640, 89);
             maskedTelefone.Mask = "(##) # ####-####";
             maskedTelefone.Name = "maskedTelefone";
@@ -261,6 +265,7 @@
             // 
             txtBairro.BackColor = Color.FromArgb(64, 64, 64);
             txtBairro.BorderStyle = BorderStyle.FixedSingle;
+            txtBairro.ForeColor = Color.White;
             txtBairro.Location = new Point(111, 165);
             txtBairro.Name = "txtBairro";
             txtBairro.Size = new Size(360, 27);
@@ -281,6 +286,7 @@
             // 
             txtRua.BackColor = Color.FromArgb(64, 64, 64);
             txtRua.BorderStyle = BorderStyle.FixedSingle;
+            txtRua.ForeColor = Color.White;
             txtRua.Location = new Point(111, 127);
             txtRua.Name = "txtRua";
             txtRua.Size = new Size(360, 27);
@@ -301,6 +307,7 @@
             // 
             txtMunicipio.BackColor = Color.FromArgb(64, 64, 64);
             txtMunicipio.BorderStyle = BorderStyle.FixedSingle;
+            txtMunicipio.ForeColor = Color.White;
             txtMunicipio.Location = new Point(640, 133);
             txtMunicipio.Name = "txtMunicipio";
             txtMunicipio.Size = new Size(189, 27);
@@ -332,6 +339,7 @@
             // 
             txtNome.BackColor = Color.FromArgb(64, 64, 64);
             txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.ForeColor = Color.White;
             txtNome.Location = new Point(111, 83);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(360, 27);
@@ -352,6 +360,7 @@
             // 
             txtNumeroCasa.BackColor = Color.FromArgb(64, 64, 64);
             txtNumeroCasa.BorderStyle = BorderStyle.FixedSingle;
+            txtNumeroCasa.ForeColor = Color.White;
             txtNumeroCasa.Location = new Point(640, 172);
             txtNumeroCasa.Name = "txtNumeroCasa";
             txtNumeroCasa.Size = new Size(92, 27);
@@ -398,6 +407,8 @@
             panel2.Anchor = AnchorStyles.Top;
             panel2.BackColor = Color.FromArgb(36, 36, 36);
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(botao_cadastrar_ordem_servico);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
@@ -415,7 +426,7 @@
             panel2.Controls.Add(txtAcessorios);
             panel2.Location = new Point(201, 259);
             panel2.Name = "panel2";
-            panel2.Size = new Size(860, 402);
+            panel2.Size = new Size(860, 475);
             panel2.TabIndex = 75;
             // 
             // botao_cadastrar_ordem_servico
@@ -424,10 +435,10 @@
             botao_cadastrar_ordem_servico.FlatStyle = FlatStyle.Popup;
             botao_cadastrar_ordem_servico.Font = new Font("Microsoft Sans Serif", 12.2F);
             botao_cadastrar_ordem_servico.ForeColor = Color.White;
-            botao_cadastrar_ordem_servico.Location = new Point(640, 246);
+            botao_cadastrar_ordem_servico.Location = new Point(561, 393);
             botao_cadastrar_ordem_servico.Margin = new Padding(3, 4, 3, 4);
             botao_cadastrar_ordem_servico.Name = "botao_cadastrar_ordem_servico";
-            botao_cadastrar_ordem_servico.Size = new Size(143, 59);
+            botao_cadastrar_ordem_servico.Size = new Size(143, 38);
             botao_cadastrar_ordem_servico.TabIndex = 76;
             botao_cadastrar_ordem_servico.Text = "Cadastrar";
             botao_cadastrar_ordem_servico.UseVisualStyleBackColor = false;
@@ -475,6 +486,25 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(446, 226);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 20);
+            label1.TabIndex = 77;
+            label1.Text = "Valor inicial:";
+            // 
+            // textBox1
+            // 
+            textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+            textBox1.BackColor = SystemColors.Window;
+            textBox1.Location = new Point(545, 222);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(151, 27);
+            textBox1.TabIndex = 78;
             // 
             // FCadastro_ordem_servico
             // 
@@ -536,5 +566,7 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private Button botao_cadastrar_ordem_servico;
+        private TextBox textBox1;
+        private Label label1;
     }
 }
