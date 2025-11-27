@@ -61,28 +61,14 @@ namespace ProjetoAssistenciaTecnica.View
         private void botao_cadastrar_ordem_servico_Click(object sender, EventArgs e)
         {
             Ordem_servico obj = new Ordem_servico();
-            /*
+            
             obj.nome = txtNome.Text;
-            obj.cpf_cnpj = maskCPFcnpj.Text;
-            obj.telefone = maskedTelefone.Text;
-            obj.data_nascimento = DateTime.Parse(txtDataNascimento.Text); // Converter para DateTime
-            obj.email = txtEmail.Text;
-            obj.modalidade = comboModalidade.Text;
 
-            //Endereco
-            obj.endereco.cep = maskedCEP.Text;
-            obj.endereco.estado = comboUF.Text;
-            obj.endereco.municipio = txtMunicipio.Text;
-            obj.endereco.rua = txtRua.Text;
-            obj.endereco.bairro = txtBairro.Text;
-            obj.endereco.complemento = comboComplemento.Text.Trim();
-            obj.endereco.n_casa = txtNumeroCasa.Text;
+            ControllerOrdemDeServico controller_ordem_servico = new ControllerOrdemDeServico();
 
-            ControllerPessoa controllerPessoa = new ControllerPessoa();
-
-            controllerPessoa.cadastrarPessoa(obj);
-            MessageBox.Show("Pessoa Cadastrada com Sucesso!");
-            */
+            controller_ordem_servico.cadastrar_ordem_servico(obj);
+            MessageBox.Show("Ordem de Servico Cadastrada com Sucesso!");
+            
             //limparCampos();
         }
     }
