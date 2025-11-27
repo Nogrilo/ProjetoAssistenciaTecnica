@@ -57,15 +57,15 @@
             label15 = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            label7 = new Label();
+            txt_id_produto = new TextBox();
+            txt_id_orcamento = new TextBox();
             label1 = new Label();
             botao_cadastrar_ordem_servico = new Button();
             panel3 = new Panel();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
-            label7 = new Label();
-            txt_id_produto = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -402,7 +402,7 @@
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label7);
             panel2.Controls.Add(txt_id_produto);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txt_id_orcamento);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(botao_cadastrar_ordem_servico);
             panel2.Controls.Add(label9);
@@ -423,15 +423,37 @@
             panel2.Size = new Size(753, 357);
             panel2.TabIndex = 75;
             // 
-            // textBox1
+            // label7
             // 
-            textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
-            textBox1.BackColor = SystemColors.Window;
-            textBox1.Location = new Point(477, 166);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(133, 23);
-            textBox1.TabIndex = 78;
+            label7.AutoSize = true;
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(114, 212);
+            label7.Name = "label7";
+            label7.Size = new Size(21, 15);
+            label7.TabIndex = 79;
+            label7.Text = "ID:";
+            // 
+            // txt_id_produto
+            // 
+            txt_id_produto.BackColor = Color.FromArgb(64, 64, 64);
+            txt_id_produto.BorderStyle = BorderStyle.FixedSingle;
+            txt_id_produto.Enabled = false;
+            txt_id_produto.ForeColor = Color.White;
+            txt_id_produto.Location = new Point(209, 208);
+            txt_id_produto.Margin = new Padding(3, 2, 3, 2);
+            txt_id_produto.Name = "txt_id_produto";
+            txt_id_produto.Size = new Size(157, 23);
+            txt_id_produto.TabIndex = 80;
+            // 
+            // txt_id_orcamento
+            // 
+            txt_id_orcamento.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txt_id_orcamento.BackColor = SystemColors.Window;
+            txt_id_orcamento.Location = new Point(477, 166);
+            txt_id_orcamento.Margin = new Padding(3, 2, 3, 2);
+            txt_id_orcamento.Name = "txt_id_orcamento";
+            txt_id_orcamento.Size = new Size(133, 23);
+            txt_id_orcamento.TabIndex = 78;
             // 
             // label1
             // 
@@ -504,28 +526,6 @@
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(114, 212);
-            label7.Name = "label7";
-            label7.Size = new Size(21, 15);
-            label7.TabIndex = 79;
-            label7.Text = "ID:";
-            // 
-            // txt_id_produto
-            // 
-            txt_id_produto.BackColor = Color.FromArgb(64, 64, 64);
-            txt_id_produto.BorderStyle = BorderStyle.FixedSingle;
-            txt_id_produto.Enabled = false;
-            txt_id_produto.ForeColor = Color.White;
-            txt_id_produto.Location = new Point(209, 208);
-            txt_id_produto.Margin = new Padding(3, 2, 3, 2);
-            txt_id_produto.Name = "txt_id_produto";
-            txt_id_produto.Size = new Size(157, 23);
-            txt_id_produto.TabIndex = 80;
-            // 
             // FCadastro_ordem_servico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -585,7 +585,7 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private Button botao_cadastrar_ordem_servico;
-        private TextBox textBox1;
+        private TextBox txt_id_orcamento;
         private Label label1;
         private Label label7;
         private TextBox txt_id_produto;

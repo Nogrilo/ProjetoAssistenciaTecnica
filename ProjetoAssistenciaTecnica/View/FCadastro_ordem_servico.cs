@@ -62,7 +62,13 @@ namespace ProjetoAssistenciaTecnica.View
         {
             Ordem_servico obj = new Ordem_servico();
             
-            obj.nome = txtNome.Text;
+            obj.n_atendimento = 1;
+            obj.defeito = txtDefeito.Text;
+            obj.acessorios = txtAcessorios.Text;
+            obj.status = "Na fila para concerto";
+            obj.id_orcamento_inicial = int.Parse(txt_id_orcamento.Text);
+            obj.cpf_cliente = txtCPFcnpj.Text;
+            obj.id_produto = int.Parse(txt_id_produto.Text);
 
             ControllerOrdemDeServico controller_ordem_servico = new ControllerOrdemDeServico();
 
