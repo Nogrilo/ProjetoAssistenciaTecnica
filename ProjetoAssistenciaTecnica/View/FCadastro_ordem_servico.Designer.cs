@@ -59,11 +59,11 @@
             label15 = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
+            botao_cadastrar_ordem_servico = new Button();
             panel3 = new Panel();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
-            botao_cadastrar_ordem_servico = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -402,7 +402,7 @@
             panel1.Controls.Add(txtRua);
             panel1.Controls.Add(txtMunicipio);
             panel1.Controls.Add(label12);
-            panel1.Location = new Point(169, 18);
+            panel1.Location = new Point(176, 18);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(753, 165);
@@ -428,58 +428,11 @@
             panel2.Controls.Add(label7);
             panel2.Controls.Add(txtMarca);
             panel2.Controls.Add(txtAcessorios);
-            panel2.Location = new Point(169, 194);
+            panel2.Location = new Point(176, 194);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(753, 302);
             panel2.TabIndex = 75;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(36, 36, 36);
-            panel3.Controls.Add(label10);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(3, 2, 3, 2);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1101, 66);
-            panel3.TabIndex = 76;
-            // 
-            // tabControl1
-            // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 66);
-            tabControl1.Margin = new Padding(3, 2, 3, 2);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1101, 541);
-            tabControl1.TabIndex = 77;
-            // 
-            // tabPage1
-            // 
-            tabPage1.BackColor = Color.FromArgb(36, 36, 36);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Controls.Add(panel2);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Margin = new Padding(3, 2, 3, 2);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 2, 3, 2);
-            tabPage1.Size = new Size(1093, 513);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Dados";
-            // 
-            // tabPage2
-            // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Margin = new Padding(3, 2, 3, 2);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 2, 3, 2);
-            tabPage2.Size = new Size(1093, 513);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Pesquisa";
-            tabPage2.UseVisualStyleBackColor = true;
             // 
             // botao_cadastrar_ordem_servico
             // 
@@ -495,12 +448,59 @@
             botao_cadastrar_ordem_servico.UseVisualStyleBackColor = false;
             botao_cadastrar_ordem_servico.Click += botao_cadastrar_ordem_servico_Click;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(36, 36, 36);
+            panel3.Controls.Add(label10);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1114, 66);
+            panel3.TabIndex = 76;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 66);
+            tabControl1.Margin = new Padding(3, 2, 3, 2);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1114, 604);
+            tabControl1.TabIndex = 77;
+            // 
+            // tabPage1
+            // 
+            tabPage1.BackColor = Color.FromArgb(36, 36, 36);
+            tabPage1.Controls.Add(panel1);
+            tabPage1.Controls.Add(panel2);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Margin = new Padding(3, 2, 3, 2);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3, 2, 3, 2);
+            tabPage1.Size = new Size(1106, 576);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Dados";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Margin = new Padding(3, 2, 3, 2);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3, 2, 3, 2);
+            tabPage2.Size = new Size(1093, 513);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Pesquisa";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // FCadastro_ordem_servico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1101, 607);
+            ClientSize = new Size(1114, 670);
             Controls.Add(tabControl1);
             Controls.Add(panel3);
             Margin = new Padding(3, 2, 3, 2);
