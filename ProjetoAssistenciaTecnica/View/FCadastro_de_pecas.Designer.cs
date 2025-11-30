@@ -121,7 +121,7 @@
             txtNome.Location = new Point(22, 48);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(365, 27);
-            txtNome.TabIndex = 3;
+            txtNome.TabIndex = 1;
             // 
             // txtCusto
             // 
@@ -131,7 +131,7 @@
             txtCusto.Location = new Point(22, 124);
             txtCusto.Name = "txtCusto";
             txtCusto.Size = new Size(169, 27);
-            txtCusto.TabIndex = 3;
+            txtCusto.TabIndex = 2;
             // 
             // txtCustoRepasse
             // 
@@ -208,7 +208,7 @@
             botaoCadastrarPeca.Location = new Point(22, 244);
             botaoCadastrarPeca.Name = "botaoCadastrarPeca";
             botaoCadastrarPeca.Size = new Size(108, 36);
-            botaoCadastrarPeca.TabIndex = 5;
+            botaoCadastrarPeca.TabIndex = 4;
             botaoCadastrarPeca.Text = "Cadastrar";
             botaoCadastrarPeca.UseVisualStyleBackColor = true;
             botaoCadastrarPeca.Click += botaoCadastrarPeca_Click;
@@ -247,7 +247,7 @@
             button1.Location = new Point(568, 84);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
-            button1.TabIndex = 4;
+            button1.TabIndex = 5;
             button1.Text = "Pesquisar";
             button1.UseVisualStyleBackColor = true;
             // 
@@ -277,7 +277,7 @@
             textBox9.Location = new Point(568, 47);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(94, 27);
-            textBox9.TabIndex = 3;
+            textBox9.TabIndex = 4;
             // 
             // textBox5
             // 
@@ -287,7 +287,7 @@
             textBox5.Location = new Point(40, 47);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(406, 27);
-            textBox5.TabIndex = 3;
+            textBox5.TabIndex = 1;
             // 
             // label7
             // 
@@ -307,7 +307,7 @@
             textBox6.Location = new Point(40, 124);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(156, 27);
-            textBox6.TabIndex = 3;
+            textBox6.TabIndex = 2;
             // 
             // label9
             // 
@@ -365,7 +365,7 @@
             button4.Location = new Point(584, 131);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
-            button4.TabIndex = 4;
+            button4.TabIndex = 7;
             button4.Text = "Adicionar";
             button4.UseVisualStyleBackColor = true;
             // 
@@ -375,7 +375,7 @@
             button3.Location = new Point(584, 89);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
-            button3.TabIndex = 4;
+            button3.TabIndex = 6;
             button3.Text = "Pesquisar";
             button3.UseVisualStyleBackColor = false;
             // 
@@ -405,7 +405,7 @@
             textBox10.Location = new Point(570, 12);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(108, 27);
-            textBox10.TabIndex = 3;
+            textBox10.TabIndex = 4;
             // 
             // textBox11
             // 
@@ -415,7 +415,7 @@
             textBox11.Location = new Point(35, 48);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(381, 27);
-            textBox11.TabIndex = 3;
+            textBox11.TabIndex = 1;
             // 
             // label13
             // 
@@ -435,7 +435,7 @@
             textBox12.Location = new Point(35, 133);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(145, 27);
-            textBox12.TabIndex = 3;
+            textBox12.TabIndex = 2;
             // 
             // textBox15
             // 
@@ -444,7 +444,7 @@
             textBox15.Location = new Point(569, 45);
             textBox15.Name = "textBox15";
             textBox15.Size = new Size(109, 27);
-            textBox15.TabIndex = 3;
+            textBox15.TabIndex = 5;
             // 
             // label16
             // 

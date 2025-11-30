@@ -104,7 +104,7 @@
             textBox2.Location = new Point(45, 135);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(211, 27);
-            textBox2.TabIndex = 1;
+            textBox2.TabIndex = 2;
             // 
             // label3
             // 
@@ -123,7 +123,7 @@
             textBox3.Location = new Point(45, 216);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 27);
-            textBox3.TabIndex = 1;
+            textBox3.TabIndex = 3;
             // 
             // label4
             // 
@@ -142,7 +142,7 @@
             textBox4.Location = new Point(256, 216);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(155, 27);
-            textBox4.TabIndex = 1;
+            textBox4.TabIndex = 4;
             // 
             // label5
             // 
@@ -161,7 +161,7 @@
             textBox5.Location = new Point(45, 320);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(155, 27);
-            textBox5.TabIndex = 1;
+            textBox5.TabIndex = 5;
             // 
             // label6
             // 
@@ -180,7 +180,7 @@
             textBox6.Location = new Point(256, 320);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(155, 27);
-            textBox6.TabIndex = 1;
+            textBox6.TabIndex = 6;
             // 
             // label7
             // 
@@ -199,7 +199,7 @@
             comboBox1.Location = new Point(135, 64);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 28);
-            comboBox1.TabIndex = 2;
+            comboBox1.TabIndex = 1;
             // 
             // label8
             // 
@@ -218,7 +218,7 @@
             textBox7.Location = new Point(36, 51);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(159, 27);
-            textBox7.TabIndex = 1;
+            textBox7.TabIndex = 8;
             // 
             // label9
             // 
@@ -237,7 +237,7 @@
             textBox8.Location = new Point(36, 140);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(159, 27);
-            textBox8.TabIndex = 1;
+            textBox8.TabIndex = 10;
             // 
             // label10
             // 
@@ -256,7 +256,7 @@
             textBox9.Location = new Point(252, 140);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(145, 27);
-            textBox9.TabIndex = 1;
+            textBox9.TabIndex = 11;
             // 
             // label11
             // 
@@ -275,7 +275,7 @@
             textBox10.Location = new Point(252, 226);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(145, 27);
-            textBox10.TabIndex = 1;
+            textBox10.TabIndex = 13;
             // 
             // label12
             // 
@@ -294,7 +294,7 @@
             textBox11.Location = new Point(36, 226);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(159, 27);
-            textBox11.TabIndex = 1;
+            textBox11.TabIndex = 12;
             // 
             // label13
             // 
@@ -313,7 +313,7 @@
             textBox12.Location = new Point(36, 322);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(159, 27);
-            textBox12.TabIndex = 1;
+            textBox12.TabIndex = 14;
             // 
             // label14
             // 
@@ -332,7 +332,7 @@
             textBox13.Location = new Point(252, 51);
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(138, 27);
-            textBox13.TabIndex = 1;
+            textBox13.TabIndex = 9;
             // 
             // label15
             // 
@@ -352,7 +352,7 @@
             textBox14.Multiline = true;
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(366, 110);
-            textBox14.TabIndex = 1;
+            textBox14.TabIndex = 7;
             // 
             // panel1
             // 
@@ -430,7 +430,7 @@
             button1.Location = new Point(252, 318);
             button1.Name = "button1";
             button1.Size = new Size(94, 51);
-            button1.TabIndex = 6;
+            button1.TabIndex = 15;
             button1.Text = "Salvar";
             button1.UseVisualStyleBackColor = false;
             // 
