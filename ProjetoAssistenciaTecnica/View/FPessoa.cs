@@ -197,9 +197,13 @@ namespace ProjetoAssistenciaTecnica.View
 
             ControllerPessoa controllerPessoa = new ControllerPessoa();
 
-            controllerPessoa.cadastrarPessoa(obj);
-            MessageBox.Show("Pessoa Cadastrada com Sucesso!");
-            //limparCampos();
+            bool verificar_cadastro_pessoa = controllerPessoa.cadastrarPessoa(obj);
+            
+            if (verificar_cadastro_pessoa)
+            {
+                MessageBox.Show($"Pessoa {obj.nome} Cadastrada com Sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                limparCampos();
+            }
         }
 
         private void botaoBuscarCEP_Click(object sender, EventArgs e)
