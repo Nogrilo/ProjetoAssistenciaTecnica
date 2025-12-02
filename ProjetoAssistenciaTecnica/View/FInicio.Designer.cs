@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FInicio));
             toolStrip1 = new ToolStrip();
             botaoCadastrarCliente = new ToolStripButton();
-            botaoOrdemDeServico = new ToolStripButton();
-            toolStripButton2 = new ToolStripButton();
             toolStripButton3 = new ToolStripButton();
+            toolStripButton2 = new ToolStripButton();
+            botaoOrdemDeServico = new ToolStripButton();
             panel1 = new Panel();
             tabControl1 = new TabControl();
             toolStrip1.SuspendLayout();
@@ -61,19 +61,20 @@
             botaoCadastrarCliente.ImageTransparentColor = Color.Magenta;
             botaoCadastrarCliente.Name = "botaoCadastrarCliente";
             botaoCadastrarCliente.Size = new Size(42, 44);
-            botaoCadastrarCliente.Text = "Clientes";
+            botaoCadastrarCliente.Text = "Cadastro de Pessoa";
             botaoCadastrarCliente.ToolTipText = "Cadastrar Cliente";
             botaoCadastrarCliente.Click += botaoCadastrarCliente_Click;
             // 
-            // botaoOrdemDeServico
+            // toolStripButton3
             // 
-            botaoOrdemDeServico.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            botaoOrdemDeServico.Image = (Image)resources.GetObject("botaoOrdemDeServico.Image");
-            botaoOrdemDeServico.ImageTransparentColor = Color.Magenta;
-            botaoOrdemDeServico.Name = "botaoOrdemDeServico";
-            botaoOrdemDeServico.Size = new Size(42, 44);
-            botaoOrdemDeServico.Text = "Ordem de Serviço";
-            botaoOrdemDeServico.Click += botaoOrdemDeServico_Click;
+            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
+            toolStripButton3.ImageTransparentColor = Color.Magenta;
+            toolStripButton3.Name = "toolStripButton3";
+            toolStripButton3.Size = new Size(42, 44);
+            toolStripButton3.Text = "Cadastro de Produtos";
+            toolStripButton3.ToolTipText = "Produto";
+            toolStripButton3.Click += toolStripButton3_Click;
             // 
             // toolStripButton2
             // 
@@ -85,16 +86,15 @@
             toolStripButton2.Text = "Cadastro Peças";
             toolStripButton2.Click += toolStripButton2_Click;
             // 
-            // toolStripButton3
+            // botaoOrdemDeServico
             // 
-            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
-            toolStripButton3.ImageTransparentColor = Color.Magenta;
-            toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(42, 44);
-            toolStripButton3.Text = "toolStripButton3";
-            toolStripButton3.ToolTipText = "Produto";
-            toolStripButton3.Click += toolStripButton3_Click;
+            botaoOrdemDeServico.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            botaoOrdemDeServico.Image = (Image)resources.GetObject("botaoOrdemDeServico.Image");
+            botaoOrdemDeServico.ImageTransparentColor = Color.Magenta;
+            botaoOrdemDeServico.Name = "botaoOrdemDeServico";
+            botaoOrdemDeServico.Size = new Size(42, 44);
+            botaoOrdemDeServico.Text = "Cadastro Ordem de Serviço";
+            botaoOrdemDeServico.Click += botaoOrdemDeServico_Click;
             // 
             // panel1
             // 

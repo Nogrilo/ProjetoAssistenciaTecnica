@@ -24,6 +24,51 @@ namespace ProjetoAssistenciaTecnica.View
         private void txtCPFcnpj_Leave(object sender, EventArgs e)
         {
             /* Funcao que ao sair do txt de CPF, dar o select no banco */
+
+            /* Verificar todos os campos foram preenchidos */
+
+            if (string.IsNullOrWhiteSpace(txtCPFcnpj.Text))
+            {
+                MessageBox.Show("Preencha o CPF/CNPJ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("Preencha o Nome", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtRua.Text))
+            {
+                MessageBox.Show("Preencha a Rua", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtBairro.Text))
+            {
+                MessageBox.Show("Preencha o Bairro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(maskedTelefone.Text))
+            {
+                MessageBox.Show("Preencha o Telefone", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtMunicipio.Text))
+            {
+                MessageBox.Show("Preencha o Municipio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNumeroCasa.Text))
+            {
+                MessageBox.Show("Preencha o Número da Casa", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             ControllerPessoa controller = new ControllerPessoa();
             var pessoa = controller.buscarPessoa(txtCPFcnpj.Text);
             if (pessoa != null)
@@ -37,13 +82,14 @@ namespace ProjetoAssistenciaTecnica.View
             }
             else
             {
-                MessageBox.Show("Cliente não encontrado.");
+                MessageBox.Show("Pessoa não encontrada", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void txtModelo_Leave(object sender, EventArgs e)
         {
-            /* Funcao que ao sair do txt de CPF, dar o select no banco */
+            /* Funcao que ao sair do txt de Modelo, dar o select no banco */
+
             ControllerProduto controller = new ControllerProduto();
             var produto = controller.buscarProduto(txtModelo.Text);
             if (produto != null)
@@ -55,14 +101,14 @@ namespace ProjetoAssistenciaTecnica.View
             }
             else
             {
-                MessageBox.Show("Produto não encontrado.");
+                MessageBox.Show("Produto não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void botao_cadastrar_ordem_servico_Click(object sender, EventArgs e)
         {
             Ordem_servico obj = new Ordem_servico();
-            
+
             obj.n_atendimento = 1;
             obj.defeito = txtDefeito.Text;
             obj.acessorios = txtAcessorios.Text;
