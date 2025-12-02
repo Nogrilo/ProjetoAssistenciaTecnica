@@ -32,13 +32,13 @@ namespace ProjetoAssistenciaTecnica.View
                 MessageBox.Show("Preencha o CPF/CNPJ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            /*
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 MessageBox.Show("Preencha o Nome", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            
             if (string.IsNullOrWhiteSpace(txtRua.Text))
             {
                 MessageBox.Show("Preencha a Rua", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -68,7 +68,7 @@ namespace ProjetoAssistenciaTecnica.View
                 MessageBox.Show("Preencha o Número da Casa", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            */
             ControllerPessoa controller = new ControllerPessoa();
             var pessoa = controller.buscarPessoa(txtCPFcnpj.Text);
             if (pessoa != null)
