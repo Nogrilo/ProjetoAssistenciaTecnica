@@ -70,9 +70,15 @@ namespace ProjetoAssistenciaTecnica.View
 
             ControllerProduto controllerProduto = new ControllerProduto();
 
+            bool verificar_cadastro_produto = controllerProduto.cadastrarProduto(obj);
+
             controllerProduto.cadastrarProduto(obj);
 
-            MessageBox.Show($"Produto: {obj.modelo} cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            /* Verificar se o cadastro foi feito com sucesso, se sim, vai retornar a mensagem */
+            if (verificar_cadastro_produto)
+            {
+                MessageBox.Show($"Produto: {obj.modelo} cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
