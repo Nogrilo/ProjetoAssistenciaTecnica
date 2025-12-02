@@ -23,6 +23,44 @@ namespace ProjetoAssistenciaTecnica.View
         {
             Produto obj = new Produto();
 
+            /* Verificar se todos os campos foram preenchidos */
+
+            if (string.IsNullOrWhiteSpace(txtCPFCliente.Text))
+            {
+                MessageBox.Show("Preencha o CPF do cliente", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtMarca.Text))
+            {
+                MessageBox.Show("Preencha a marca do Produto", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtModelo.Text))
+            {
+                MessageBox.Show("Preencha o modelo do Produto", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNumeroSerie.Text))
+            {
+                MessageBox.Show("Preencha o Número de Série do Produto", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTipo.Text))
+            {
+                MessageBox.Show("Preencha o tipo do Produto", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCondicao.Text))
+            {
+                MessageBox.Show("Preencha a condição do Produto", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             obj.cpf_cliente = txtCPFCliente.Text;
             obj.marca = txtMarca.Text;
             obj.modelo = txtModelo.Text;
