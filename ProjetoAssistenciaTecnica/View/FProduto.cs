@@ -33,6 +33,8 @@ namespace ProjetoAssistenciaTecnica.View
             ControllerProduto controllerProduto = new ControllerProduto();
 
             controllerProduto.cadastrarProduto(obj);
+
+            MessageBox.Show($"Produto: {obj.modelo} cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

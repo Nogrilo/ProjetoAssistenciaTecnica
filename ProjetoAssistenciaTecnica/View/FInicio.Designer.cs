@@ -46,7 +46,7 @@
             toolStrip1.Dock = DockStyle.Left;
             toolStrip1.GripMargin = new Padding(10, 5, 10, 5);
             toolStrip1.ImageScalingSize = new Size(40, 40);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, botaoOrdemDeServico, toolStripButton2, toolStripButton3 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { botaoCadastrarCliente, toolStripButton3, toolStripButton2, botaoOrdemDeServico });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -116,7 +116,7 @@
             // 
             // FInicio
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1029, 535);
