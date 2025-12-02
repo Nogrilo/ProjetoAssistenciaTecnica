@@ -19,9 +19,37 @@ namespace ProjetoAssistenciaTecnica.View
             InitializeComponent();
         }
 
+        public void limpar_campos()
+        {
+            txtNome.Clear();
+            txtCusto.Clear();
+            txtCustoRepasse.Clear();
+        }
+
         private void botaoCadastrarPeca_Click(object sender, EventArgs e)
         {
             Peca obj = new Peca();
+
+
+            /* Verificar se todos os campos foram preenchidos */
+
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("Preencha o Nome", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCusto.Text))
+            {
+                MessageBox.Show("Preencha o Custo", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCustoRepasse.Text))
+            {
+                MessageBox.Show("Preencha o Valor de Venda", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             obj.tipo = txtNome.Text;
             obj.valorCusto = float.Parse(txtCusto.Text);
@@ -29,9 +57,13 @@ namespace ProjetoAssistenciaTecnica.View
 
             ControllerPeca controllerPeca = new ControllerPeca();
 
-            controllerPeca.cadastrarPeca(obj);
-            //MessageBox.Show("Pessoa Cadastrada com Sucesso!");
-            //limparCampos();
+            bool verificar_cadastro_peca = controllerPeca.cadastrarPeca(obj);
+
+            if (verificar_cadastro_peca)
+            {
+                MessageBox.Show($"Peça {obj.tipo} Cadastrada com Sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                limpar_campos();
+            }
         }
     }
 }
