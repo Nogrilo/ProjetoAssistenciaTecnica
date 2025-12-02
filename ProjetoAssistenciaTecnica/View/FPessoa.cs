@@ -88,10 +88,88 @@ namespace ProjetoAssistenciaTecnica.View
         {
             Pessoa obj = new Pessoa();
 
-            // Verificar se o objeto que vamos instanciar vai ser Funcionario, ou cliente
+            /* Verificar todos os campos foram preenchidos */
+
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("Preencha o Nome", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(maskCPFcnpj.Text))
+            {
+                MessageBox.Show("Preencha o CPF/CNPJ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(maskedTelefone.Text))
+            {
+                MessageBox.Show("Preencha o Telefone", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtDataNascimento.Text))
+            {
+                MessageBox.Show("Preencha a Data de Nascimento", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("Preencha o E-mail", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(comboModalidade.Text))
+            {
+                MessageBox.Show("Preencha a Modalidade", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            /* Verificacao dos campos de endereco */
+
+            if (string.IsNullOrWhiteSpace(maskedCEP.Text))
+            {
+                MessageBox.Show("Preencha o CEP", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtRua.Text))
+            {
+                MessageBox.Show("Preencha a Rua", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtBairro.Text))
+            {
+                MessageBox.Show("Preencha o Bairro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNumeroCasa.Text))
+            {
+                MessageBox.Show("Preencha o Número da Casa", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(comboUF.Text))
+            {
+                MessageBox.Show("Preencha a UF", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            /* Verificar se o objeto que vamos instanciar vai ser Funcionario, ou cliente */
 
             if (comboModalidade.Text == "Funcionario")
             {
+                /* Verificar os campos do Funcionario */
+
+                if (string.IsNullOrWhiteSpace(comboCargo.Text))
+                {
+                    MessageBox.Show("Preencha o Cargo", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 obj = new Funcionario();
 
                 ((Funcionario)obj).tipo = comboCargo.Text;
