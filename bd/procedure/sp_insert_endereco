@@ -1,0 +1,23 @@
+DELIMITER $
+CREATE PROCEDURE sp_insert_endereco(
+	IN v_id_pertencente INT,
+	IN v_estado CHAR(2),
+	IN v_municipio VARCHAR(200),
+	IN v_bairro VARCHAR(200),
+	IN v_rua VARCHAR(200),
+	IN v_complemento VARCHAR(25),
+	IN v_ncomplemento VARCHAR(15),
+	IN v_cep VARCHAR(8)
+)
+BEGIN
+	DECLARE ex_complemento CONDITION FOR SQLSTATE '90909';
+
+	IF v_complemento NOT IN('Casa', 'Apartamento', 'Bloco', 'Outro') THEN 
+		SIGNAL ex_complemento SET MESSAGE_TEXT = 'Complemento inválido';
+	END IF;
+
+	INSERT INTO tb_endereco(estado, municipio, bairro, rua, complemento, n_complemento, cep, id_pertencente)
+	VALUES (v_estado, v_municipio, v_bairro, v_rua, v_complemento, v_ncomplemento, v_cep, v_id_pertencente);
+END$
+
+DELIMITER ;

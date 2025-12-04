@@ -42,6 +42,7 @@
             tabControl1 = new TabControl();
             TabPage1 = new TabPage();
             panel4 = new Panel();
+            label18 = new Label();
             comboCargo = new ComboBox();
             maskCPFcnpj = new MaskedTextBox();
             label17 = new Label();
@@ -78,7 +79,6 @@
             label14 = new Label();
             botaoPesquisarPessoa = new Button();
             panel1 = new Panel();
-            label18 = new Label();
             tabControl1.SuspendLayout();
             TabPage1.SuspendLayout();
             panel4.SuspendLayout();
@@ -97,7 +97,7 @@
             label1.Location = new Point(916, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(26, 18);
+            label1.Size = new Size(22, 15);
             label1.TabIndex = 0;
             label1.Text = "ID:";
             // 
@@ -108,7 +108,7 @@
             txtID.ForeColor = Color.White;
             txtID.Location = new Point(954, 30);
             txtID.Name = "txtID";
-            txtID.Size = new Size(66, 34);
+            txtID.Size = new Size(66, 29);
             txtID.TabIndex = 1;
             // 
             // txtNome
@@ -118,7 +118,7 @@
             txtNome.ForeColor = Color.White;
             txtNome.Location = new Point(17, 30);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(457, 34);
+            txtNome.Size = new Size(457, 29);
             txtNome.TabIndex = 1;
             txtNome.TextChanged += txtNome_TextChanged;
             // 
@@ -130,7 +130,7 @@
             label2.Location = new Point(17, 6);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(53, 18);
+            label2.Size = new Size(44, 15);
             label2.TabIndex = 2;
             label2.Text = "Nome:";
             // 
@@ -142,7 +142,7 @@
             label3.Location = new Point(18, 68);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(42, 18);
+            label3.Size = new Size(33, 15);
             label3.TabIndex = 4;
             label3.Text = "CPF:";
             // 
@@ -154,7 +154,7 @@
             label4.Location = new Point(18, 128);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(69, 18);
+            label4.Size = new Size(58, 15);
             label4.TabIndex = 6;
             label4.Text = "Telefone:";
             // 
@@ -166,7 +166,7 @@
             label5.Location = new Point(16, 190);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(127, 20);
+            label5.Size = new Size(101, 15);
             label5.TabIndex = 8;
             label5.Text = "Data Nascimento:";
             // 
@@ -178,7 +178,7 @@
             txtDataNascimento.Location = new Point(18, 214);
             txtDataNascimento.Mask = "0000/00/00";
             txtDataNascimento.Name = "txtDataNascimento";
-            txtDataNascimento.Size = new Size(164, 34);
+            txtDataNascimento.Size = new Size(164, 29);
             txtDataNascimento.TabIndex = 4;
             // 
             // label6
@@ -189,7 +189,7 @@
             label6.Location = new Point(18, 251);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(49, 18);
+            label6.Size = new Size(42, 15);
             label6.TabIndex = 20;
             label6.Text = "Email:";
             // 
@@ -200,7 +200,7 @@
             txtEmail.ForeColor = Color.White;
             txtEmail.Location = new Point(18, 272);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(456, 34);
+            txtEmail.Size = new Size(456, 29);
             txtEmail.TabIndex = 5;
             // 
             // label12
@@ -211,7 +211,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(13, 19);
             label12.Name = "label12";
-            label12.Size = new Size(288, 32);
+            label12.Size = new Size(227, 26);
             label12.TabIndex = 0;
             label12.Text = "Cadastro de Pessoa";
             // 
@@ -231,10 +231,10 @@
             TabPage1.BackColor = Color.FromArgb(36, 36, 36);
             TabPage1.Controls.Add(panel4);
             TabPage1.Controls.Add(panel3);
-            TabPage1.Location = new Point(4, 37);
+            TabPage1.Location = new Point(4, 30);
             TabPage1.Name = "TabPage1";
             TabPage1.Padding = new Padding(3);
-            TabPage1.Size = new Size(1133, 594);
+            TabPage1.Size = new Size(1133, 601);
             TabPage1.TabIndex = 0;
             TabPage1.Text = "Dados";
             TabPage1.Click += TabPage1_Click;
@@ -266,6 +266,17 @@
             panel4.Size = new Size(1048, 330);
             panel4.TabIndex = 57;
             // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(188, 223);
+            label18.Name = "label18";
+            label18.Size = new Size(83, 15);
+            label18.TabIndex = 56;
+            label18.Text = "(ano/mês/dia)";
+            // 
             // comboCargo
             // 
             comboCargo.BackColor = Color.FromArgb(64, 64, 64);
@@ -274,7 +285,7 @@
             comboCargo.Items.AddRange(new object[] { "Auxiliar Técnico", "Recepcionista", "Gerente Técnico", "Gerente Administrativo", "Outro" });
             comboCargo.Location = new Point(869, 160);
             comboCargo.Name = "comboCargo";
-            comboCargo.Size = new Size(151, 36);
+            comboCargo.Size = new Size(151, 29);
             comboCargo.TabIndex = 14;
             // 
             // maskCPFcnpj
@@ -284,7 +295,7 @@
             maskCPFcnpj.ForeColor = Color.White;
             maskCPFcnpj.Location = new Point(18, 91);
             maskCPFcnpj.Name = "maskCPFcnpj";
-            maskCPFcnpj.Size = new Size(260, 34);
+            maskCPFcnpj.Size = new Size(260, 29);
             maskCPFcnpj.TabIndex = 2;
             maskCPFcnpj.TextChanged += maskCPFcnpj_TextChanged;
             // 
@@ -295,7 +306,7 @@
             label17.Location = new Point(740, 162);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(69, 28);
+            label17.Size = new Size(55, 21);
             label17.TabIndex = 55;
             label17.Text = "Cargo:";
             // 
@@ -307,7 +318,7 @@
             comboModalidade.Items.AddRange(new object[] { "Cliente", "Funcionario" });
             comboModalidade.Location = new Point(869, 97);
             comboModalidade.Name = "comboModalidade";
-            comboModalidade.Size = new Size(151, 36);
+            comboModalidade.Size = new Size(151, 29);
             comboModalidade.TabIndex = 13;
             comboModalidade.SelectedIndexChanged += comboModalidade_SelectedIndexChanged;
             // 
@@ -318,7 +329,7 @@
             label16.Location = new Point(740, 100);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
-            label16.Size = new Size(122, 28);
+            label16.Size = new Size(95, 21);
             label16.TabIndex = 52;
             label16.Text = "Modalidade:";
             // 
@@ -344,7 +355,7 @@
             maskedTelefone.Location = new Point(18, 152);
             maskedTelefone.Mask = "(##) # ####-####";
             maskedTelefone.Name = "maskedTelefone";
-            maskedTelefone.Size = new Size(260, 34);
+            maskedTelefone.Size = new Size(260, 29);
             maskedTelefone.TabIndex = 3;
             // 
             // panel3
@@ -379,7 +390,7 @@
             label7.Location = new Point(124, 32);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(43, 18);
+            label7.Size = new Size(34, 15);
             label7.TabIndex = 35;
             label7.Text = "CEP:";
             // 
@@ -391,7 +402,7 @@
             label8.Location = new Point(599, 125);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(32, 18);
+            label8.Size = new Size(26, 15);
             label8.TabIndex = 37;
             label8.Text = "UF:";
             // 
@@ -403,7 +414,7 @@
             comboComplemento.Items.AddRange(new object[] { "Casa", "Apartamento", "Bloco", "Outro" });
             comboComplemento.Location = new Point(713, 173);
             comboComplemento.Name = "comboComplemento";
-            comboComplemento.Size = new Size(151, 36);
+            comboComplemento.Size = new Size(151, 29);
             comboComplemento.TabIndex = 12;
             // 
             // botaoBuscarCEP
@@ -428,7 +439,7 @@
             maskedCEP.Location = new Point(214, 22);
             maskedCEP.Mask = "#####-###";
             maskedCEP.Name = "maskedCEP";
-            maskedCEP.Size = new Size(234, 34);
+            maskedCEP.Size = new Size(234, 29);
             maskedCEP.TabIndex = 6;
             // 
             // comboUF
@@ -439,7 +450,7 @@
             comboUF.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
             comboUF.Location = new Point(713, 115);
             comboUF.Name = "comboUF";
-            comboUF.Size = new Size(151, 36);
+            comboUF.Size = new Size(151, 29);
             comboUF.TabIndex = 11;
             // 
             // label9
@@ -450,7 +461,7 @@
             label9.Location = new Point(124, 185);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(75, 18);
+            label9.Size = new Size(64, 15);
             label9.TabIndex = 42;
             label9.Text = "Municipio:";
             // 
@@ -461,7 +472,7 @@
             txtMunicipio.ForeColor = Color.White;
             txtMunicipio.Location = new Point(214, 175);
             txtMunicipio.Name = "txtMunicipio";
-            txtMunicipio.Size = new Size(348, 34);
+            txtMunicipio.Size = new Size(348, 29);
             txtMunicipio.TabIndex = 9;
             // 
             // label10
@@ -472,7 +483,7 @@
             label10.Location = new Point(123, 81);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(39, 18);
+            label10.Size = new Size(33, 15);
             label10.TabIndex = 44;
             label10.Text = "Rua:";
             // 
@@ -483,7 +494,7 @@
             txtNumeroCasa.ForeColor = Color.White;
             txtNumeroCasa.Location = new Point(713, 65);
             txtNumeroCasa.Name = "txtNumeroCasa";
-            txtNumeroCasa.Size = new Size(151, 34);
+            txtNumeroCasa.Size = new Size(151, 29);
             txtNumeroCasa.TabIndex = 10;
             // 
             // txtRua
@@ -493,7 +504,7 @@
             txtRua.ForeColor = Color.White;
             txtRua.Location = new Point(214, 71);
             txtRua.Name = "txtRua";
-            txtRua.Size = new Size(348, 34);
+            txtRua.Size = new Size(348, 29);
             txtRua.TabIndex = 7;
             // 
             // label15
@@ -504,7 +515,7 @@
             label15.Location = new Point(599, 79);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
-            label15.Size = new Size(28, 18);
+            label15.Size = new Size(23, 15);
             label15.TabIndex = 50;
             label15.Text = "Nº:";
             // 
@@ -516,7 +527,7 @@
             label11.Location = new Point(124, 127);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(52, 18);
+            label11.Size = new Size(43, 15);
             label11.TabIndex = 46;
             label11.Text = "Bairro:";
             // 
@@ -528,7 +539,7 @@
             label13.Location = new Point(599, 177);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
-            label13.Size = new Size(106, 18);
+            label13.Size = new Size(88, 15);
             label13.TabIndex = 48;
             label13.Text = "Complemento:";
             // 
@@ -539,17 +550,17 @@
             txtBairro.ForeColor = Color.White;
             txtBairro.Location = new Point(214, 121);
             txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(350, 34);
+            txtBairro.Size = new Size(350, 29);
             txtBairro.TabIndex = 8;
             // 
             // tabPage2
             // 
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1133, 602);
+            tabPage2.Size = new Size(1133, 607);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pesquisa";
             tabPage2.UseVisualStyleBackColor = true;
@@ -562,7 +573,7 @@
             dataGridView1.Location = new Point(3, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1127, 535);
+            dataGridView1.Size = new Size(1127, 540);
             dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -629,7 +640,7 @@
             // 
             textBox1.Location = new Point(107, 15);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(402, 34);
+            textBox1.Size = new Size(402, 29);
             textBox1.TabIndex = 4;
             // 
             // label14
@@ -637,7 +648,7 @@
             label14.AutoSize = true;
             label14.Location = new Point(31, 17);
             label14.Name = "label14";
-            label14.Size = new Size(70, 28);
+            label14.Size = new Size(56, 21);
             label14.TabIndex = 3;
             label14.Text = "Nome:";
             // 
@@ -661,20 +672,9 @@
             panel1.Size = new Size(1141, 71);
             panel1.TabIndex = 49;
             // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(188, 223);
-            label18.Name = "label18";
-            label18.Size = new Size(104, 20);
-            label18.TabIndex = 56;
-            label18.Text = "(ano/dia/mês)";
-            // 
             // FPessoa
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1141, 706);

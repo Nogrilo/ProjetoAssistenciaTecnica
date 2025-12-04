@@ -69,6 +69,7 @@ namespace ProjetoAssistenciaTecnica.View
                 return;
             }
             */
+
             ControllerPessoa controller = new ControllerPessoa();
             var pessoa = controller.buscarPessoa(txtCPFcnpj.Text);
             if (pessoa != null)
